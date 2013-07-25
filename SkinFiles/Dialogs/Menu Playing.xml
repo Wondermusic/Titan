@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MPDisplayDialog">
+  <Name>Menu Playing</Name>
+  <Id>901</Id>
+  <Width>792</Width>
+  <Height>146</Height>
+  <PosX>-67</PosX>
+  <PosY>296</PosY>
+  <BorderThickness>2</BorderThickness>
+  <CornerRadius>5</CornerRadius>
+  <BackgroundBrush x:type="ImageBrush" Image="\menu_bg.png" Stretch="Fill" />
+  <BorderBrush />
+  <DialogAnimations>
+    <Animation x:type="Fade" Condition="WindowOpen" Duration="600" Easing="EaseInOut" />
+    <Animation x:type="Fade" Condition="WindowClose" Duration="600" Easing="EaseInOut" From="100" To="0" />
+  </DialogAnimations>
+  <DialogControls>
+    <Control x:type="Button">
+      <Name>SkipBack</Name>
+      <Id>1</Id>
+      <Width>80</Width>
+      <Height>80</Height>
+      <PosX>55</PosX>
+      <PosY>30</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush x:type="ImageBrush" Image="\Remote\topbar_skipback.png" Stretch="Uniform" />
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="ImageBrush" Image="\Remote\topbar_skipback_focus.png" Stretch="Uniform" />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="MediaPortalAction" Param="ACTION_PREV_ITEM" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Rewind</Name>
+      <Id>2</Id>
+      <Width>80</Width>
+      <Height>80</Height>
+      <PosX>135</PosX>
+      <PosY>30</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush x:type="ImageBrush" Image="\Remote\topbar_rew.png" Stretch="Uniform" />
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="ImageBrush" Image="\Remote\topbar_rew_focus.png" Stretch="Uniform" />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="MediaPortalAction" Param="ACTION_REWIND" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Pause</Name>
+      <Id>3</Id>
+      <Width>80</Width>
+      <Height>80</Height>
+      <PosX>215</PosX>
+      <PosY>30</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush x:type="ImageBrush" Image="\Remote\topbar_pause.png" Stretch="Uniform" />
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="ImageBrush" Image="\Remote\topbar_pause_focus.png" Stretch="Uniform" />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="MediaPortalAction" Param="ACTION_PAUSE" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Stop</Name>
+      <Id>4</Id>
+      <Width>80</Width>
+      <Height>80</Height>
+      <PosX>295</PosX>
+      <PosY>30</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush x:type="ImageBrush" Image="\Remote\topbar_stop.png" Stretch="Uniform" />
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="ImageBrush" Image="\Remote\topbar_stop_focus.png" Stretch="Uniform" />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="MediaPortalAction" Param="ACTION_STOP" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Play</Name>
+      <Id>5</Id>
+      <Width>80</Width>
+      <Height>80</Height>
+      <PosX>375</PosX>
+      <PosY>30</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush x:type="ImageBrush" Image="\Remote\topbar_play.png" Stretch="Uniform" />
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="ImageBrush" Image="\Remote\topbar_play_focus.png" Stretch="Uniform" />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="MediaPortalAction" Param="ACTION_PLAY" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Ffwd</Name>
+      <Id>6</Id>
+      <Width>80</Width>
+      <Height>80</Height>
+      <PosX>455</PosX>
+      <PosY>30</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush x:type="ImageBrush" Image="\Remote\topbar_FF.png" Stretch="Uniform" />
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="ImageBrush" Image="\Remote\topbar_FF_focus.png" Stretch="Uniform" />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="MediaPortalAction" Param="ACTION_FORWARD" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>SkipForward</Name>
+      <Id>7</Id>
+      <Width>80</Width>
+      <Height>80</Height>
+      <PosX>535</PosX>
+      <PosY>30</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush x:type="ImageBrush" Image="\Remote\topbar_skipforward.png" Stretch="Uniform" />
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="ImageBrush" Image="\Remote\topbar_skipforward_focus.png" Stretch="Uniform" />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="MediaPortalAction" Param="ACTION_NEXT_ITEM" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Close</Name>
+      <Id>8</Id>
+      <Width>80</Width>
+      <Height>80</Height>
+      <PosX>648</PosX>
+      <PosY>30</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush x:type="ImageBrush" Image="\Remote\topbar_exit.png" Stretch="Uniform" />
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="ImageBrush" Image="\Remote\topbar_exit_focus.png" Stretch="Uniform" />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="901" />
+      </Actions>
+    </Control>
+  </DialogControls>
+</Dialog>

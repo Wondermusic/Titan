@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language xmlns:x="http://www.w3.org/2001/XMLSchema-instance">
+  <LanguageEntries>
+    <LanguageEntry Tag="@Exit">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Ausgang" />
+        <LanguageValue Language="English" Value="Exit" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Remote">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Steuerung" />
+        <LanguageValue Language="English" Value="Remote" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Moonphase">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Mondphase" />
+        <LanguageValue Language="English" Value="Moonphase" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Sundial">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Sonnenuhr" />
+        <LanguageValue Language="English" Value="Sundial" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Wind">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Wind" />
+        <LanguageValue Language="English" Value="Wind" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Condition">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Wetterlage" />
+        <LanguageValue Language="English" Value="Condition" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Temperature">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Temperatur" />
+        <LanguageValue Language="English" Value="Temperature" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Clean Installation directory">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Lösche Install. Verz." />
+        <LanguageValue Language="English" Value="Clean Installation directory" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Reboot">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Neustart" />
+        <LanguageValue Language="English" Value="Reboot" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Filter Updates">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Updates filtern" />
+        <LanguageValue Language="English" Value="Filter Updates" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Restore Point">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Wiederherstellungspunkt" />
+        <LanguageValue Language="English" Value="Restore Point" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Installed Updates">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="installierte Updates" />
+        <LanguageValue Language="English" Value="Installed Updates" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Search for Updates">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Updatesuche" />
+        <LanguageValue Language="English" Value="Search for Updates" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Show installed Updates">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Zeige install. Updates" />
+        <LanguageValue Language="English" Value="Show installed Updates" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Duration">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Spielzeit" />
+        <LanguageValue Language="English" Value="Duration" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Filesize">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Dateigröße" />
+        <LanguageValue Language="English" Value="Filesize" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Audio Bitrate">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Audio Bitrate" />
+        <LanguageValue Language="English" Value="Audio Bitrate" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Video Bitrate">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Video Bitrate" />
+        <LanguageValue Language="English" Value="Video Bitrate" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Date">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Datum" />
+        <LanguageValue Language="English" Value="Date" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Producer">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Produzent" />
+        <LanguageValue Language="English" Value="Producer" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Country">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Land" />
+        <LanguageValue Language="English" Value="Country" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Options">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Optionen" />
+        <LanguageValue Language="English" Value="Options" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Technical Details">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Technische Details" />
+        <LanguageValue Language="English" Value="Technical Details" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Comments">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Kommentare" />
+        <LanguageValue Language="English" Value="Comments" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Overview">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Übersicht" />
+        <LanguageValue Language="English" Value="Overview" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Last Played">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="zuletzt gespielt" />
+        <LanguageValue Language="English" Value="Last Played" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Genre">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Genre" />
+        <LanguageValue Language="English" Value="Genre" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Next">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Nächste" />
+        <LanguageValue Language="English" Value="Next" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@FPS">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="BPS" />
+        <LanguageValue Language="English" Value="FPS" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Info URL">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Info Adresse" />
+        <LanguageValue Language="English" Value="Info URL" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Date added">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Hinzugefügt am" />
+        <LanguageValue Language="English" Value="Date added" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Audio Channels">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Audio Kanäle" />
+        <LanguageValue Language="English" Value="Audio Channels" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Audio Format">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Audio Format" />
+        <LanguageValue Language="English" Value="Audio Format" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Resolution">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Auflösung" />
+        <LanguageValue Language="English" Value="Resolution" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Video Framerate">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Bildwiederholrate" />
+        <LanguageValue Language="English" Value="Video Framerate" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Video Format">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Video Format" />
+        <LanguageValue Language="English" Value="Video Format" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Description">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Beschreibung" />
+        <LanguageValue Language="English" Value="Description" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Runtime">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Laufzeit" />
+        <LanguageValue Language="English" Value="Runtime" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Year">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Jahr" />
+        <LanguageValue Language="English" Value="Year" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Actors">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Darsteller" />
+        <LanguageValue Language="English" Value="Actors" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Writer">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Autor" />
+        <LanguageValue Language="English" Value="Writer" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Director">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Regisseur" />
+        <LanguageValue Language="English" Value="Director" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@ID">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="ID" />
+        <LanguageValue Language="English" Value="ID" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Release Date">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Veröffentlichung" />
+        <LanguageValue Language="English" Value="Release Date" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Author">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Autor" />
+        <LanguageValue Language="English" Value="Author" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Version">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Version" />
+        <LanguageValue Language="English" Value="Version" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Screenshots">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Schnappschuss" />
+        <LanguageValue Language="English" Value="Screenshots" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Changes">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Änderungen" />
+        <LanguageValue Language="English" Value="Changes" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Deinstall Extension">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Deinstallieren" />
+        <LanguageValue Language="English" Value="Deinstall Extension" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@EPG Info">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="EPG folgt in einer späteren Version" />
+        <LanguageValue Language="English" Value="Display of EPG will follow in later Versions" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@notavailable">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Diese Funktion gibt es leider nicht..." />
+        <LanguageValue Language="English" Value="This function is not available..." />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Extensions">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Erweiterungen" />
+        <LanguageValue Language="English" Value="Extensions" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Plugins">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Module" />
+        <LanguageValue Language="English" Value="Plugins" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@OnlineVideos">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="OnlineVideos" />
+        <LanguageValue Language="English" Value="OnlineVideos" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@InfoService">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="InfoService" />
+        <LanguageValue Language="English" Value="InfoService" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Settings">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Einstellungen" />
+        <LanguageValue Language="English" Value="Settings" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Series">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Serien" />
+        <LanguageValue Language="English" Value="Series" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Pictures">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Bilder" />
+        <LanguageValue Language="English" Value="Pictures" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Radio">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Radio" />
+        <LanguageValue Language="English" Value="Radio" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Movies">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Filme" />
+        <LanguageValue Language="English" Value="Movies" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@TV">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Fernsehen" />
+        <LanguageValue Language="English" Value="TV" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Music">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Musik" />
+        <LanguageValue Language="English" Value="Music" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Language">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Sprache" />
+        <LanguageValue Language="English" Value="Language" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Shutdown">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Herunterfahren" />
+        <LanguageValue Language="English" Value="Shutdown" />
+      </Values>
+    </LanguageEntry>
+  </LanguageEntries>
+</Language>
