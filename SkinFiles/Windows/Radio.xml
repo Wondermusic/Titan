@@ -828,7 +828,8 @@
       <Id>83</Id>
       <Width>1280</Width>
       <Height>130</Height>
-      <VisibleCondition />
+      <VisibleCondition>IsPlayer(None)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
       <ButtonStyle>
@@ -981,6 +982,32 @@
           </CoverFlowItemStyle>
         </Control>
       </GroupControls>
+    </Control>
+    <Control x:type="Button">
+      <Name>Play_Menu</Name>
+      <Id>84</Id>
+      <Width>1280</Width>
+      <Height>130</Height>
+      <VisibleCondition>!IsPlayer(None)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush />
+        <NoFocusBorderBrush />
+        <FocusBrush />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FontType>Titan</FontType>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00B7FF" />
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="904" />
+      </Actions>
     </Control>
   </WindowControls>
   <VisibleCondition>IsMediaPortalWindow(30) || IsMediaPortalWindow(2345) || IsMediaPortalWindow(7890) || IsMediaPortalWindow(25650) || IsMediaPortalWindow(15634330) || IsMediaPortalWindow(25653) || IsPlayer(Radio) || IsPlayer(RadioTime) || IsPlayer(Streamradio) || IsPlayer(PandoraMusicBox)</VisibleCondition>

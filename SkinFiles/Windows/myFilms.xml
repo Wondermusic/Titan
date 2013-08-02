@@ -1702,7 +1702,8 @@
       <Id>199</Id>
       <Width>1280</Width>
       <Height>130</Height>
-      <VisibleCondition />
+      <VisibleCondition>IsPlayer(None)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
       <ButtonStyle>
@@ -1855,6 +1856,32 @@
           </CoverFlowItemStyle>
         </Control>
       </GroupControls>
+    </Control>
+    <Control x:type="Button">
+      <Name>Play_Menu</Name>
+      <Id>200</Id>
+      <Width>1280</Width>
+      <Height>130</Height>
+      <VisibleCondition>!IsPlayer(None)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush />
+        <NoFocusBorderBrush />
+        <FocusBrush />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FontType>Titan</FontType>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00B7FF" />
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="904" />
+      </Actions>
     </Control>
   </WindowControls>
   <VisibleCondition>IsMediaPortalWindow(7986) || IsMediaPortalWindow(7987) || IsPlayer(MyFilms)</VisibleCondition>
