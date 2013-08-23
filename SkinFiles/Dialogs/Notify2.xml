@@ -122,4 +122,5 @@
       <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
     </Control>
   </DialogControls>
+  <VisibleCondition>IsMediaPortalDialog(101)</VisibleCondition>
 </Dialog>

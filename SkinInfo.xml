@@ -3,8 +3,8 @@
   <SkinWidth>1280</SkinWidth>
   <SkinHeight>720</SkinHeight>
   <CurrentStyle>Default</CurrentStyle>
-  <CurrentLanguage>Deutsch</CurrentLanguage>
-  <TextEnableScrolling>true</TextEnableScrolling>
+  <CurrentLanguage>English</CurrentLanguage>
+  <TextEnableScrolling>false</TextEnableScrolling>
   <TextHorizontalScrollDelay>3</TextHorizontalScrollDelay>
   <TextHorizontalScrollSpeed>20</TextHorizontalScrollSpeed>
   <TextHorizontalScrollWrap>true</TextHorizontalScrollWrap>
@@ -15,7 +15,7 @@
   <TextVerticalScrollSeperator>---------------------------------</TextVerticalScrollSeperator>
   <SkinOptions>
     <SkinOption Name="Default" IsEnabled="true" IsPreviewImageEnabled="true" PreviewImage="\Preview_Default.png" />
-    <SkinOption Name="Extended" />
+    <SkinOption Name="Extended" IsPreviewImageEnabled="true" PreviewImage="\Preview_Extended.png" />
   </SkinOptions>
   <SkinName>Titan</SkinName>
   <Author>Wondermusic</Author>
