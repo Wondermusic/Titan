@@ -10,7 +10,7 @@
   <WindowControls>
     <Control x:type="Group">
       <Name>Extended Menu Style</Name>
-      <Id>88</Id>
+      <Id>1</Id>
       <Width>1280</Width>
       <Height>720</Height>
       <VisibleCondition>IsSkinOptionEnabled(Extended)</VisibleCondition>
@@ -21,7 +21,7 @@
       <GroupControls>
         <Control x:type="Group">
           <Name>Backgrounds</Name>
-          <Id>96</Id>
+          <Id>2</Id>
           <Width>1280</Width>
           <Height>720</Height>
           <VisibleCondition>IsControlVisible(88)</VisibleCondition>
@@ -32,7 +32,7 @@
           <GroupControls>
             <Control x:type="Image">
               <Name>Background Image Radio</Name>
-              <Id>97</Id>
+              <Id>3</Id>
               <Width>1280</Width>
               <Height>720</Height>
               <VisibleCondition>IsMediaPortalControlFocused(3)</VisibleCondition>
@@ -48,7 +48,7 @@
             </Control>
             <Control x:type="Image">
               <Name>Background Image Music</Name>
-              <Id>98</Id>
+              <Id>4</Id>
               <Width>1280</Width>
               <Height>720</Height>
               <VisibleCondition>IsMediaPortalControlFocused(2)</VisibleCondition>
@@ -66,7 +66,7 @@
             </Control>
             <Control x:type="Image">
               <Name>Background Image TV</Name>
-              <Id>99</Id>
+              <Id>5</Id>
               <Width>1280</Width>
               <Height>720</Height>
               <VisibleCondition>IsMediaPortalControlFocused(4)</VisibleCondition>
@@ -84,7 +84,7 @@
             </Control>
             <Control x:type="Image">
               <Name>Background Image Video</Name>
-              <Id>104</Id>
+              <Id>6</Id>
               <Width>1280</Width>
               <Height>720</Height>
               <VisibleCondition>IsMediaPortalControlFocused(6)</VisibleCondition>
@@ -102,7 +102,7 @@
             </Control>
             <Control x:type="Image">
               <Name>Background Image Series</Name>
-              <Id>106</Id>
+              <Id>7</Id>
               <Width>1280</Width>
               <Height>720</Height>
               <VisibleCondition>IsMediaPortalControlFocused(7)</VisibleCondition>
@@ -122,7 +122,7 @@
         </Control>
         <Control x:type="Group">
           <Name>Buttons</Name>
-          <Id>100</Id>
+          <Id>8</Id>
           <Width>1280</Width>
           <Height>720</Height>
           <VisibleCondition />
@@ -132,7 +132,7 @@
           <GroupControls>
             <Control x:type="Button">
               <Name>Radio Button</Name>
-              <Id>101</Id>
+              <Id>9</Id>
               <Width>230</Width>
               <Height>175</Height>
               <PosX>20</PosX>
@@ -165,7 +165,7 @@
             </Control>
             <Control x:type="Button">
               <Name>Music Button</Name>
-              <Id>102</Id>
+              <Id>10</Id>
               <Width>230</Width>
               <Height>175</Height>
               <PosX>272</PosX>
@@ -198,7 +198,7 @@
             </Control>
             <Control x:type="Button">
               <Name>TV Button</Name>
-              <Id>103</Id>
+              <Id>11</Id>
               <Width>230</Width>
               <Height>175</Height>
               <PosX>524</PosX>
@@ -231,7 +231,7 @@
             </Control>
             <Control x:type="Button">
               <Name>Video Button</Name>
-              <Id>105</Id>
+              <Id>12</Id>
               <Width>230</Width>
               <Height>175</Height>
               <PosX>775</PosX>
@@ -265,7 +265,7 @@
             </Control>
             <Control x:type="Button">
               <Name>MovPic Button</Name>
-              <Id>109</Id>
+              <Id>13</Id>
               <Width>230</Width>
               <Height>175</Height>
               <PosX>775</PosX>
@@ -299,7 +299,7 @@
             </Control>
             <Control x:type="Button">
               <Name>myFilms Button</Name>
-              <Id>232</Id>
+              <Id>14</Id>
               <Width>230</Width>
               <Height>175</Height>
               <PosX>775</PosX>
@@ -333,7 +333,7 @@
             </Control>
             <Control x:type="Button">
               <Name>Series Button</Name>
-              <Id>107</Id>
+              <Id>15</Id>
               <Width>230</Width>
               <Height>175</Height>
               <PosX>1026</PosX>
@@ -370,7 +370,7 @@
     </Control>
     <Control x:type="Group">
       <Name>default Menu Style</Name>
-      <Id>71</Id>
+      <Id>16</Id>
       <Width>1280</Width>
       <Height>720</Height>
       <VisibleCondition>IsSkinOptionEnabled(Default)</VisibleCondition>
@@ -381,7 +381,7 @@
       <GroupControls>
         <Control x:type="Image">
           <Name>Background Image</Name>
-          <Id>108</Id>
+          <Id>17</Id>
           <Width>1280</Width>
           <Height>720</Height>
           <VisibleCondition />
@@ -393,7 +393,7 @@
         </Control>
         <Control x:type="Group">
           <Name>Menu 1</Name>
-          <Id>72</Id>
+          <Id>18</Id>
           <Width>1275</Width>
           <Height>523</Height>
           <PosX>4</PosX>
@@ -408,7 +408,7 @@
           <GroupControls>
             <Control x:type="Button">
               <Name>Music Button</Name>
-              <Id>73</Id>
+              <Id>19</Id>
               <Width>382</Width>
               <Height>215</Height>
               <PosX>10</PosX>
@@ -441,7 +441,7 @@
             </Control>
             <Control x:type="Button">
               <Name>TV Button</Name>
-              <Id>74</Id>
+              <Id>20</Id>
               <Width>382</Width>
               <Height>215</Height>
               <PosX>439</PosX>
@@ -474,7 +474,7 @@
             </Control>
             <Control x:type="Button">
               <Name>Video Button</Name>
-              <Id>75</Id>
+              <Id>21</Id>
               <Width>382</Width>
               <Height>215</Height>
               <PosX>867</PosX>
@@ -507,76 +507,8 @@
               </Actions>
             </Control>
             <Control x:type="Button">
-              <Name>MovPic Button</Name>
-              <Id>67</Id>
-              <Width>382</Width>
-              <Height>215</Height>
-              <PosX>867</PosX>
-              <PosY>24</PosY>
-              <VisibleCondition>IsPluginEnabled(MovingPictures)</VisibleCondition>
-              <IsWindowOpenVisible>false</IsWindowOpenVisible>
-              <Animations />
-              <MediaPortalFocusControls>
-                <MediaPortalControlId>6</MediaPortalControlId>
-              </MediaPortalFocusControls>
-              <ButtonStyle>
-                <BorderThickness>4,4,4,4</BorderThickness>
-                <CornerRadius>24,24,24,24</CornerRadius>
-                <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
-                <FocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
-                <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
-                <FontType>Titan</FontType>
-                <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
-                <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-                <LabelMargin>0,0,0,5</LabelMargin>
-                <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-                <EnableImage>true</EnableImage>
-                <ImageStretch>None</ImageStretch>
-              </ButtonStyle>
-              <Image>basichome_button_movies</Image>
-              <LabelText>@Movies</LabelText>
-              <Actions>
-                <Action Action="OpenWindow" Param="96742" />
-              </Actions>
-            </Control>
-            <Control x:type="Button">
-              <Name>MyFilms Button</Name>
-              <Id>232</Id>
-              <Width>382</Width>
-              <Height>215</Height>
-              <PosX>867</PosX>
-              <PosY>24</PosY>
-              <VisibleCondition>!IsPluginEnabled(MyFilms)</VisibleCondition>
-              <IsWindowOpenVisible>false</IsWindowOpenVisible>
-              <Animations />
-              <MediaPortalFocusControls>
-                <MediaPortalControlId>6</MediaPortalControlId>
-              </MediaPortalFocusControls>
-              <ButtonStyle>
-                <BorderThickness>4,4,4,4</BorderThickness>
-                <CornerRadius>24,24,24,24</CornerRadius>
-                <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
-                <FocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
-                <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
-                <FontType>Titan</FontType>
-                <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
-                <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-                <LabelMargin>0,0,0,5</LabelMargin>
-                <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-                <EnableImage>true</EnableImage>
-                <ImageStretch>None</ImageStretch>
-              </ButtonStyle>
-              <Image>basichome_button_movies</Image>
-              <LabelText>@Movies</LabelText>
-              <Actions>
-                <Action Action="OpenWindow" Param="7986" />
-              </Actions>
-            </Control>
-            <Control x:type="Button">
               <Name>Radio Button</Name>
-              <Id>76</Id>
+              <Id>24</Id>
               <Width>382</Width>
               <Height>215</Height>
               <PosX>10</PosX>
@@ -609,7 +541,7 @@
             </Control>
             <Control x:type="Button">
               <Name>Pictures Button</Name>
-              <Id>77</Id>
+              <Id>25</Id>
               <Width>382</Width>
               <Height>215</Height>
               <PosX>439</PosX>
@@ -642,12 +574,13 @@
             </Control>
             <Control x:type="Button">
               <Name>Series Button</Name>
-              <Id>78</Id>
+              <Id>26</Id>
               <Width>382</Width>
               <Height>215</Height>
               <PosX>867</PosX>
               <PosY>255</PosY>
-              <VisibleCondition />
+              <VisibleCondition>IsPluginEnabled(MP-TV Series)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls>
                 <MediaPortalControlId>7</MediaPortalControlId>
@@ -673,9 +606,123 @@
                 <Action Action="OpenWindow" Param="9811" />
               </Actions>
             </Control>
+            <Control x:type="Group">
+              <Name>Alternatives</Name>
+              <Id>36</Id>
+              <Width>1275</Width>
+              <Height>523</Height>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <GroupStyle StyleId="Empty" />
+              <GroupControls>
+                <Control x:type="Button">
+                  <Name>MovPic Button</Name>
+                  <Id>54</Id>
+                  <Width>382</Width>
+                  <Height>215</Height>
+                  <PosX>867</PosX>
+                  <PosY>24</PosY>
+                  <VisibleCondition>IsPluginEnabled(MovingPictures)</VisibleCondition>
+                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
+                  <Animations />
+                  <MediaPortalFocusControls>
+                    <MediaPortalControlId>6</MediaPortalControlId>
+                  </MediaPortalFocusControls>
+                  <ButtonStyle>
+                    <BorderThickness>4,4,4,4</BorderThickness>
+                    <CornerRadius>24,24,24,24</CornerRadius>
+                    <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
+                    <FocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
+                    <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
+                    <FontType>Titan</FontType>
+                    <FontSize>50</FontSize>
+                    <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                    <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                    <LabelMargin>0,0,0,5</LabelMargin>
+                    <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+                    <EnableImage>true</EnableImage>
+                    <ImageStretch>None</ImageStretch>
+                  </ButtonStyle>
+                  <Image>basichome_button_movies</Image>
+                  <LabelText>@Movies</LabelText>
+                  <Actions>
+                    <Action Action="OpenWindow" Param="96742" />
+                  </Actions>
+                </Control>
+                <Control x:type="Button">
+                  <Name>MyFilms Button</Name>
+                  <Id>55</Id>
+                  <Width>382</Width>
+                  <Height>215</Height>
+                  <PosX>867</PosX>
+                  <PosY>24</PosY>
+                  <VisibleCondition>IsPluginEnabled(MyFilms)</VisibleCondition>
+                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
+                  <Animations />
+                  <MediaPortalFocusControls>
+                    <MediaPortalControlId>6</MediaPortalControlId>
+                  </MediaPortalFocusControls>
+                  <ButtonStyle>
+                    <BorderThickness>4,4,4,4</BorderThickness>
+                    <CornerRadius>24,24,24,24</CornerRadius>
+                    <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
+                    <FocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
+                    <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
+                    <FontType>Titan</FontType>
+                    <FontSize>50</FontSize>
+                    <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                    <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                    <LabelMargin>0,0,0,5</LabelMargin>
+                    <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+                    <EnableImage>true</EnableImage>
+                    <ImageStretch>None</ImageStretch>
+                  </ButtonStyle>
+                  <Image>basichome_button_movies</Image>
+                  <LabelText>@Movies</LabelText>
+                  <Actions>
+                    <Action Action="OpenWindow" Param="7986" />
+                  </Actions>
+                </Control>
+                <Control x:type="Button">
+                  <Name>Series Dummy Button</Name>
+                  <Id>59</Id>
+                  <Width>382</Width>
+                  <Height>215</Height>
+                  <PosX>867</PosX>
+                  <PosY>255</PosY>
+                  <VisibleCondition>!IsPluginEnabled(MP-TV Series)</VisibleCondition>
+                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
+                  <Animations />
+                  <MediaPortalFocusControls>
+                    <MediaPortalControlId>700</MediaPortalControlId>
+                  </MediaPortalFocusControls>
+                  <ButtonStyle>
+                    <BorderThickness>4,4,4,4</BorderThickness>
+                    <CornerRadius>24,24,24,24</CornerRadius>
+                    <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                    <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                    <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
+                    <EnableLabel>false</EnableLabel>
+                    <FontType>Titan</FontType>
+                    <FontSize>50</FontSize>
+                    <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                    <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                    <LabelMargin>0,0,0,5</LabelMargin>
+                    <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+                    <ImageStretch>None</ImageStretch>
+                  </ButtonStyle>
+                  <Image>basichome_button_dummy</Image>
+                  <LabelText>NewButton</LabelText>
+                  <Actions>
+                    <Action Action="OpenWindow" />
+                  </Actions>
+                </Control>
+              </GroupControls>
+            </Control>
             <Control x:type="Button">
               <Name>Nextpage</Name>
-              <Id>79</Id>
+              <Id>27</Id>
               <Width>139</Width>
               <Height>170</Height>
               <PosX>1187</PosX>
@@ -704,7 +751,7 @@
         </Control>
         <Control x:type="Group">
           <Name>Menu 2</Name>
-          <Id>80</Id>
+          <Id>28</Id>
           <Width>1275</Width>
           <Height>523</Height>
           <PosX>4</PosX>
@@ -721,7 +768,7 @@
           <GroupControls>
             <Control x:type="Button">
               <Name>Settings Button</Name>
-              <Id>81</Id>
+              <Id>29</Id>
               <Width>382</Width>
               <Height>215</Height>
               <PosX>10</PosX>
@@ -753,12 +800,13 @@
             </Control>
             <Control x:type="Button">
               <Name>InfoService Button</Name>
-              <Id>82</Id>
+              <Id>30</Id>
               <Width>382</Width>
               <Height>215</Height>
               <PosX>439</PosX>
               <PosY>24</PosY>
-              <VisibleCondition />
+              <VisibleCondition>IsPluginEnabled(InfoService)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls>
                 <MediaPortalControlId>500</MediaPortalControlId>
@@ -785,12 +833,13 @@
             </Control>
             <Control x:type="Button">
               <Name>OnlineVideo Button</Name>
-              <Id>83</Id>
+              <Id>31</Id>
               <Width>382</Width>
               <Height>215</Height>
               <PosX>867</PosX>
               <PosY>24</PosY>
-              <VisibleCondition />
+              <VisibleCondition>IsPluginEnabled(OnlineVideos)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls>
                 <MediaPortalControlId>200</MediaPortalControlId>
@@ -817,7 +866,7 @@
             </Control>
             <Control x:type="Button">
               <Name>Plugins Button</Name>
-              <Id>84</Id>
+              <Id>32</Id>
               <Width>382</Width>
               <Height>215</Height>
               <PosX>10</PosX>
@@ -848,13 +897,14 @@
               </Actions>
             </Control>
             <Control x:type="Button">
-              <Name>Dummy Button</Name>
-              <Id>85</Id>
+              <Name>Trakt Button</Name>
+              <Id>58</Id>
               <Width>382</Width>
               <Height>215</Height>
               <PosX>439</PosX>
               <PosY>255</PosY>
-              <VisibleCondition />
+              <VisibleCondition>IsPluginEnabled(Trakt)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls>
                 <MediaPortalControlId>700</MediaPortalControlId>
@@ -877,17 +927,18 @@
               <Image>basichome_button_dummy</Image>
               <LabelText>NewButton</LabelText>
               <Actions>
-                <Action Action="OpenWindow" />
+                <Action Action="OpenWindow" Param="87258" />
               </Actions>
             </Control>
             <Control x:type="Button">
               <Name>Extensions Button</Name>
-              <Id>86</Id>
+              <Id>34</Id>
               <Width>382</Width>
               <Height>215</Height>
               <PosX>867</PosX>
               <PosY>255</PosY>
-              <VisibleCondition />
+              <VisibleCondition>IsPluginEnabled(Extensions)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls>
                 <MediaPortalControlId>300</MediaPortalControlId>
@@ -912,9 +963,157 @@
                 <Action Action="OpenWindow" Param="801" />
               </Actions>
             </Control>
+            <Control x:type="Group">
+              <Name>Dummys</Name>
+              <Id>56</Id>
+              <Width>1275</Width>
+              <Height>523</Height>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <GroupStyle StyleId="Empty" />
+              <GroupControls>
+                <Control x:type="Button">
+                  <Name>Trakt Dummy Button</Name>
+                  <Id>57</Id>
+                  <Width>382</Width>
+                  <Height>215</Height>
+                  <PosX>439</PosX>
+                  <PosY>255</PosY>
+                  <VisibleCondition>!IsPluginEnabled(Trakt)</VisibleCondition>
+                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
+                  <Animations />
+                  <MediaPortalFocusControls>
+                    <MediaPortalControlId>700</MediaPortalControlId>
+                  </MediaPortalFocusControls>
+                  <ButtonStyle>
+                    <BorderThickness>4,4,4,4</BorderThickness>
+                    <CornerRadius>24,24,24,24</CornerRadius>
+                    <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                    <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                    <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
+                    <EnableLabel>false</EnableLabel>
+                    <FontType>Titan</FontType>
+                    <FontSize>50</FontSize>
+                    <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                    <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                    <LabelMargin>0,0,0,5</LabelMargin>
+                    <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+                    <ImageStretch>None</ImageStretch>
+                  </ButtonStyle>
+                  <Image>basichome_button_dummy</Image>
+                  <LabelText>NewButton</LabelText>
+                  <Actions>
+                    <Action Action="OpenWindow" />
+                  </Actions>
+                </Control>
+                <Control x:type="Button">
+                  <Name>Info Service Dummy Button</Name>
+                  <Id>60</Id>
+                  <Width>382</Width>
+                  <Height>215</Height>
+                  <PosX>439</PosX>
+                  <PosY>24</PosY>
+                  <VisibleCondition>!IsPluginEnabled(InfoService)</VisibleCondition>
+                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
+                  <Animations />
+                  <MediaPortalFocusControls>
+                    <MediaPortalControlId>700</MediaPortalControlId>
+                  </MediaPortalFocusControls>
+                  <ButtonStyle>
+                    <BorderThickness>4,4,4,4</BorderThickness>
+                    <CornerRadius>24,24,24,24</CornerRadius>
+                    <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                    <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                    <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
+                    <EnableLabel>false</EnableLabel>
+                    <FontType>Titan</FontType>
+                    <FontSize>50</FontSize>
+                    <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                    <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                    <LabelMargin>0,0,0,5</LabelMargin>
+                    <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+                    <ImageStretch>None</ImageStretch>
+                  </ButtonStyle>
+                  <Image>basichome_button_dummy</Image>
+                  <LabelText>NewButton</LabelText>
+                  <Actions>
+                    <Action Action="OpenWindow" />
+                  </Actions>
+                </Control>
+                <Control x:type="Button">
+                  <Name>OnlineVideos Dummy Button</Name>
+                  <Id>61</Id>
+                  <Width>382</Width>
+                  <Height>215</Height>
+                  <PosX>867</PosX>
+                  <PosY>24</PosY>
+                  <VisibleCondition>!IsPluginEnabled(OnlineVideos)</VisibleCondition>
+                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
+                  <Animations />
+                  <MediaPortalFocusControls>
+                    <MediaPortalControlId>700</MediaPortalControlId>
+                  </MediaPortalFocusControls>
+                  <ButtonStyle>
+                    <BorderThickness>4,4,4,4</BorderThickness>
+                    <CornerRadius>24,24,24,24</CornerRadius>
+                    <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                    <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                    <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
+                    <EnableLabel>false</EnableLabel>
+                    <FontType>Titan</FontType>
+                    <FontSize>50</FontSize>
+                    <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                    <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                    <LabelMargin>0,0,0,5</LabelMargin>
+                    <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+                    <ImageStretch>None</ImageStretch>
+                  </ButtonStyle>
+                  <Image>basichome_button_dummy</Image>
+                  <LabelText>NewButton</LabelText>
+                  <Actions>
+                    <Action Action="OpenWindow" />
+                  </Actions>
+                </Control>
+                <Control x:type="Button">
+                  <Name>Extensions Dummy Button</Name>
+                  <Id>62</Id>
+                  <Width>382</Width>
+                  <Height>215</Height>
+                  <PosX>867</PosX>
+                  <PosY>255</PosY>
+                  <VisibleCondition>!IsPluginEnabled(Extensions)</VisibleCondition>
+                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
+                  <Animations />
+                  <MediaPortalFocusControls>
+                    <MediaPortalControlId>700</MediaPortalControlId>
+                  </MediaPortalFocusControls>
+                  <ButtonStyle>
+                    <BorderThickness>4,4,4,4</BorderThickness>
+                    <CornerRadius>24,24,24,24</CornerRadius>
+                    <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                    <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                    <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
+                    <EnableLabel>false</EnableLabel>
+                    <FontType>Titan</FontType>
+                    <FontSize>50</FontSize>
+                    <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                    <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                    <LabelMargin>0,0,0,5</LabelMargin>
+                    <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+                    <ImageStretch>None</ImageStretch>
+                  </ButtonStyle>
+                  <Image>basichome_button_dummy</Image>
+                  <LabelText>NewButton</LabelText>
+                  <Actions>
+                    <Action Action="OpenWindow" />
+                  </Actions>
+                </Control>
+              </GroupControls>
+            </Control>
             <Control x:type="Button">
               <Name>Nextpage</Name>
-              <Id>87</Id>
+              <Id>35</Id>
               <Width>139</Width>
               <Height>170</Height>
               <PosX>-52</PosX>
@@ -945,7 +1144,7 @@
     </Control>
     <Control x:type="Group">
       <Name>Action Menu</Name>
-      <Id>63</Id>
+      <Id>36</Id>
       <Width>1280</Width>
       <Height>200</Height>
       <PosY>303</PosY>
@@ -963,7 +1162,7 @@
       <GroupControls>
         <Control x:type="Button">
           <Name>Background</Name>
-          <Id>70</Id>
+          <Id>37</Id>
           <Width>1260</Width>
           <Height>100</Height>
           <PosX>10</PosX>
@@ -991,7 +1190,7 @@
         </Control>
         <Control x:type="Button">
           <Name>Restart Button</Name>
-          <Id>65</Id>
+          <Id>38</Id>
           <Width>70</Width>
           <Height>70</Height>
           <PosX>660</PosX>
@@ -1021,7 +1220,7 @@
         </Control>
         <Control x:type="Button">
           <Name>Shutdown Button</Name>
-          <Id>66</Id>
+          <Id>39</Id>
           <Width>70</Width>
           <Height>70</Height>
           <PosX>810</PosX>
@@ -1051,7 +1250,7 @@
         </Control>
         <Control x:type="Button">
           <Name>Close Button</Name>
-          <Id>67</Id>
+          <Id>40</Id>
           <Width>70</Width>
           <Height>70</Height>
           <PosX>960</PosX>
@@ -1081,7 +1280,7 @@
         </Control>
         <Control x:type="Label">
           <Name>Info</Name>
-          <Id>68</Id>
+          <Id>41</Id>
           <Width>574</Width>
           <Height>70</Height>
           <PosX>50</PosX>
@@ -1104,7 +1303,7 @@
     </Control>
     <Control x:type="Group">
       <Name>Window Name</Name>
-      <Id>37</Id>
+      <Id>42</Id>
       <Width>1280</Width>
       <Height>156</Height>
       <VisibleCondition />
@@ -1117,7 +1316,7 @@
       <GroupControls>
         <Control x:type="Image">
           <Name>Icon</Name>
-          <Id>38</Id>
+          <Id>43</Id>
           <Width>60</Width>
           <Height>60</Height>
           <VisibleCondition />
@@ -1133,7 +1332,7 @@
         </Control>
         <Control x:type="Label">
           <Name>Name of Window</Name>
-          <Id>39</Id>
+          <Id>44</Id>
           <Width>563</Width>
           <Height>60</Height>
           <PosX>68</PosX>
@@ -1154,7 +1353,7 @@
         </Control>
         <Control x:type="Label">
           <Name>Time</Name>
-          <Id>40</Id>
+          <Id>45</Id>
           <Width>426</Width>
           <Height>110</Height>
           <PosX>855</PosX>
@@ -1176,7 +1375,7 @@
         </Control>
         <Control x:type="Label">
           <Name>Date</Name>
-          <Id>41</Id>
+          <Id>46</Id>
           <Width>694</Width>
           <Height>70</Height>
           <PosX>580</PosX>
@@ -1199,7 +1398,7 @@
         </Control>
         <Control x:type="Label">
           <Name>Date</Name>
-          <Id>42</Id>
+          <Id>47</Id>
           <Width>694</Width>
           <Height>70</Height>
           <PosX>580</PosX>
@@ -1224,7 +1423,7 @@
     </Control>
     <Control x:type="Group">
       <Name>RSS-Ticker</Name>
-      <Id>59</Id>
+      <Id>48</Id>
       <Width>1225</Width>
       <Height>65</Height>
       <PosX>28</PosX>
@@ -1240,7 +1439,7 @@
       <GroupControls>
         <Control x:type="Image">
           <Name>NewImage</Name>
-          <Id>60</Id>
+          <Id>49</Id>
           <Width>1225</Width>
           <Height>77</Height>
           <PosX>1</PosX>
@@ -1258,7 +1457,7 @@
         </Control>
         <Control x:type="Label">
           <Name>Ticker</Name>
-          <Id>61</Id>
+          <Id>50</Id>
           <Width>1196</Width>
           <Height>70</Height>
           <PosX>13</PosX>
@@ -1280,7 +1479,7 @@
     </Control>
     <Control x:type="Button">
       <Name>Shutdown Menu</Name>
-      <Id>62</Id>
+      <Id>51</Id>
       <Width>50</Width>
       <Height>50</Height>
       <PosX>600</PosX>
@@ -1308,7 +1507,7 @@
     </Control>
     <Control x:type="Button">
       <Name>MPD++ Remote Button</Name>
-      <Id>69</Id>
+      <Id>52</Id>
       <Width>640</Width>
       <Height>150</Height>
       <PosX>640</PosX>
@@ -1333,7 +1532,7 @@
     </Control>
     <Control x:type="Button">
       <Name>Menu</Name>
-      <Id>233</Id>
+      <Id>53</Id>
       <Width>640</Width>
       <Height>150</Height>
       <VisibleCondition />
