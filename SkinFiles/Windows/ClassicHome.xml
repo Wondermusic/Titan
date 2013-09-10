@@ -10,7 +10,7 @@
   <WindowControls>
     <Control x:type="Image">
       <Name>Background</Name>
-      <Id>1</Id>
+      <Id>26</Id>
       <Width>1280</Width>
       <Height>720</Height>
       <VisibleCondition />

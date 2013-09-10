@@ -374,7 +374,6 @@
       <Width>1280</Width>
       <Height>720</Height>
       <VisibleCondition>IsSkinOptionEnabled(Default)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle StyleId="Empty" />
@@ -399,7 +398,10 @@
           <PosX>4</PosX>
           <PosY>141</PosY>
           <VisibleCondition>IsMediaPortalControlFocused(2) || IsMediaPortalControlFocused(3) || IsMediaPortalControlFocused(4) || IsMediaPortalControlFocused(5) || IsMediaPortalControlFocused(6) || IsMediaPortalControlFocused(7) || IsMediaPortalControlFocused(1000) || IsMediaPortalControlFocused(1001) || IsMediaPortalControlFocused(1002) || IsMediaPortalControlFocused(1003) || IsMediaPortalControlFocused(1004)</VisibleCondition>
-          <Animations />
+          <Animations>
+            <Animation x:type="Slide" Condition="VisibleTrue" Duration="500" Easing="EaseInOut" StartX="-1275" StartY="141" EndY="141" />
+            <Animation x:type="Slide" Condition="VisibleFalse" Duration="500" Easing="EaseInOut" StartY="141" EndX="-1275" EndY="141" />
+          </Animations>
           <MediaPortalFocusControls />
           <GroupStyle>
             <BorderThickness>0,0,0,0</BorderThickness>
@@ -758,7 +760,10 @@
           <PosY>141</PosY>
           <VisibleCondition>IsMediaPortalControlFocused(200) || IsMediaPortalControlFocused(300) || IsMediaPortalControlFocused(400) || IsMediaPortalControlFocused(500) || IsMediaPortalControlFocused(600) || IsMediaPortalControlFocused(700)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations />
+          <Animations>
+            <Animation x:type="Slide" Condition="VisibleTrue" Duration="500" Easing="EaseInOut" StartX="1280" StartY="141" EndX="4" EndY="141" />
+            <Animation x:type="Slide" Condition="VisibleFalse" Duration="500" Easing="EaseInOut" StartX="4" StartY="141" EndX="1280" EndY="141" />
+          </Animations>
           <MediaPortalFocusControls />
           <GroupStyle>
             <BorderThickness>0,0,0,0</BorderThickness>

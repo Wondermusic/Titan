@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MPDisplayWindow">
-  <IsDefault>false</IsDefault>
+  <IsDefault>true</IsDefault>
   <Width>1280</Width>
   <Height>720</Height>
   <Name>Home</Name>
@@ -44,7 +44,8 @@
       <Id>9</Id>
       <Width>1280</Width>
       <Height>580</Height>
-      <VisibleCondition />
+      <VisibleCondition>!IsMediaPortalConnected ++ !IsControlVisible(54)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
         <Animation x:type="Slide" Condition="VisibleTrue" Duration="500" Delay="500" Easing="EaseOut" StartY="-580" />
         <Animation x:type="Slide" Condition="VisibleFalse" Duration="500" Easing="EaseIn" EndY="-580" />
@@ -495,7 +496,8 @@
       <Id>54</Id>
       <Width>1280</Width>
       <Height>580</Height>
-      <VisibleCondition />
+      <VisibleCondition>IsMediaPortalConnected ++ !IsControlVisible(9)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
         <Animation x:type="Slide" Condition="VisibleTrue" Duration="500" Delay="500" Easing="EaseOut" StartY="-580" />
         <Animation x:type="Slide" Condition="VisibleFalse" Duration="500" Easing="EaseIn" EndY="-580" />
@@ -767,7 +769,6 @@
               <PosX>130</PosX>
               <PosY>431</PosY>
               <VisibleCondition>!IsPlayer(IsTV)</VisibleCondition>
-              <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls />
               <ButtonStyle StyleId="KeyPad Lower left" />
@@ -798,7 +799,6 @@
               <PosX>374</PosX>
               <PosY>431</PosY>
               <VisibleCondition>!IsPlayer(IsTV)</VisibleCondition>
-              <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls />
               <ButtonStyle StyleId="KeyPad Lower right" />
@@ -1386,7 +1386,7 @@
       <ButtonStyle StyleId="MPDHome Button" />
       <LabelText>@Exit</LabelText>
       <Actions>
-        <Action Action="CloseWindow" />
+        <Action Action="Exit" Param="C:\Program Files\MPDisplay++\MPDisplay.exe" />
       </Actions>
     </Control>
   </WindowControls>
