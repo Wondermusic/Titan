@@ -29,7 +29,7 @@
           <Id>2</Id>
           <Width>1280</Width>
           <Height>720</Height>
-          <VisibleCondition>ControlVisible(4)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -78,7 +78,7 @@
           <Height>110</Height>
           <PosX>40</PosX>
           <PosY>470</PosY>
-          <VisibleCondition>ControlVisible(32)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -329,7 +329,7 @@
           <Height>350</Height>
           <PosX>465</PosX>
           <PosY>81</PosY>
-          <VisibleCondition>ControlVisible(32)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />

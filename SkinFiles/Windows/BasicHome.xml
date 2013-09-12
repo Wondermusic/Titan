@@ -397,7 +397,7 @@
           <Height>523</Height>
           <PosX>4</PosX>
           <PosY>141</PosY>
-          <VisibleCondition>IsMediaPortalControlFocused(2) || IsMediaPortalControlFocused(3) || IsMediaPortalControlFocused(4) || IsMediaPortalControlFocused(5) || IsMediaPortalControlFocused(6) || IsMediaPortalControlFocused(7) || IsMediaPortalControlFocused(1000) || IsMediaPortalControlFocused(1001) || IsMediaPortalControlFocused(1002) || IsMediaPortalControlFocused(1003) || IsMediaPortalControlFocused(1004)</VisibleCondition>
+          <VisibleCondition>IsMediaPortalControlFocused(2) || IsMediaPortalControlFocused(3) || IsMediaPortalControlFocused(4) || IsMediaPortalControlFocused(5) || IsMediaPortalControlFocused(6) || IsMediaPortalControlFocused(7)</VisibleCondition>
           <Animations>
             <Animation x:type="Slide" Condition="VisibleTrue" Duration="500" Easing="EaseInOut" StartX="-1275" StartY="141" EndY="141" />
             <Animation x:type="Slide" Condition="VisibleFalse" Duration="500" Easing="EaseInOut" StartY="141" EndX="-1275" EndY="141" />
@@ -416,7 +416,10 @@
               <PosX>10</PosX>
               <PosY>24</PosY>
               <VisibleCondition />
-              <Animations />
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+              </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>2</MediaPortalControlId>
               </MediaPortalFocusControls>
@@ -438,7 +441,7 @@
               <Image>basichome_button_music</Image>
               <LabelText>@Music</LabelText>
               <Actions>
-                <Action Action="OpenWindow" Param="501" />
+                <Action Action="MediaPortalWindow" Param="501" />
               </Actions>
             </Control>
             <Control x:type="Button">
@@ -449,7 +452,10 @@
               <PosX>439</PosX>
               <PosY>24</PosY>
               <VisibleCondition />
-              <Animations />
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+              </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>4</MediaPortalControlId>
               </MediaPortalFocusControls>
@@ -471,7 +477,7 @@
               <Image>basichome_button_tv</Image>
               <LabelText>@TV</LabelText>
               <Actions>
-                <Action Action="OpenWindow" Param="1" />
+                <Action Action="MediaPortalWindow" Param="1" />
               </Actions>
             </Control>
             <Control x:type="Button">
@@ -483,7 +489,10 @@
               <PosY>24</PosY>
               <VisibleCondition>!IsPluginEnabled(MovingPictures) ++ !IsPluginEnabled(MyFilms)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
-              <Animations />
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+              </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>6</MediaPortalControlId>
               </MediaPortalFocusControls>
@@ -505,7 +514,7 @@
               <Image>basichome_button_movies</Image>
               <LabelText>@Movies</LabelText>
               <Actions>
-                <Action Action="OpenWindow" Param="6" />
+                <Action Action="MediaPortalWindow" Param="6" />
               </Actions>
             </Control>
             <Control x:type="Button">
@@ -516,7 +525,10 @@
               <PosX>10</PosX>
               <PosY>255</PosY>
               <VisibleCondition />
-              <Animations />
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+              </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>3</MediaPortalControlId>
               </MediaPortalFocusControls>
@@ -538,7 +550,7 @@
               <Image>basichome_button_radio</Image>
               <LabelText>@Radio</LabelText>
               <Actions>
-                <Action Action="OpenWindow" Param="30" />
+                <Action Action="MediaPortalWindow" Param="30" />
               </Actions>
             </Control>
             <Control x:type="Button">
@@ -549,7 +561,10 @@
               <PosX>439</PosX>
               <PosY>255</PosY>
               <VisibleCondition />
-              <Animations />
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+              </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>5</MediaPortalControlId>
               </MediaPortalFocusControls>
@@ -571,7 +586,7 @@
               <Image>basichome_button_pictures</Image>
               <LabelText>@Pictures</LabelText>
               <Actions>
-                <Action Action="OpenWindow" Param="2" />
+                <Action Action="MediaPortalWindow" Param="2" />
               </Actions>
             </Control>
             <Control x:type="Button">
@@ -582,8 +597,10 @@
               <PosX>867</PosX>
               <PosY>255</PosY>
               <VisibleCondition>IsPluginEnabled(MP-TV Series)</VisibleCondition>
-              <IsWindowOpenVisible>false</IsWindowOpenVisible>
-              <Animations />
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+              </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>7</MediaPortalControlId>
               </MediaPortalFocusControls>
@@ -605,7 +622,7 @@
               <Image>basichome_button_series</Image>
               <LabelText>@Series</LabelText>
               <Actions>
-                <Action Action="OpenWindow" Param="9811" />
+                <Action Action="MediaPortalWindow" Param="9811" />
               </Actions>
             </Control>
             <Control x:type="Group">
@@ -627,7 +644,10 @@
                   <PosY>24</PosY>
                   <VisibleCondition>IsPluginEnabled(MovingPictures)</VisibleCondition>
                   <IsWindowOpenVisible>false</IsWindowOpenVisible>
-                  <Animations />
+                  <Animations>
+                    <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                    <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                  </Animations>
                   <MediaPortalFocusControls>
                     <MediaPortalControlId>6</MediaPortalControlId>
                   </MediaPortalFocusControls>
@@ -649,7 +669,7 @@
                   <Image>basichome_button_movies</Image>
                   <LabelText>@Movies</LabelText>
                   <Actions>
-                    <Action Action="OpenWindow" Param="96742" />
+                    <Action Action="MediaPortalWindow" Param="96742" />
                   </Actions>
                 </Control>
                 <Control x:type="Button">
@@ -661,7 +681,10 @@
                   <PosY>24</PosY>
                   <VisibleCondition>IsPluginEnabled(MyFilms)</VisibleCondition>
                   <IsWindowOpenVisible>false</IsWindowOpenVisible>
-                  <Animations />
+                  <Animations>
+                    <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                    <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                  </Animations>
                   <MediaPortalFocusControls>
                     <MediaPortalControlId>6</MediaPortalControlId>
                   </MediaPortalFocusControls>
@@ -683,7 +706,7 @@
                   <Image>basichome_button_movies</Image>
                   <LabelText>@Movies</LabelText>
                   <Actions>
-                    <Action Action="OpenWindow" Param="7986" />
+                    <Action Action="MediaPortalWindow" Param="7986" />
                   </Actions>
                 </Control>
                 <Control x:type="Button">
@@ -695,7 +718,10 @@
                   <PosY>255</PosY>
                   <VisibleCondition>!IsPluginEnabled(MP-TV Series)</VisibleCondition>
                   <IsWindowOpenVisible>false</IsWindowOpenVisible>
-                  <Animations />
+                  <Animations>
+                    <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                    <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                  </Animations>
                   <MediaPortalFocusControls>
                     <MediaPortalControlId>700</MediaPortalControlId>
                   </MediaPortalFocusControls>
@@ -716,9 +742,7 @@
                   </ButtonStyle>
                   <Image>basichome_button_dummy</Image>
                   <LabelText>NewButton</LabelText>
-                  <Actions>
-                    <Action Action="OpenWindow" />
-                  </Actions>
+                  <Actions />
                 </Control>
               </GroupControls>
             </Control>
@@ -779,7 +803,10 @@
               <PosX>10</PosX>
               <PosY>24</PosY>
               <VisibleCondition />
-              <Animations />
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+              </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>400</MediaPortalControlId>
               </MediaPortalFocusControls>
@@ -800,7 +827,7 @@
               <Image>basichome_button_settings</Image>
               <LabelText>@Settings</LabelText>
               <Actions>
-                <Action Action="OpenWindow" Param="4" />
+                <Action Action="MediaPortalWindow" Param="4" />
               </Actions>
             </Control>
             <Control x:type="Button">
@@ -812,7 +839,10 @@
               <PosY>24</PosY>
               <VisibleCondition>IsPluginEnabled(InfoService)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
-              <Animations />
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+              </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>500</MediaPortalControlId>
               </MediaPortalFocusControls>
@@ -833,7 +863,7 @@
               <Image>basichome_button_infoservice</Image>
               <LabelText>@InfoService</LabelText>
               <Actions>
-                <Action Action="OpenWindow" Param="16000" />
+                <Action Action="MediaPortalWindow" Param="16000" />
               </Actions>
             </Control>
             <Control x:type="Button">
@@ -845,7 +875,10 @@
               <PosY>24</PosY>
               <VisibleCondition>IsPluginEnabled(OnlineVideos)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
-              <Animations />
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+              </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>200</MediaPortalControlId>
               </MediaPortalFocusControls>
@@ -866,7 +899,7 @@
               <Image>basichome_button_onlinevideos</Image>
               <LabelText>@OnlineVideos</LabelText>
               <Actions>
-                <Action Action="OpenWindow" Param="4755" />
+                <Action Action="MediaPortalWindow" Param="4755" />
               </Actions>
             </Control>
             <Control x:type="Button">
@@ -877,7 +910,10 @@
               <PosX>10</PosX>
               <PosY>255</PosY>
               <VisibleCondition />
-              <Animations />
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+              </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>600</MediaPortalControlId>
               </MediaPortalFocusControls>
@@ -898,7 +934,7 @@
               <Image>basichome_button_plugins</Image>
               <LabelText>@Plugins</LabelText>
               <Actions>
-                <Action Action="OpenWindow" Param="34" />
+                <Action Action="MediaPortalWindow" Param="34" />
               </Actions>
             </Control>
             <Control x:type="Button">
@@ -910,7 +946,10 @@
               <PosY>255</PosY>
               <VisibleCondition>IsPluginEnabled(Trakt)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
-              <Animations />
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+              </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>700</MediaPortalControlId>
               </MediaPortalFocusControls>
@@ -932,7 +971,7 @@
               <Image>basichome_button_dummy</Image>
               <LabelText>NewButton</LabelText>
               <Actions>
-                <Action Action="OpenWindow" Param="87258" />
+                <Action Action="MediaPortalWindow" Param="87258" />
               </Actions>
             </Control>
             <Control x:type="Button">
@@ -944,7 +983,10 @@
               <PosY>255</PosY>
               <VisibleCondition>IsPluginEnabled(Extensions)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
-              <Animations />
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+              </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>300</MediaPortalControlId>
               </MediaPortalFocusControls>
@@ -965,7 +1007,7 @@
               <Image>basichome_button_extensions</Image>
               <LabelText>@Extensions</LabelText>
               <Actions>
-                <Action Action="OpenWindow" Param="801" />
+                <Action Action="MediaPortalWindow" Param="801" />
               </Actions>
             </Control>
             <Control x:type="Group">
@@ -974,7 +1016,10 @@
               <Width>1275</Width>
               <Height>523</Height>
               <VisibleCondition />
-              <Animations />
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+              </Animations>
               <MediaPortalFocusControls />
               <GroupStyle StyleId="Empty" />
               <GroupControls>
@@ -1008,9 +1053,7 @@
                   </ButtonStyle>
                   <Image>basichome_button_dummy</Image>
                   <LabelText>NewButton</LabelText>
-                  <Actions>
-                    <Action Action="OpenWindow" />
-                  </Actions>
+                  <Actions />
                 </Control>
                 <Control x:type="Button">
                   <Name>Info Service Dummy Button</Name>
@@ -1021,7 +1064,10 @@
                   <PosY>24</PosY>
                   <VisibleCondition>!IsPluginEnabled(InfoService)</VisibleCondition>
                   <IsWindowOpenVisible>false</IsWindowOpenVisible>
-                  <Animations />
+                  <Animations>
+                    <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                    <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                  </Animations>
                   <MediaPortalFocusControls>
                     <MediaPortalControlId>700</MediaPortalControlId>
                   </MediaPortalFocusControls>
@@ -1042,9 +1088,7 @@
                   </ButtonStyle>
                   <Image>basichome_button_dummy</Image>
                   <LabelText>NewButton</LabelText>
-                  <Actions>
-                    <Action Action="OpenWindow" />
-                  </Actions>
+                  <Actions />
                 </Control>
                 <Control x:type="Button">
                   <Name>OnlineVideos Dummy Button</Name>
@@ -1055,7 +1099,10 @@
                   <PosY>24</PosY>
                   <VisibleCondition>!IsPluginEnabled(OnlineVideos)</VisibleCondition>
                   <IsWindowOpenVisible>false</IsWindowOpenVisible>
-                  <Animations />
+                  <Animations>
+                    <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                    <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                  </Animations>
                   <MediaPortalFocusControls>
                     <MediaPortalControlId>700</MediaPortalControlId>
                   </MediaPortalFocusControls>
@@ -1076,9 +1123,7 @@
                   </ButtonStyle>
                   <Image>basichome_button_dummy</Image>
                   <LabelText>NewButton</LabelText>
-                  <Actions>
-                    <Action Action="OpenWindow" />
-                  </Actions>
+                  <Actions />
                 </Control>
                 <Control x:type="Button">
                   <Name>Extensions Dummy Button</Name>
@@ -1089,7 +1134,10 @@
                   <PosY>255</PosY>
                   <VisibleCondition>!IsPluginEnabled(Extensions)</VisibleCondition>
                   <IsWindowOpenVisible>false</IsWindowOpenVisible>
-                  <Animations />
+                  <Animations>
+                    <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
+                    <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                  </Animations>
                   <MediaPortalFocusControls>
                     <MediaPortalControlId>700</MediaPortalControlId>
                   </MediaPortalFocusControls>
@@ -1110,9 +1158,7 @@
                   </ButtonStyle>
                   <Image>basichome_button_dummy</Image>
                   <LabelText>NewButton</LabelText>
-                  <Actions>
-                    <Action Action="OpenWindow" />
-                  </Actions>
+                  <Actions />
                 </Control>
               </GroupControls>
             </Control>

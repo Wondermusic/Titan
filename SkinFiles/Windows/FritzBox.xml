@@ -299,7 +299,7 @@
           <Height>480</Height>
           <PosX>57</PosX>
           <PosY>50</PosY>
-          <VisibleCondition>ControlVisible(11)</VisibleCondition>
+          <VisibleCondition>IsControlVisible(11)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />

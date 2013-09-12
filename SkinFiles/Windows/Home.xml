@@ -1390,4 +1390,5 @@
       </Actions>
     </Control>
   </WindowControls>
+  <VisibleCondition>!IsMediaPortalConnected</VisibleCondition>
 </Window>

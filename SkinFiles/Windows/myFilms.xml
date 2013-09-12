@@ -522,7 +522,7 @@
           <Id>131</Id>
           <Width>1280</Width>
           <Height>720</Height>
-          <VisibleCondition>IsControlFocused(10000)</VisibleCondition>
+          <VisibleCondition>IsMediaPortalControlFocused(10000)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -809,7 +809,7 @@
           <Id>147</Id>
           <Width>1280</Width>
           <Height>720</Height>
-          <VisibleCondition>IsControlFocused(10001)</VisibleCondition>
+          <VisibleCondition>IsMediaPortalControlFocused(10001)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -860,7 +860,7 @@
           <Id>150</Id>
           <Width>1280</Width>
           <Height>720</Height>
-          <VisibleCondition>IsControlFocused(10002)</VisibleCondition>
+          <VisibleCondition>IsMediaPortalControlFocused(10002)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -911,7 +911,7 @@
           <Id>153</Id>
           <Width>1280</Width>
           <Height>720</Height>
-          <VisibleCondition>IsControlFocused(10003)</VisibleCondition>
+          <VisibleCondition>IsMediaPortalControlFocused(10003)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -962,7 +962,7 @@
           <Id>156</Id>
           <Width>1280</Width>
           <Height>720</Height>
-          <VisibleCondition>IsControlFocused(20004)</VisibleCondition>
+          <VisibleCondition>IsMediaPortalControlFocused(20004)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />

@@ -157,7 +157,7 @@
       </GroupStyle>
       <GroupControls>
         <Control x:type="List">
-          <Name>NewList</Name>
+          <Name>List</Name>
           <Id>9</Id>
           <Width>1225</Width>
           <Height>118</Height>
@@ -463,5 +463,5 @@
       </Actions>
     </Control>
   </WindowControls>
-  <VisibleCondition>IsMediaPortalWindow(0)</VisibleCondition>
+  <VisibleCondition>IsMediaPortalWindow(0) || IsMediaPortalWindow(34)</VisibleCondition>
 </Window>

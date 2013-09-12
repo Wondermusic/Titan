@@ -19,6 +19,20 @@
       <GroupStyle StyleId="Empty" />
       <GroupControls>
         <Control x:type="Image">
+          <Name>Fanart</Name>
+          <Id>24</Id>
+          <Width>1280</Width>
+          <Height>720</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Hovers\hover_my tv.jpg</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverImage StyleId="Background Play" />
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
           <Name>BG</Name>
           <Id>2</Id>
           <Width>1335</Width>

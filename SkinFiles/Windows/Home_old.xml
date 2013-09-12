@@ -564,7 +564,7 @@
               <Height>88</Height>
               <PosX>130</PosX>
               <PosY>431</PosY>
-              <VisibleCondition>IsPlayer(TV)</VisibleCondition>
+              <VisibleCondition>IsPlayer(IsTV)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls />
@@ -588,7 +588,7 @@
               <Height>88</Height>
               <PosX>374</PosX>
               <PosY>431</PosY>
-              <VisibleCondition>IsPlayer(TV)</VisibleCondition>
+              <VisibleCondition>IsPlayer(IsTV)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls />

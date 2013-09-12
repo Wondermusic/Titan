@@ -57,7 +57,7 @@
           <PosX>500</PosX>
           <PosY>140</PosY>
           <Center3DX>1</Center3DX>
-          <VisibleCondition>IsPlayer(Radio)</VisibleCondition>
+          <VisibleCondition>IsPlayer(IsRadio)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -103,7 +103,7 @@
           <Height>90</Height>
           <PosX>38</PosX>
           <PosY>411</PosY>
-          <VisibleCondition>IsPlayer(Radio)</VisibleCondition>
+          <VisibleCondition>IsPlayer(IsRadio)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
