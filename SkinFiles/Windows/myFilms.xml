@@ -1395,7 +1395,7 @@
           <Animations />
           <MediaPortalFocusControls />
           <ListControlStyle StyleId="empty" />
-          <ListType>MediaPortalListControl</ListType>
+          <ListType>MediaPortalButtonGroup</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="ActionMenu ListControl" />
           <HorizontalItemStyle>
@@ -1462,7 +1462,7 @@
           <Animations />
           <MediaPortalFocusControls />
           <ListControlStyle StyleId="empty" />
-          <ListType>MediaPortalListControl</ListType>
+          <ListType>MediaPortalButtonGroup</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="ActionMenu ListControl" />
           <HorizontalItemStyle>

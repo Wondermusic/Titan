@@ -110,13 +110,13 @@
           <LabelStyle StyleId="Titan 40">
             <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>New Label</LabelText>
+          <LabelText>#highlightedbutton</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
         <Control x:type="List">
-          <Name>NewList</Name>
+          <Name>List</Name>
           <Id>125</Id>
           <Width>503</Width>
           <Height>461</Height>
@@ -132,19 +132,34 @@
           <VerticalItemStyle>
             <NoFocusBrush />
             <NoFocusBorderBrush />
-            <FocusBrush />
+            <FocusBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#FF00B7FF" Offset="0" />
+                <GradientStop Color="#63000000" Offset="0.021" />
+                <GradientStop Color="#6400B7FF" Offset="0.043" />
+                <GradientStop Color="#6400B7FF" Offset="0.065" />
+                <GradientStop Color="#6400B7FF" Offset="0.086" />
+                <GradientStop Color="#8400B7FF" Offset="0.209" />
+                <GradientStop Color="#1A00B7FF" Offset="1" />
+              </GradientStops>
+              <Angle>Horizontal</Angle>
+            </FocusBrush>
             <FocusBorderBrush />
+            <ShadeBrush />
             <FontType>Titan</FontType>
+            <FontSize>35</FontSize>
             <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00B7FF" />
+            <LabelMargin>30,0,0,0</LabelMargin>
             <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
             <ImageMargin>3,3,3,3</ImageMargin>
             <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
             <ImageVerticalAlignment>Top</ImageVerticalAlignment>
             <ImageCornerRadius>4</ImageCornerRadius>
-            <Width>503</Width>
+            <Width>480</Width>
             <Height>50</Height>
-            <ItemMargin>-2,-2,-2,-2</ItemMargin>
+            <ItemMargin>1,1,1,1</ItemMargin>
+            <HorizontalAlignment>Left</HorizontalAlignment>
           </VerticalItemStyle>
           <HorizontalItemStyle>
             <BorderThickness>1,1,1,1</BorderThickness>
@@ -278,7 +293,7 @@
             <BorderBrush />
           </ImageStyle>
           <Image>#MovingPictures.Coverart</Image>
-          <ImageStretch>None</ImageStretch>
+          <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="Image">
@@ -334,7 +349,7 @@
           <MediaPortalFocusControls />
           <ListControlStyle StyleId="empty" />
           <ListType>MediaPortalListControl</ListType>
-          <ListLayout>CoverFlow</ListLayout>
+          <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="VideoList" />
           <HorizontalItemStyle StyleId="VideoList Horizontal" />
           <CoverFlowItemStyle StyleId="VideoList CoverFlow" />
@@ -556,8 +571,7 @@
           <Id>145</Id>
           <Width>1280</Width>
           <Height>720</Height>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
@@ -572,8 +586,7 @@
           <Width>1280</Width>
           <Height>600</Height>
           <PosY>100</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle>
@@ -593,8 +606,7 @@
           <Height>352</Height>
           <PosX>55</PosX>
           <PosY>166</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle>
@@ -614,8 +626,7 @@
           <Height>51</Height>
           <PosX>30</PosX>
           <PosY>141</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle>
@@ -635,8 +646,7 @@
           <Height>58</Height>
           <PosX>320</PosX>
           <PosY>160</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan40 White">
@@ -654,11 +664,10 @@
           <Height>50</Height>
           <PosX>320</PosX>
           <PosY>215</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan 40">
+          <LabelStyle StyleId="Titan40 White">
             <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>#MovingPictures.SelectedMovie.genres</LabelText>
@@ -673,8 +682,7 @@
           <Height>22</Height>
           <PosX>320</PosX>
           <PosY>266</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
@@ -689,8 +697,7 @@
           <Height>45</Height>
           <PosX>549</PosX>
           <PosY>263</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan25">
@@ -708,8 +715,7 @@
           <Height>186</Height>
           <PosX>320</PosX>
           <PosY>465</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan25">
@@ -729,8 +735,7 @@
           <Height>36</Height>
           <PosX>320</PosX>
           <PosY>306</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan25">
@@ -748,8 +753,7 @@
           <Height>36</Height>
           <PosX>706</PosX>
           <PosY>306</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan25">
@@ -767,8 +771,7 @@
           <Height>36</Height>
           <PosX>320</PosX>
           <PosY>335</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan25">
@@ -786,7 +789,7 @@
           <Height>36</Height>
           <PosX>706</PosX>
           <PosY>335</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan25">
@@ -1091,8 +1094,7 @@
           <Height>352</Height>
           <PosX>55</PosX>
           <PosY>166</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle>
@@ -1112,8 +1114,7 @@
           <Height>51</Height>
           <PosX>30</PosX>
           <PosY>141</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle>
@@ -1133,8 +1134,7 @@
           <Height>58</Height>
           <PosX>320</PosX>
           <PosY>160</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan40 White">
@@ -1238,8 +1238,7 @@
           <Height>352</Height>
           <PosX>55</PosX>
           <PosY>166</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle>
@@ -1259,8 +1258,7 @@
           <Height>51</Height>
           <PosX>30</PosX>
           <PosY>141</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle>
@@ -1280,8 +1278,7 @@
           <Height>58</Height>
           <PosX>320</PosX>
           <PosY>160</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan40 White">
@@ -1551,7 +1548,7 @@
       <Id>200</Id>
       <Width>1280</Width>
       <Height>720</Height>
-      <VisibleCondition>IsMediaPortalControlFocused(10005)</VisibleCondition>
+      <VisibleCondition>IsMediaPortalControlFocused(10003)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
@@ -1576,74 +1573,6 @@
           <ImageStretch>Fill</ImageStretch>
           <CoverImage x:type="ImageBrush" Image="\fanart_overlay.png" Stretch="Fill" />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Image">
-          <Name>BG</Name>
-          <Id>202</Id>
-          <Width>1280</Width>
-          <Height>600</Height>
-          <PosY>100</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
-          <Image>\panel_thumbs_noinfo.png</Image>
-          <ImageStretch>Fill</ImageStretch>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Label">
-          <Name>Title</Name>
-          <Id>203</Id>
-          <Width>700</Width>
-          <Height>58</Height>
-          <PosX>533</PosX>
-          <PosY>657</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan 40">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#MovingPictures.SelectedMovie.title</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="Image">
-          <Name>StarRating</Name>
-          <Id>204</Id>
-          <Width>300</Width>
-          <Height>30</Height>
-          <PosX>35</PosX>
-          <PosY>664</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
-          <Image>\Logos\Stars\MoPi\star+#MovingPictures.SelectedMovie.score.rounded+.png</Image>
-          <ImageStretch>Fill</ImageStretch>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Label">
-          <Name>StarRating Label</Name>
-          <Id>205</Id>
-          <Width>200</Width>
-          <Height>60</Height>
-          <PosX>334</PosX>
-          <PosY>657</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan 40">
-            <FontSize>20</FontSize>
-          </LabelStyle>
-          <LabelText>#MovingPictures.SelectedMovie.score.localized+ / 10</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
       </GroupControls>
     </Control>
@@ -1817,7 +1746,7 @@
           <Animations />
           <MediaPortalFocusControls />
           <ListControlStyle StyleId="empty" />
-          <ListType>MediaPortalListControl</ListType>
+          <ListType>MediaPortalButtonGroup</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="ActionMenu ListControl" />
           <HorizontalItemStyle>

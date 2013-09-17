@@ -40,11 +40,137 @@
       </GroupControls>
     </Control>
     <Control x:type="Group">
+      <Name>SystemInfo</Name>
+      <Id>122</Id>
+      <Width>1280</Width>
+      <Height>580</Height>
+      <VisibleCondition>!IsControlVisible(9) || !IsControlVisible(54)</VisibleCondition>
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,0,0</CornerRadius>
+        <BackgroundBrush x:type="ColorBrush" Color="#FF272727" />
+        <BorderBrush />
+        <GlossBrush />
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Label">
+          <Name>Time</Name>
+          <Id>123</Id>
+          <Width>1280</Width>
+          <Height>80</Height>
+          <PosY>50</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Titan70">
+            <FontSize>20</FontSize>
+          </LabelStyle>
+          <LabelText>23:45</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>Date</Name>
+          <Id>124</Id>
+          <Width>1280</Width>
+          <Height>80</Height>
+          <PosY>130</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Titan70">
+            <FontSize>20</FontSize>
+          </LabelStyle>
+          <LabelText>16. September 2013</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>CPU Label</Name>
+          <Id>125</Id>
+          <Width>300</Width>
+          <Height>70</Height>
+          <PosX>160</PosX>
+          <PosY>300</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Titan60">
+            <FontSize>20</FontSize>
+          </LabelStyle>
+          <LabelText>CPU Load:</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>RAM Label</Name>
+          <Id>126</Id>
+          <Width>300</Width>
+          <Height>70</Height>
+          <PosX>160</PosX>
+          <PosY>370</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Titan60">
+            <FontSize>20</FontSize>
+          </LabelStyle>
+          <LabelText>RAM:</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>Disk Label</Name>
+          <Id>127</Id>
+          <Width>300</Width>
+          <Height>70</Height>
+          <PosX>160</PosX>
+          <PosY>440</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Titan60">
+            <FontSize>20</FontSize>
+          </LabelStyle>
+          <LabelText>Disk:</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>OS Label</Name>
+          <Id>128</Id>
+          <Width>300</Width>
+          <Height>70</Height>
+          <PosX>160</PosX>
+          <PosY>510</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Titan60">
+            <FontSize>20</FontSize>
+          </LabelStyle>
+          <LabelText>OS:</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
       <Name>Settings </Name>
       <Id>9</Id>
       <Width>1280</Width>
       <Height>580</Height>
-      <VisibleCondition>!IsMediaPortalConnected ++ !IsControlVisible(54)</VisibleCondition>
+      <VisibleCondition />
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
         <Animation x:type="Slide" Condition="VisibleTrue" Duration="500" Delay="500" Easing="EaseOut" StartY="-580" />
@@ -225,20 +351,20 @@
           <CornerRadius>0,0,0,0</CornerRadius>
           <BackgroundBrush />
           <ShadeBrush x:type="GradientBrush">
-            <Angle>Horizontal</Angle>
             <GradientStops>
               <GradientStop Color="Transparent" Offset="0.36" />
               <GradientStop Color="#FFC0C0C0" Offset="0.475" />
               <GradientStop Color="Transparent" Offset="0.626" />
             </GradientStops>
+            <Angle>Horizontal</Angle>
           </ShadeBrush>
           <GlossBrush x:type="GradientBrush">
-            <Angle>Vertical</Angle>
             <GradientStops>
               <GradientStop Color="Transparent" Offset="0" />
               <GradientStop Color="#FFC0C0C0" Offset="0.468" />
               <GradientStop Color="Transparent" Offset="1" />
             </GradientStops>
+            <Angle>Vertical</Angle>
           </GlossBrush>
         </Control>
         <Control x:type="Label">
@@ -329,20 +455,20 @@
           <CornerRadius>0,0,0,0</CornerRadius>
           <BackgroundBrush />
           <ShadeBrush x:type="GradientBrush">
-            <Angle>Horizontal</Angle>
             <GradientStops>
               <GradientStop Color="Transparent" Offset="0.36" />
               <GradientStop Color="#FFC0C0C0" Offset="0.475" />
               <GradientStop Color="Transparent" Offset="0.626" />
             </GradientStops>
+            <Angle>Horizontal</Angle>
           </ShadeBrush>
           <GlossBrush x:type="GradientBrush">
-            <Angle>Vertical</Angle>
             <GradientStops>
               <GradientStop Color="Transparent" Offset="0" />
               <GradientStop Color="#FFC0C0C0" Offset="0.468" />
               <GradientStop Color="Transparent" Offset="1" />
             </GradientStops>
+            <Angle>Vertical</Angle>
           </GlossBrush>
         </Control>
         <Control x:type="Label">
@@ -496,7 +622,7 @@
       <Id>54</Id>
       <Width>1280</Width>
       <Height>580</Height>
-      <VisibleCondition>IsMediaPortalConnected ++ !IsControlVisible(9)</VisibleCondition>
+      <VisibleCondition />
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
         <Animation x:type="Slide" Condition="VisibleTrue" Duration="500" Delay="500" Easing="EaseOut" StartY="-580" />
@@ -582,12 +708,12 @@
                 <FocusBrush x:type="ColorBrush" Color="#FF272727" />
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
                 <ShadeBrush x:type="GradientBrush">
-                  <Angle>Vertical</Angle>
                   <GradientStops>
                     <GradientStop Color="#1FF0F8FF" Offset="0" />
                     <GradientStop Color="#00FFFFFF" Offset="0.59" />
                     <GradientStop Color="#00FFFFFF" Offset="1" />
                   </GradientStops>
+                  <Angle>Vertical</Angle>
                 </ShadeBrush>
                 <GlossBrush />
                 <FontType>Titan</FontType>
@@ -850,12 +976,12 @@
                 <FocusBrush x:type="ColorBrush" Color="#FF272727" />
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
                 <ShadeBrush x:type="GradientBrush">
-                  <Angle>Vertical</Angle>
                   <GradientStops>
                     <GradientStop Color="#1FF0F8FF" Offset="0" />
                     <GradientStop Color="#00FFFFFF" Offset="0.59" />
                     <GradientStop Color="#00FFFFFF" Offset="1" />
                   </GradientStops>
+                  <Angle>Vertical</Angle>
                 </ShadeBrush>
                 <GlossBrush />
                 <EnableLabel>false</EnableLabel>
@@ -888,12 +1014,12 @@
                 <FocusBrush x:type="ColorBrush" Color="#FF272727" />
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
                 <ShadeBrush x:type="GradientBrush">
-                  <Angle>Vertical</Angle>
                   <GradientStops>
                     <GradientStop Color="#1FF0F8FF" Offset="0" />
                     <GradientStop Color="#00FFFFFF" Offset="0.59" />
                     <GradientStop Color="#00FFFFFF" Offset="1" />
                   </GradientStops>
+                  <Angle>Vertical</Angle>
                 </ShadeBrush>
                 <GlossBrush />
                 <EnableLabel>false</EnableLabel>
@@ -927,12 +1053,12 @@
                 <FocusBrush x:type="ColorBrush" Color="#FF272727" />
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
                 <ShadeBrush x:type="GradientBrush">
-                  <Angle>Vertical</Angle>
                   <GradientStops>
                     <GradientStop Color="#1FF0F8FF" Offset="0" />
                     <GradientStop Color="#00FFFFFF" Offset="0.59" />
                     <GradientStop Color="#00FFFFFF" Offset="1" />
                   </GradientStops>
+                  <Angle>Vertical</Angle>
                 </ShadeBrush>
                 <GlossBrush />
                 <EnableLabel>false</EnableLabel>
@@ -966,12 +1092,12 @@
                 <FocusBrush x:type="ColorBrush" Color="#FF272727" />
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
                 <ShadeBrush x:type="GradientBrush">
-                  <Angle>Vertical</Angle>
                   <GradientStops>
                     <GradientStop Color="#1FF0F8FF" Offset="0" />
                     <GradientStop Color="Transparent" Offset="0.583" />
                     <GradientStop Color="Transparent" Offset="1" />
                   </GradientStops>
+                  <Angle>Vertical</Angle>
                 </ShadeBrush>
                 <EnableLabel>false</EnableLabel>
                 <FontType>Titan</FontType>
@@ -1003,12 +1129,12 @@
                 <FocusBrush x:type="ColorBrush" Color="#FF272727" />
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
                 <ShadeBrush x:type="GradientBrush">
-                  <Angle>Vertical</Angle>
                   <GradientStops>
                     <GradientStop Color="#1FF0F8FF" Offset="0" />
                     <GradientStop Color="#00FFFFFF" Offset="0.59" />
                     <GradientStop Color="#00FFFFFF" Offset="1" />
                   </GradientStops>
+                  <Angle>Vertical</Angle>
                 </ShadeBrush>
                 <GlossBrush />
                 <EnableLabel>false</EnableLabel>
@@ -1041,12 +1167,12 @@
                 <FocusBrush x:type="ColorBrush" Color="#FF272727" />
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
                 <ShadeBrush x:type="GradientBrush">
-                  <Angle>Vertical</Angle>
                   <GradientStops>
                     <GradientStop Color="#1FF0F8FF" Offset="0" />
                     <GradientStop Color="#00FFFFFF" Offset="0.59" />
                     <GradientStop Color="#00FFFFFF" Offset="1" />
                   </GradientStops>
+                  <Angle>Vertical</Angle>
                 </ShadeBrush>
                 <GlossBrush />
                 <EnableLabel>false</EnableLabel>
@@ -1080,12 +1206,12 @@
                 <FocusBrush x:type="ColorBrush" Color="#FF272727" />
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
                 <ShadeBrush x:type="GradientBrush">
-                  <Angle>Vertical</Angle>
                   <GradientStops>
                     <GradientStop Color="#1FF0F8FF" Offset="0" />
                     <GradientStop Color="Transparent" Offset="0.583" />
                     <GradientStop Color="Transparent" Offset="1" />
                   </GradientStops>
+                  <Angle>Vertical</Angle>
                 </ShadeBrush>
                 <EnableLabel>false</EnableLabel>
                 <FontType>Titan</FontType>
@@ -1143,12 +1269,12 @@
                     <BorderThickness>10,10,10,10</BorderThickness>
                     <CornerRadius>200,200,200,200</CornerRadius>
                     <BackgroundBrush x:type="GradientBrush">
-                      <Angle>Vertical</Angle>
                       <GradientStops>
                         <GradientStop Color="#1FF0F8FF" Offset="0" />
                         <GradientStop Color="#00FFFFFF" Offset="0.583" />
                         <GradientStop Color="Transparent" Offset="1" />
                       </GradientStops>
+                      <Angle>Vertical</Angle>
                     </BackgroundBrush>
                     <BorderBrush x:type="ColorBrush" Color="#FF000000" />
                   </ImageStyle>
@@ -1169,12 +1295,12 @@
                     <BorderThickness>5,5,5,5</BorderThickness>
                     <CornerRadius>200,200,200,200</CornerRadius>
                     <BackgroundBrush x:type="GradientBrush">
-                      <Angle>Vertical</Angle>
                       <GradientStops>
                         <GradientStop Color="#1FF0F8FF" Offset="0" />
                         <GradientStop Color="#00FFFFFF" Offset="0.583" />
                         <GradientStop Color="Transparent" Offset="1" />
                       </GradientStops>
+                      <Angle>Vertical</Angle>
                     </BackgroundBrush>
                     <BorderBrush x:type="ColorBrush" Color="#FF000000" />
                   </ImageStyle>
@@ -1339,7 +1465,7 @@
       </Actions>
     </Control>
     <Control x:type="Button">
-      <Name>Remote Button</Name>
+      <Name>Remote notActive</Name>
       <Id>56</Id>
       <Width>274</Width>
       <Height>75</Height>
@@ -1356,7 +1482,7 @@
       </Actions>
     </Control>
     <Control x:type="Button">
-      <Name>Remote Button</Name>
+      <Name>Remote Active</Name>
       <Id>57</Id>
       <Width>274</Width>
       <Height>75</Height>

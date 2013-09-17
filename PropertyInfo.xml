@@ -1756,5 +1756,13 @@
         <XmlMediaPortalTag Tag="#fanarthandler.tvseries.backdrop2.any" />
       </MediaPortalTags>
     </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#MPE.Selected.VersionDescription</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>* Fixed bug that caused check for skin update allways when starting MP regardless of the setting in configuration (thanks disaster123) * Fixed the green  highligt in TV Guide for programs with notification * Fixed alignment of recording indicator in tv program information screen * Fixed color in list (more difference now between selected and unselected items) in home and plugins.</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#MPE.Selected.VersionDescription" />
+      </MediaPortalTags>
+    </XmlProperty>
   </Properties>
 </XmlPropertyInfo>

@@ -397,7 +397,7 @@
           <Height>523</Height>
           <PosX>4</PosX>
           <PosY>141</PosY>
-          <VisibleCondition>IsMediaPortalControlFocused(2) || IsMediaPortalControlFocused(3) || IsMediaPortalControlFocused(4) || IsMediaPortalControlFocused(5) || IsMediaPortalControlFocused(6) || IsMediaPortalControlFocused(7)</VisibleCondition>
+          <VisibleCondition>IsMediaPortalControlFocused(2) || IsMediaPortalControlFocused(3) || IsMediaPortalControlFocused(4) || IsMediaPortalControlFocused(5) || IsMediaPortalControlFocused(6) || IsMediaPortalControlFocused(7) || IsMediaPortalControlFocused(-1)</VisibleCondition>
           <Animations>
             <Animation x:type="Slide" Condition="VisibleTrue" Duration="500" Easing="EaseInOut" StartX="-1275" StartY="141" EndY="141" />
             <Animation x:type="Slide" Condition="VisibleFalse" Duration="500" Easing="EaseInOut" StartY="141" EndX="-1275" EndY="141" />
@@ -417,8 +417,8 @@
               <PosY>24</PosY>
               <VisibleCondition />
               <Animations>
-                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
               </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>2</MediaPortalControlId>
@@ -453,8 +453,8 @@
               <PosY>24</PosY>
               <VisibleCondition />
               <Animations>
-                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
               </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>4</MediaPortalControlId>
@@ -490,8 +490,8 @@
               <VisibleCondition>!IsPluginEnabled(MovingPictures) ++ !IsPluginEnabled(MyFilms)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations>
-                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
               </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>6</MediaPortalControlId>
@@ -526,8 +526,8 @@
               <PosY>255</PosY>
               <VisibleCondition />
               <Animations>
-                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
               </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>3</MediaPortalControlId>
@@ -562,8 +562,8 @@
               <PosY>255</PosY>
               <VisibleCondition />
               <Animations>
-                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
               </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>5</MediaPortalControlId>
@@ -598,8 +598,8 @@
               <PosY>255</PosY>
               <VisibleCondition>IsPluginEnabled(MP-TV Series)</VisibleCondition>
               <Animations>
-                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
               </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>7</MediaPortalControlId>
@@ -625,126 +625,114 @@
                 <Action Action="MediaPortalWindow" Param="9811" />
               </Actions>
             </Control>
-            <Control x:type="Group">
-              <Name>Alternatives</Name>
-              <Id>36</Id>
-              <Width>1275</Width>
-              <Height>523</Height>
-              <VisibleCondition />
-              <Animations />
-              <MediaPortalFocusControls />
-              <GroupStyle StyleId="Empty" />
-              <GroupControls>
-                <Control x:type="Button">
-                  <Name>MovPic Button</Name>
-                  <Id>54</Id>
-                  <Width>382</Width>
-                  <Height>215</Height>
-                  <PosX>867</PosX>
-                  <PosY>24</PosY>
-                  <VisibleCondition>IsPluginEnabled(MovingPictures)</VisibleCondition>
-                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
-                  <Animations>
-                    <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                    <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
-                  </Animations>
-                  <MediaPortalFocusControls>
-                    <MediaPortalControlId>6</MediaPortalControlId>
-                  </MediaPortalFocusControls>
-                  <ButtonStyle>
-                    <BorderThickness>4,4,4,4</BorderThickness>
-                    <CornerRadius>24,24,24,24</CornerRadius>
-                    <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
-                    <FocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
-                    <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
-                    <FontType>Titan</FontType>
-                    <FontSize>50</FontSize>
-                    <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
-                    <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-                    <LabelMargin>0,0,0,5</LabelMargin>
-                    <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-                    <EnableImage>true</EnableImage>
-                    <ImageStretch>None</ImageStretch>
-                  </ButtonStyle>
-                  <Image>basichome_button_movies</Image>
-                  <LabelText>@Movies</LabelText>
-                  <Actions>
-                    <Action Action="MediaPortalWindow" Param="96742" />
-                  </Actions>
-                </Control>
-                <Control x:type="Button">
-                  <Name>MyFilms Button</Name>
-                  <Id>55</Id>
-                  <Width>382</Width>
-                  <Height>215</Height>
-                  <PosX>867</PosX>
-                  <PosY>24</PosY>
-                  <VisibleCondition>IsPluginEnabled(MyFilms)</VisibleCondition>
-                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
-                  <Animations>
-                    <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                    <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
-                  </Animations>
-                  <MediaPortalFocusControls>
-                    <MediaPortalControlId>6</MediaPortalControlId>
-                  </MediaPortalFocusControls>
-                  <ButtonStyle>
-                    <BorderThickness>4,4,4,4</BorderThickness>
-                    <CornerRadius>24,24,24,24</CornerRadius>
-                    <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
-                    <FocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
-                    <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
-                    <FontType>Titan</FontType>
-                    <FontSize>50</FontSize>
-                    <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
-                    <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-                    <LabelMargin>0,0,0,5</LabelMargin>
-                    <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-                    <EnableImage>true</EnableImage>
-                    <ImageStretch>None</ImageStretch>
-                  </ButtonStyle>
-                  <Image>basichome_button_movies</Image>
-                  <LabelText>@Movies</LabelText>
-                  <Actions>
-                    <Action Action="MediaPortalWindow" Param="7986" />
-                  </Actions>
-                </Control>
-                <Control x:type="Button">
-                  <Name>Series Dummy Button</Name>
-                  <Id>59</Id>
-                  <Width>382</Width>
-                  <Height>215</Height>
-                  <PosX>867</PosX>
-                  <PosY>255</PosY>
-                  <VisibleCondition>!IsPluginEnabled(MP-TV Series)</VisibleCondition>
-                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
-                  <Animations>
-                    <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                    <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
-                  </Animations>
-                  <MediaPortalFocusControls>
-                    <MediaPortalControlId>700</MediaPortalControlId>
-                  </MediaPortalFocusControls>
-                  <ButtonStyle>
-                    <BorderThickness>4,4,4,4</BorderThickness>
-                    <CornerRadius>24,24,24,24</CornerRadius>
-                    <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
-                    <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
-                    <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
-                    <EnableLabel>false</EnableLabel>
-                    <FontType>Titan</FontType>
-                    <FontSize>50</FontSize>
-                    <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
-                    <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-                    <LabelMargin>0,0,0,5</LabelMargin>
-                    <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-                    <ImageStretch>None</ImageStretch>
-                  </ButtonStyle>
-                  <Image>basichome_button_dummy</Image>
-                  <LabelText>NewButton</LabelText>
-                  <Actions />
-                </Control>
-              </GroupControls>
+            <Control x:type="Button">
+              <Name>MovPic Button</Name>
+              <Id>54</Id>
+              <Width>382</Width>
+              <Height>215</Height>
+              <PosX>867</PosX>
+              <PosY>24</PosY>
+              <VisibleCondition>IsPluginEnabled(MovingPictures)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
+              </Animations>
+              <MediaPortalFocusControls>
+                <MediaPortalControlId>6</MediaPortalControlId>
+              </MediaPortalFocusControls>
+              <ButtonStyle>
+                <BorderThickness>4,4,4,4</BorderThickness>
+                <CornerRadius>24,24,24,24</CornerRadius>
+                <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
+                <FocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
+                <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
+                <FontType>Titan</FontType>
+                <FontSize>50</FontSize>
+                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <LabelMargin>0,0,0,5</LabelMargin>
+                <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+                <EnableImage>true</EnableImage>
+                <ImageStretch>None</ImageStretch>
+              </ButtonStyle>
+              <Image>basichome_button_movies</Image>
+              <LabelText>@Movies</LabelText>
+              <Actions>
+                <Action Action="MediaPortalWindow" Param="96742" />
+              </Actions>
+            </Control>
+            <Control x:type="Button">
+              <Name>MyFilms Button</Name>
+              <Id>55</Id>
+              <Width>382</Width>
+              <Height>215</Height>
+              <PosX>867</PosX>
+              <PosY>24</PosY>
+              <VisibleCondition>IsPluginEnabled(MyFilms)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
+              </Animations>
+              <MediaPortalFocusControls>
+                <MediaPortalControlId>6</MediaPortalControlId>
+              </MediaPortalFocusControls>
+              <ButtonStyle>
+                <BorderThickness>4,4,4,4</BorderThickness>
+                <CornerRadius>24,24,24,24</CornerRadius>
+                <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
+                <FocusBrush x:type="ImageBrush" Image="\basichome_button_movies.png" Stretch="Fill" />
+                <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
+                <FontType>Titan</FontType>
+                <FontSize>50</FontSize>
+                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <LabelMargin>0,0,0,5</LabelMargin>
+                <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+                <EnableImage>true</EnableImage>
+                <ImageStretch>None</ImageStretch>
+              </ButtonStyle>
+              <Image>basichome_button_movies</Image>
+              <LabelText>@Movies</LabelText>
+              <Actions>
+                <Action Action="MediaPortalWindow" Param="7986" />
+              </Actions>
+            </Control>
+            <Control x:type="Button">
+              <Name>Series Dummy Button</Name>
+              <Id>59</Id>
+              <Width>382</Width>
+              <Height>215</Height>
+              <PosX>867</PosX>
+              <PosY>255</PosY>
+              <VisibleCondition>!IsPluginEnabled(MP-TV Series)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
+              </Animations>
+              <MediaPortalFocusControls>
+                <MediaPortalControlId>7</MediaPortalControlId>
+              </MediaPortalFocusControls>
+              <ButtonStyle>
+                <BorderThickness>4,4,4,4</BorderThickness>
+                <CornerRadius>24,24,24,24</CornerRadius>
+                <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
+                <EnableLabel>false</EnableLabel>
+                <FontType>Titan</FontType>
+                <FontSize>50</FontSize>
+                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <LabelMargin>0,0,0,5</LabelMargin>
+                <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+                <ImageStretch>None</ImageStretch>
+              </ButtonStyle>
+              <Image>basichome_button_dummy</Image>
+              <LabelText>NewButton</LabelText>
+              <Actions />
             </Control>
             <Control x:type="Button">
               <Name>Nextpage</Name>
@@ -804,8 +792,8 @@
               <PosY>24</PosY>
               <VisibleCondition />
               <Animations>
-                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
               </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>400</MediaPortalControlId>
@@ -840,8 +828,8 @@
               <VisibleCondition>IsPluginEnabled(InfoService)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations>
-                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
               </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>500</MediaPortalControlId>
@@ -876,8 +864,8 @@
               <VisibleCondition>IsPluginEnabled(OnlineVideos)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations>
-                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
               </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>200</MediaPortalControlId>
@@ -911,8 +899,8 @@
               <PosY>255</PosY>
               <VisibleCondition />
               <Animations>
-                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
               </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>600</MediaPortalControlId>
@@ -947,8 +935,8 @@
               <VisibleCondition>IsPluginEnabled(Trakt)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations>
-                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
               </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>700</MediaPortalControlId>
@@ -984,8 +972,8 @@
               <VisibleCondition>IsPluginEnabled(Extensions)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations>
-                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
               </Animations>
               <MediaPortalFocusControls>
                 <MediaPortalControlId>300</MediaPortalControlId>
@@ -1010,157 +998,142 @@
                 <Action Action="MediaPortalWindow" Param="801" />
               </Actions>
             </Control>
-            <Control x:type="Group">
-              <Name>Dummys</Name>
-              <Id>56</Id>
-              <Width>1275</Width>
-              <Height>523</Height>
-              <VisibleCondition />
+            <Control x:type="Button">
+              <Name>Trakt Dummy Button</Name>
+              <Id>57</Id>
+              <Width>382</Width>
+              <Height>215</Height>
+              <PosX>439</PosX>
+              <PosY>255</PosY>
+              <VisibleCondition>!IsPluginEnabled(Trakt)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
+              <Animations />
+              <MediaPortalFocusControls>
+                <MediaPortalControlId>700</MediaPortalControlId>
+              </MediaPortalFocusControls>
+              <ButtonStyle>
+                <BorderThickness>4,4,4,4</BorderThickness>
+                <CornerRadius>24,24,24,24</CornerRadius>
+                <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
+                <EnableLabel>false</EnableLabel>
+                <FontType>Titan</FontType>
+                <FontSize>50</FontSize>
+                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <LabelMargin>0,0,0,5</LabelMargin>
+                <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+                <ImageStretch>None</ImageStretch>
+              </ButtonStyle>
+              <Image>basichome_button_dummy</Image>
+              <LabelText>NewButton</LabelText>
+              <Actions />
+            </Control>
+            <Control x:type="Button">
+              <Name>Info Service Dummy Button</Name>
+              <Id>60</Id>
+              <Width>382</Width>
+              <Height>215</Height>
+              <PosX>439</PosX>
+              <PosY>24</PosY>
+              <VisibleCondition>!IsPluginEnabled(InfoService)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations>
-                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
               </Animations>
-              <MediaPortalFocusControls />
-              <GroupStyle StyleId="Empty" />
-              <GroupControls>
-                <Control x:type="Button">
-                  <Name>Trakt Dummy Button</Name>
-                  <Id>57</Id>
-                  <Width>382</Width>
-                  <Height>215</Height>
-                  <PosX>439</PosX>
-                  <PosY>255</PosY>
-                  <VisibleCondition>!IsPluginEnabled(Trakt)</VisibleCondition>
-                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
-                  <Animations />
-                  <MediaPortalFocusControls>
-                    <MediaPortalControlId>700</MediaPortalControlId>
-                  </MediaPortalFocusControls>
-                  <ButtonStyle>
-                    <BorderThickness>4,4,4,4</BorderThickness>
-                    <CornerRadius>24,24,24,24</CornerRadius>
-                    <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
-                    <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
-                    <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
-                    <EnableLabel>false</EnableLabel>
-                    <FontType>Titan</FontType>
-                    <FontSize>50</FontSize>
-                    <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
-                    <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-                    <LabelMargin>0,0,0,5</LabelMargin>
-                    <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-                    <ImageStretch>None</ImageStretch>
-                  </ButtonStyle>
-                  <Image>basichome_button_dummy</Image>
-                  <LabelText>NewButton</LabelText>
-                  <Actions />
-                </Control>
-                <Control x:type="Button">
-                  <Name>Info Service Dummy Button</Name>
-                  <Id>60</Id>
-                  <Width>382</Width>
-                  <Height>215</Height>
-                  <PosX>439</PosX>
-                  <PosY>24</PosY>
-                  <VisibleCondition>!IsPluginEnabled(InfoService)</VisibleCondition>
-                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
-                  <Animations>
-                    <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                    <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
-                  </Animations>
-                  <MediaPortalFocusControls>
-                    <MediaPortalControlId>700</MediaPortalControlId>
-                  </MediaPortalFocusControls>
-                  <ButtonStyle>
-                    <BorderThickness>4,4,4,4</BorderThickness>
-                    <CornerRadius>24,24,24,24</CornerRadius>
-                    <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
-                    <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
-                    <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
-                    <EnableLabel>false</EnableLabel>
-                    <FontType>Titan</FontType>
-                    <FontSize>50</FontSize>
-                    <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
-                    <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-                    <LabelMargin>0,0,0,5</LabelMargin>
-                    <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-                    <ImageStretch>None</ImageStretch>
-                  </ButtonStyle>
-                  <Image>basichome_button_dummy</Image>
-                  <LabelText>NewButton</LabelText>
-                  <Actions />
-                </Control>
-                <Control x:type="Button">
-                  <Name>OnlineVideos Dummy Button</Name>
-                  <Id>61</Id>
-                  <Width>382</Width>
-                  <Height>215</Height>
-                  <PosX>867</PosX>
-                  <PosY>24</PosY>
-                  <VisibleCondition>!IsPluginEnabled(OnlineVideos)</VisibleCondition>
-                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
-                  <Animations>
-                    <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                    <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
-                  </Animations>
-                  <MediaPortalFocusControls>
-                    <MediaPortalControlId>700</MediaPortalControlId>
-                  </MediaPortalFocusControls>
-                  <ButtonStyle>
-                    <BorderThickness>4,4,4,4</BorderThickness>
-                    <CornerRadius>24,24,24,24</CornerRadius>
-                    <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
-                    <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
-                    <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
-                    <EnableLabel>false</EnableLabel>
-                    <FontType>Titan</FontType>
-                    <FontSize>50</FontSize>
-                    <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
-                    <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-                    <LabelMargin>0,0,0,5</LabelMargin>
-                    <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-                    <ImageStretch>None</ImageStretch>
-                  </ButtonStyle>
-                  <Image>basichome_button_dummy</Image>
-                  <LabelText>NewButton</LabelText>
-                  <Actions />
-                </Control>
-                <Control x:type="Button">
-                  <Name>Extensions Dummy Button</Name>
-                  <Id>62</Id>
-                  <Width>382</Width>
-                  <Height>215</Height>
-                  <PosX>867</PosX>
-                  <PosY>255</PosY>
-                  <VisibleCondition>!IsPluginEnabled(Extensions)</VisibleCondition>
-                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
-                  <Animations>
-                    <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="90" />
-                    <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="90" />
-                  </Animations>
-                  <MediaPortalFocusControls>
-                    <MediaPortalControlId>700</MediaPortalControlId>
-                  </MediaPortalFocusControls>
-                  <ButtonStyle>
-                    <BorderThickness>4,4,4,4</BorderThickness>
-                    <CornerRadius>24,24,24,24</CornerRadius>
-                    <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
-                    <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
-                    <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
-                    <EnableLabel>false</EnableLabel>
-                    <FontType>Titan</FontType>
-                    <FontSize>50</FontSize>
-                    <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
-                    <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-                    <LabelMargin>0,0,0,5</LabelMargin>
-                    <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-                    <ImageStretch>None</ImageStretch>
-                  </ButtonStyle>
-                  <Image>basichome_button_dummy</Image>
-                  <LabelText>NewButton</LabelText>
-                  <Actions />
-                </Control>
-              </GroupControls>
+              <MediaPortalFocusControls>
+                <MediaPortalControlId>500</MediaPortalControlId>
+              </MediaPortalFocusControls>
+              <ButtonStyle>
+                <BorderThickness>4,4,4,4</BorderThickness>
+                <CornerRadius>24,24,24,24</CornerRadius>
+                <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
+                <EnableLabel>false</EnableLabel>
+                <FontType>Titan</FontType>
+                <FontSize>50</FontSize>
+                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <LabelMargin>0,0,0,5</LabelMargin>
+                <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+                <ImageStretch>None</ImageStretch>
+              </ButtonStyle>
+              <Image>basichome_button_dummy</Image>
+              <LabelText>NewButton</LabelText>
+              <Actions />
+            </Control>
+            <Control x:type="Button">
+              <Name>OnlineVideos Dummy Button</Name>
+              <Id>61</Id>
+              <Width>382</Width>
+              <Height>215</Height>
+              <PosX>867</PosX>
+              <PosY>24</PosY>
+              <VisibleCondition>!IsPluginEnabled(OnlineVideos)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
+              </Animations>
+              <MediaPortalFocusControls>
+                <MediaPortalControlId>200</MediaPortalControlId>
+              </MediaPortalFocusControls>
+              <ButtonStyle>
+                <BorderThickness>4,4,4,4</BorderThickness>
+                <CornerRadius>24,24,24,24</CornerRadius>
+                <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
+                <EnableLabel>false</EnableLabel>
+                <FontType>Titan</FontType>
+                <FontSize>50</FontSize>
+                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <LabelMargin>0,0,0,5</LabelMargin>
+                <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+                <ImageStretch>None</ImageStretch>
+              </ButtonStyle>
+              <Image>basichome_button_dummy</Image>
+              <LabelText>NewButton</LabelText>
+              <Actions />
+            </Control>
+            <Control x:type="Button">
+              <Name>Extensions Dummy Button</Name>
+              <Id>62</Id>
+              <Width>382</Width>
+              <Height>215</Height>
+              <PosX>867</PosX>
+              <PosY>255</PosY>
+              <VisibleCondition>!IsPluginEnabled(Extensions)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
+              <Animations>
+                <Animation x:type="Zoom" Condition="FocusTrue" Duration="100" From="100" To="105" />
+                <Animation x:type="Zoom" Condition="FocusFalse" Duration="100" From="105" />
+              </Animations>
+              <MediaPortalFocusControls>
+                <MediaPortalControlId>300</MediaPortalControlId>
+              </MediaPortalFocusControls>
+              <ButtonStyle>
+                <BorderThickness>4,4,4,4</BorderThickness>
+                <CornerRadius>24,24,24,24</CornerRadius>
+                <NoFocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                <FocusBrush x:type="ImageBrush" Image="\basichome_button_dummy.png" Stretch="Fill" />
+                <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
+                <EnableLabel>false</EnableLabel>
+                <FontType>Titan</FontType>
+                <FontSize>50</FontSize>
+                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <LabelMargin>0,0,0,5</LabelMargin>
+                <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+                <ImageStretch>None</ImageStretch>
+              </ButtonStyle>
+              <Image>basichome_button_dummy</Image>
+              <LabelText>NewButton</LabelText>
+              <Actions />
             </Control>
             <Control x:type="Button">
               <Name>Nextpage</Name>

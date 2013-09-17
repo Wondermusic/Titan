@@ -5,7 +5,7 @@
   <Width>520</Width>
   <Height>576</Height>
   <BorderThickness>2</BorderThickness>
-  <CornerRadius>25,25,25,25</CornerRadius>
+  <CornerRadius>0,25,25,0</CornerRadius>
   <BackgroundBrush x:type="GradientBrush">
     <GradientStops>
       <GradientStop Color="#FF788282" Offset="1" />

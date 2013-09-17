@@ -287,7 +287,7 @@
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
         <Animation x:type="Slide" Condition="VisibleTrue" Duration="400" Easing="EaseOut" StartX="-400" StartY="76" EndX="-15" EndY="76" />
-        <Animation x:type="Slide" Condition="VisibleFalse" Duration="400" Delay="200" StartX="-15" StartY="76" EndX="400" EndY="76" />
+        <Animation x:type="Slide" Condition="VisibleFalse" Duration="400" Delay="200" StartX="-15" StartY="76" EndX="-400" EndY="76" />
       </Animations>
       <MediaPortalFocusControls />
       <GroupStyle StyleId="ActionMenu BG" />
@@ -304,7 +304,7 @@
           <Animations />
           <MediaPortalFocusControls />
           <ListControlStyle StyleId="empty" />
-          <ListType>MediaPortalListControl</ListType>
+          <ListType>MediaPortalButtonGroup</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="ActionMenu ListControl" />
           <HorizontalItemStyle />

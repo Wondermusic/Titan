@@ -147,8 +147,7 @@
       <Height>118</Height>
       <PosX>28</PosX>
       <PosY>548</PosY>
-      <VisibleCondition>!IsControlVisible(52)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle>
@@ -205,7 +204,6 @@
       <PosX>28</PosX>
       <PosY>650</PosY>
       <VisibleCondition>IsPluginEnabled(InfoService)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle>
@@ -214,7 +212,7 @@
       </GroupStyle>
       <GroupControls>
         <Control x:type="Image">
-          <Name>NewImage</Name>
+          <Name>Image</Name>
           <Id>11</Id>
           <Width>1225</Width>
           <Height>77</Height>
