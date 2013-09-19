@@ -69,9 +69,9 @@
           <Name>Artist</Name>
           <Id>5</Id>
           <Width>1205</Width>
-          <Height>100</Height>
+          <Height>110</Height>
           <PosX>38</PosX>
-          <PosY>439</PosY>
+          <PosY>424</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -80,16 +80,18 @@
           </LabelStyle>
           <LabelText>#mvCentral.ArtistName</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>4</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>   |   </ScrollSeperator>
         </Control>
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>6</Id>
           <Width>1205</Width>
-          <Height>85</Height>
+          <Height>75</Height>
           <PosX>38</PosX>
-          <PosY>525</PosY>
+          <PosY>520</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -97,8 +99,10 @@
             <FontSize>20</FontSize>
           </LabelStyle>
           <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>4</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>   |   </ScrollSeperator>
         </Control>
         <Control x:type="Image">
           <Name>Cover</Name>

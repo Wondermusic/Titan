@@ -88,9 +88,9 @@
           <Name>Artist</Name>
           <Id>6</Id>
           <Width>1205</Width>
-          <Height>110</Height>
+          <Height>100</Height>
           <PosX>38</PosX>
-          <PosY>430</PosY>
+          <PosY>439</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -133,17 +133,15 @@
           <Width>1205</Width>
           <Height>50</Height>
           <PosX>38</PosX>
-          <PosY>674</PosY>
+          <PosY>670</PosY>
           <VisibleCondition />
           <Animations>
             <Animation x:type="Rotate" Condition="PropertyChanging" Duration="300" Pos3DXTo="90" />
             <Animation x:type="Rotate" Condition="PropertyChanged" Duration="300" Delay="600" Pos3DXFrom="-90" />
           </Animations>
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontSize>35</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan40 White">
+            <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>@Next+: +#Play.Next.Artist+ - +#Play.Next.Title+ / +#Play.Next.Duration</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
@@ -237,36 +235,13 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <EqualizerStyle>
-            <BorderThickness>1,1,1,1</BorderThickness>
-            <CornerRadius>5,5,5,5</CornerRadius>
-            <BackgroundBrush />
-            <BorderBrush />
-            <LowRangeColor x:type="GradientBrush">
-              <GradientStops>
-                <GradientStop Color="#96000000" Offset="1" />
-                <GradientStop Color="#967EFF00" Offset="0.237" />
-                <GradientStop Color="#96FFFF00" Offset="0" />
-              </GradientStops>
-              <Angle>Vertical</Angle>
-            </LowRangeColor>
-            <MedRangeColor x:type="GradientBrush">
-              <GradientStops>
-                <GradientStop Color="#96FFFF00" Offset="0.468" />
-                <GradientStop Color="#96FF0004" Offset="0" />
-              </GradientStops>
-              <Angle>Vertical</Angle>
-            </MedRangeColor>
-            <MaxRangeColor x:type="ColorBrush" Color="#96FF0004" />
-            <BandBorderColor />
-            <FallOffColor x:type="ColorBrush" Color="#FF00BFFF" />
-          </EqualizerStyle>
+          <EqualizerStyle StyleId="Equalizer" />
           <BandCount>15</BandCount>
           <BandSpacing>1</BandSpacing>
           <BandBorderSize>0</BandBorderSize>
           <BandCornerRadius>0</BandCornerRadius>
-          <FalloffSpeed>1</FalloffSpeed>
-          <FallOffHeight>1</FallOffHeight>
+          <FalloffSpeed>4</FalloffSpeed>
+          <FallOffHeight>2</FallOffHeight>
         </Control>
         <Control x:type="Equalizer">
           <Name>Equalizer</Name>

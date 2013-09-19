@@ -92,8 +92,10 @@
           </LabelStyle>
           <LabelText>#TV.View.title</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>4</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>  |   </ScrollSeperator>
         </Control>
         <Control x:type="Label">
           <Name>Channel</Name>
@@ -128,8 +130,10 @@
           </LabelStyle>
           <LabelText>#TV.View.genre</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>4</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>  |   </ScrollSeperator>
         </Control>
         <Control x:type="Label">
           <Name>Next Time Label</Name>
@@ -182,8 +186,10 @@
           </LabelStyle>
           <LabelText>#TV.Next.title</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>4</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>   |   </ScrollSeperator>
         </Control>
         <Control x:type="Label">
           <Name>Next Genre</Name>
@@ -200,8 +206,10 @@
           </LabelStyle>
           <LabelText>#TV.Next.genre</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>4</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>   |   </ScrollSeperator>
         </Control>
         <Control x:type="Label">
           <Name>TV Start</Name>
@@ -262,11 +270,11 @@
             <BarCornerRadius>15,15,15,15</BarCornerRadius>
             <BarBorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
             <BarBackgroundBrush x:type="GradientBrush">
+              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#FFFF8C00" Offset="0.434" />
                 <GradientStop Color="#FFFFA500" Offset="1" />
               </GradientStops>
-              <Angle>Vertical</Angle>
             </BarBackgroundBrush>
           </ProgressBarStyle>
           <ProgressValue>#TV.View.Percentage</ProgressValue>
@@ -293,11 +301,11 @@
             <BarCornerRadius>15,15,15,15</BarCornerRadius>
             <BarBorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
             <BarBackgroundBrush x:type="GradientBrush">
+              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="#FF4169E1" Offset="0.304" />
                 <GradientStop Color="#FF00BFFF" Offset="1" />
               </GradientStops>
-              <Angle>Vertical</Angle>
             </BarBackgroundBrush>
           </ProgressBarStyle>
           <ProgressValue>#TV.Record.percent2</ProgressValue>

@@ -133,6 +133,7 @@
             <NoFocusBrush />
             <NoFocusBorderBrush />
             <FocusBrush x:type="GradientBrush">
+              <Angle>Horizontal</Angle>
               <GradientStops>
                 <GradientStop Color="#FF00B7FF" Offset="0" />
                 <GradientStop Color="#63000000" Offset="0.021" />
@@ -142,7 +143,6 @@
                 <GradientStop Color="#8400B7FF" Offset="0.209" />
                 <GradientStop Color="#1A00B7FF" Offset="1" />
               </GradientStops>
-              <Angle>Horizontal</Angle>
             </FocusBrush>
             <FocusBorderBrush />
             <ShadeBrush />
@@ -156,10 +156,10 @@
             <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
             <ImageVerticalAlignment>Top</ImageVerticalAlignment>
             <ImageCornerRadius>4</ImageCornerRadius>
-            <Width>480</Width>
+            <Width>500</Width>
             <Height>50</Height>
             <ItemMargin>1,1,1,1</ItemMargin>
-            <HorizontalAlignment>Left</HorizontalAlignment>
+            <HorizontalAlignment>Right</HorizontalAlignment>
           </VerticalItemStyle>
           <HorizontalItemStyle>
             <BorderThickness>1,1,1,1</BorderThickness>
@@ -667,7 +667,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan40 White">
+          <LabelStyle StyleId="Titan 40">
             <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>#MovingPictures.SelectedMovie.genres</LabelText>
@@ -1573,6 +1573,71 @@
           <ImageStretch>Fill</ImageStretch>
           <CoverImage x:type="ImageBrush" Image="\fanart_overlay.png" Stretch="Fill" />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>BG</Name>
+          <Id>202</Id>
+          <Width>1280</Width>
+          <Height>600</Height>
+          <PosY>100</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\panel_thumbs_noinfo.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Label">
+          <Name>Title</Name>
+          <Id>203</Id>
+          <Width>700</Width>
+          <Height>58</Height>
+          <PosX>533</PosX>
+          <PosY>657</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Titan 40">
+            <FontSize>20</FontSize>
+          </LabelStyle>
+          <LabelText>#MovingPictures.SelectedMovie.title</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>StarRating</Name>
+          <Id>204</Id>
+          <Width>300</Width>
+          <Height>30</Height>
+          <PosX>35</PosX>
+          <PosY>664</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\Stars\MoPi\star+#MovingPictures.SelectedMovie.score.rounded+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Label">
+          <Name>StarRating Label</Name>
+          <Id>205</Id>
+          <Width>200</Width>
+          <Height>60</Height>
+          <PosX>334</PosX>
+          <PosY>657</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Titan 40">
+            <FontSize>20</FontSize>
+          </LabelStyle>
+          <LabelText>#MovingPictures.SelectedMovie.score.localized+ / 10</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
       </GroupControls>
     </Control>

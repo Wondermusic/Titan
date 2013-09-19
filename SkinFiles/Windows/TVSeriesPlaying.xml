@@ -60,23 +60,46 @@
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="Label">
-          <Name>Title</Name>
+          <Name>Series Title</Name>
           <Id>5</Id>
           <Width>1200</Width>
-          <Height>100</Height>
+          <Height>90</Height>
           <PosX>40</PosX>
-          <PosY>470</PosY>
+          <PosY>450</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan90">
+          <LabelStyle StyleId="Titan80">
             <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>#Play.Current.Title</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>4</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>   |   </ScrollSeperator>
+        </Control>
+        <Control x:type="Label">
+          <Name>Episode Title</Name>
+          <Id>23</Id>
+          <Width>1200</Width>
+          <Height>80</Height>
+          <PosX>40</PosX>
+          <PosY>530</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Titan70">
+            <FontSize>20</FontSize>
+          </LabelStyle>
+          <LabelText>#TVSeries.Episode.LocalEpisodeName</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>4</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>   |   </ScrollSeperator>
         </Control>
         <Control x:type="Image">
           <Name>Cover</Name>

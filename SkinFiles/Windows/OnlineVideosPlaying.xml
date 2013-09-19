@@ -71,7 +71,7 @@
           <Width>1200</Width>
           <Height>110</Height>
           <PosX>40</PosX>
-          <PosY>470</PosY>
+          <PosY>450</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -81,8 +81,10 @@
           <LabelText>#Play.Current.Title</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>4</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>   |   </ScrollSeperator>
         </Control>
         <Control x:type="ProgressBar">
           <Name>BufferBar</Name>

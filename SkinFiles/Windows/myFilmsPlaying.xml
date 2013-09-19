@@ -220,11 +220,10 @@
           <Name>Title</Name>
           <Id>14</Id>
           <Width>1200</Width>
-          <Height>110</Height>
+          <Height>120</Height>
           <PosX>40</PosX>
-          <PosY>470</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <PosY>450</PosY>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan100">
@@ -233,8 +232,10 @@
           <LabelText>#Play.Current.Title</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>4</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>   |   </ScrollSeperator>
         </Control>
         <Control x:type="Image">
           <Name>SelectedThumb Moving Pictures</Name>
@@ -243,8 +244,7 @@
           <Height>350</Height>
           <PosX>465</PosX>
           <PosY>81</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle>

@@ -1757,9 +1757,17 @@
       </MediaPortalTags>
     </XmlProperty>
     <XmlProperty>
+      <SkinTag>#TVSeries.Episode.LocalEpisodeName</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>Mr. Monk Meets the Candidate (1)</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#TVSeries.Episode.LocalEpisodeName" />
+      </MediaPortalTags>
+    </XmlProperty>
+    <XmlProperty>
       <SkinTag>#MPE.Selected.VersionDescription</SkinTag>
       <PropertyType>Label</PropertyType>
-      <DesignerValue>* Fixed bug that caused check for skin update allways when starting MP regardless of the setting in configuration (thanks disaster123) * Fixed the green  highligt in TV Guide for programs with notification * Fixed alignment of recording indicator in tv program information screen * Fixed color in list (more difference now between selected and unselected items) in home and plugins.</DesignerValue>
+      <DesignerValue>New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... New.... </DesignerValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#MPE.Selected.VersionDescription" />
       </MediaPortalTags>
