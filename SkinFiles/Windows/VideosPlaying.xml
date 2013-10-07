@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="PlayerWindow">
   <IsDefault>false</IsDefault>
-  <Width>1280</Width>
-  <Height>720</Height>
+  <Width>1024</Width>
+  <Height>768</Height>
   <Name>VideosPlaying</Name>
   <Id>33</Id>
   <BackgroundBrush />
@@ -11,9 +11,9 @@
     <Control x:type="Group">
       <Name>Recordings</Name>
       <Id>1</Id>
-      <Width>1280</Width>
-      <Height>720</Height>
-      <VisibleCondition>IsPlayer(IsTVRecording)</VisibleCondition>
+      <Width>1024</Width>
+      <Height>768</Height>
+      <VisibleCondition>IsPlayer(IsTVRecording) || IsMediaPortalWindow(602)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
@@ -22,8 +22,9 @@
         <Control x:type="Image">
           <Name>Background Image</Name>
           <Id>2</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1366</Width>
+          <Height>768</Height>
+          <PosX>-171</PosX>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -34,8 +35,8 @@
         <Control x:type="Group">
           <Name>Playing Screen</Name>
           <Id>14</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -44,8 +45,9 @@
             <Control x:type="Image">
               <Name>Background</Name>
               <Id>15</Id>
-              <Width>1280</Width>
-              <Height>720</Height>
+              <Width>1366</Width>
+              <Height>768</Height>
+              <PosX>-171</PosX>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -58,8 +60,8 @@
             <Control x:type="Image">
               <Name>Overlay</Name>
               <Id>16</Id>
-              <Width>1280</Width>
-              <Height>720</Height>
+              <Width>1024</Width>
+              <Height>768</Height>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -71,7 +73,7 @@
             <Control x:type="Image">
               <Name>OSD</Name>
               <Id>17</Id>
-              <Width>1280</Width>
+              <Width>1024</Width>
               <Height>320</Height>
               <PosY>405</PosY>
               <VisibleCondition />
@@ -97,23 +99,26 @@
               </LabelStyle>
               <LabelText>#Play.Current.Title</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
               <ScrollSpeed>4</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
               <ScrollSeperator>   |   </ScrollSeperator>
             </Control>
             <Control x:type="Image">
               <Name>Cover</Name>
               <Id>19</Id>
-              <Width>350</Width>
-              <Height>350</Height>
-              <PosX>465</PosX>
-              <PosY>81</PosY>
+              <Width>280</Width>
+              <Height>280</Height>
+              <PosX>500</PosX>
+              <PosY>140</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <ImageStyle StyleId="VideoCover" />
+              <ImageStyle>
+                <BorderThickness>0,0,0,0</BorderThickness>
+                <CornerRadius>10,10,10,10</CornerRadius>
+                <BackgroundBrush />
+                <BorderBrush />
+              </ImageStyle>
               <Image>#TV.RecordedTV.thumb</Image>
               <ImageStretch>Uniform</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -243,37 +248,12 @@
               <ImageStretch>Uniform</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
-            <Control x:type="Button">
-              <Name>Play Menu</Name>
-              <Id>28</Id>
-              <Width>1280</Width>
-              <Height>200</Height>
-              <PosY>520</PosY>
-              <VisibleCondition />
-              <Animations />
-              <MediaPortalFocusControls />
-              <ButtonStyle>
-                <NoFocusBrush />
-                <NoFocusBorderBrush />
-                <FocusBrush />
-                <FocusBorderBrush />
-                <ShadeBrush />
-                <GlossBrush />
-                <EnableLabel>false</EnableLabel>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-                <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-              </ButtonStyle>
-              <LabelText>NewButton</LabelText>
-              <Actions>
-                <Action Action="OpenWindow" Param="901" />
-              </Actions>
-            </Control>
           </GroupControls>
         </Control>
         <Control x:type="Group">
           <Name>Window Name</Name>
           <Id>29</Id>
-          <Width>1280</Width>
+          <Width>1024</Width>
           <Height>156</Height>
           <VisibleCondition />
           <Animations />
@@ -309,13 +289,10 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle>
-                <FontType>Titan</FontType>
-                <FontWeight>Black</FontWeight>
-                <FontSize>50</FontSize>
-                <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+              <LabelStyle StyleId="Titan50_White">
+                <FontSize>20</FontSize>
               </LabelStyle>
-              <LabelText>#currentmodule</LabelText>
+              <LabelText>Recordings</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
               <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -325,18 +302,15 @@
               <Id>32</Id>
               <Width>426</Width>
               <Height>110</Height>
-              <PosX>855</PosX>
+              <PosX>599</PosX>
               <PosY>-10</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle>
-                <FontType>Titan</FontType>
-                <FontWeight>Black</FontWeight>
-                <FontSize>70</FontSize>
-                <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+              <LabelStyle StyleId="Titan70">
+                <FontSize>20</FontSize>
               </LabelStyle>
-              <LabelText>#Time</LabelText>
+              <LabelText>#time</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -347,19 +321,16 @@
               <Id>33</Id>
               <Width>694</Width>
               <Height>70</Height>
-              <PosX>580</PosX>
-              <PosY>80</PosY>
-              <VisibleCondition>!IsPluginEnabled(WorldWeather)</VisibleCondition>
+              <PosX>324</PosX>
+              <PosY>60</PosY>
+              <VisibleCondition>!IsPluginEnabled(World Weather)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle>
-                <FontType>Titan</FontType>
-                <FontWeight>Black</FontWeight>
-                <FontSize>60</FontSize>
-                <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+              <LabelStyle StyleId="Titan60">
+                <FontSize>20</FontSize>
               </LabelStyle>
-              <LabelText>#Date</LabelText>
+              <LabelText>#date</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -370,19 +341,16 @@
               <Id>34</Id>
               <Width>694</Width>
               <Height>70</Height>
-              <PosX>580</PosX>
-              <PosY>80</PosY>
-              <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+              <PosX>324</PosX>
+              <PosY>60</PosY>
+              <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle>
-                <FontType>Titan</FontType>
-                <FontWeight>Black</FontWeight>
-                <FontSize>60</FontSize>
-                <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+              <LabelStyle StyleId="Titan60">
+                <FontSize>20</FontSize>
               </LabelStyle>
-              <LabelText>#Date+ | +#WorldWeather.TodayTemperature</LabelText>
+              <LabelText>#date+ | +#WorldWeather.TodayTemperature</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -395,32 +363,19 @@
     <Control x:type="Group">
       <Name>Videos</Name>
       <Id>35</Id>
-      <Width>1280</Width>
-      <Height>720</Height>
+      <Width>1024</Width>
+      <Height>768</Height>
       <VisibleCondition>IsPlayer(IsVideo) || IsPlayer(IsDVD)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle StyleId="Empty" />
       <GroupControls>
-        <Control x:type="Image">
-          <Name>Background Image</Name>
-          <Id>36</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="Background" />
-          <ImageStretch>Fill</ImageStretch>
-          <CoverImage />
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
         <Control x:type="Group">
           <Name>Playing Screen</Name>
           <Id>46</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -429,8 +384,9 @@
             <Control x:type="Image">
               <Name>Background</Name>
               <Id>47</Id>
-              <Width>1280</Width>
-              <Height>720</Height>
+              <Width>1366</Width>
+              <Height>768</Height>
+              <PosX>-171</PosX>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -443,8 +399,8 @@
             <Control x:type="Image">
               <Name>Overlay</Name>
               <Id>48</Id>
-              <Width>1280</Width>
-              <Height>720</Height>
+              <Width>1024</Width>
+              <Height>768</Height>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -456,7 +412,7 @@
             <Control x:type="Image">
               <Name>OSD</Name>
               <Id>49</Id>
-              <Width>1280</Width>
+              <Width>1024</Width>
               <Height>320</Height>
               <PosY>405</PosY>
               <VisibleCondition />
@@ -482,10 +438,8 @@
               </LabelStyle>
               <LabelText>#Play.Current.Title</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
               <ScrollSpeed>4</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
               <ScrollSeperator>   |   </ScrollSeperator>
             </Control>
             <Control x:type="Image">
@@ -498,8 +452,13 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <ImageStyle StyleId="VideoCover" />
-              <Image>#TV.RecordedTV.thumb</Image>
+              <ImageStyle>
+                <BorderThickness>0,0,0,0</BorderThickness>
+                <CornerRadius>10,10,10,10</CornerRadius>
+                <BackgroundBrush />
+                <BorderBrush />
+              </ImageStyle>
+              <Image>#Play.Current.Thumb</Image>
               <ImageStretch>Uniform</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
@@ -628,37 +587,12 @@
               <ImageStretch>Uniform</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
-            <Control x:type="Button">
-              <Name>Play Menu</Name>
-              <Id>60</Id>
-              <Width>1280</Width>
-              <Height>200</Height>
-              <PosY>520</PosY>
-              <VisibleCondition />
-              <Animations />
-              <MediaPortalFocusControls />
-              <ButtonStyle>
-                <NoFocusBrush />
-                <NoFocusBorderBrush />
-                <FocusBrush />
-                <FocusBorderBrush />
-                <ShadeBrush />
-                <GlossBrush />
-                <EnableLabel>false</EnableLabel>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-                <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-              </ButtonStyle>
-              <LabelText>NewButton</LabelText>
-              <Actions>
-                <Action Action="OpenWindow" Param="901" />
-              </Actions>
-            </Control>
           </GroupControls>
         </Control>
         <Control x:type="Group">
           <Name>Window Name</Name>
           <Id>61</Id>
-          <Width>1280</Width>
+          <Width>1024</Width>
           <Height>156</Height>
           <VisibleCondition />
           <Animations />
@@ -694,13 +628,10 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle>
-                <FontType>Titan</FontType>
-                <FontWeight>Black</FontWeight>
-                <FontSize>50</FontSize>
-                <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+              <LabelStyle StyleId="Titan50_White">
+                <FontSize>20</FontSize>
               </LabelStyle>
-              <LabelText>#currentmodule</LabelText>
+              <LabelText>Video</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
               <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -710,18 +641,15 @@
               <Id>64</Id>
               <Width>426</Width>
               <Height>110</Height>
-              <PosX>855</PosX>
+              <PosX>599</PosX>
               <PosY>-10</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle>
-                <FontType>Titan</FontType>
-                <FontWeight>Black</FontWeight>
-                <FontSize>70</FontSize>
-                <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+              <LabelStyle StyleId="Titan70">
+                <FontSize>20</FontSize>
               </LabelStyle>
-              <LabelText>#Time</LabelText>
+              <LabelText>#time</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -732,19 +660,16 @@
               <Id>65</Id>
               <Width>694</Width>
               <Height>70</Height>
-              <PosX>580</PosX>
-              <PosY>80</PosY>
-              <VisibleCondition>!IsPluginEnabled(WorldWeather)</VisibleCondition>
+              <PosX>324</PosX>
+              <PosY>60</PosY>
+              <VisibleCondition>!IsPluginEnabled(World Weather)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle>
-                <FontType>Titan</FontType>
-                <FontWeight>Black</FontWeight>
-                <FontSize>60</FontSize>
-                <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+              <LabelStyle StyleId="Titan60">
+                <FontSize>20</FontSize>
               </LabelStyle>
-              <LabelText>#Date</LabelText>
+              <LabelText>#date</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -755,19 +680,16 @@
               <Id>66</Id>
               <Width>694</Width>
               <Height>70</Height>
-              <PosX>580</PosX>
-              <PosY>80</PosY>
-              <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+              <PosX>324</PosX>
+              <PosY>60</PosY>
+              <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle>
-                <FontType>Titan</FontType>
-                <FontWeight>Black</FontWeight>
-                <FontSize>60</FontSize>
-                <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+              <LabelStyle StyleId="Titan60">
+                <FontSize>20</FontSize>
               </LabelStyle>
-              <LabelText>#Date+ | +#WorldWeather.TodayTemperature</LabelText>
+              <LabelText>#date+ | +#WorldWeather.TodayTemperature</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -780,7 +702,7 @@
     <Control x:type="Button">
       <Name>Play_Menu</Name>
       <Id>67</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>130</Height>
       <VisibleCondition>!IsPlayer(None)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -804,5 +726,5 @@
       </Actions>
     </Control>
   </WindowControls>
-  <VisibleCondition>IsPlayer(IsDVD) || IsPlayer(IsVideo) || IsPlayer(IsTVRecording)</VisibleCondition>
+  <VisibleCondition>IsPlayer(IsDVD) || IsPlayer(IsVideo) || IsPlayer(IsTVRecording) || IsMediaPortalWindow(602)</VisibleCondition>
 </Window>

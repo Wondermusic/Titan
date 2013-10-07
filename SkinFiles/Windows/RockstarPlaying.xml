@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="PlayerWindow">
   <IsDefault>false</IsDefault>
-  <Width>1280</Width>
-  <Height>720</Height>
+  <Width>1024</Width>
+  <Height>768</Height>
   <Name>RockstarPlaying</Name>
   <Id>30</Id>
   <BackgroundBrush />
@@ -11,18 +11,33 @@
     <Control x:type="Group">
       <Name>Playing Screen</Name>
       <Id>1</Id>
-      <Width>1280</Width>
-      <Height>720</Height>
+      <Width>1024</Width>
+      <Height>768</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle StyleId="Empty" />
       <GroupControls>
         <Control x:type="Image">
+          <Name>Background</Name>
+          <Id>23</Id>
+          <Width>1366</Width>
+          <Height>768</Height>
+          <PosX>-171</PosX>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Hovers\hover_my radio.jpg</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
           <Name>Fanart</Name>
           <Id>2</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1366</Width>
+          <Height>768</Height>
+          <PosX>-171</PosX>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -35,7 +50,7 @@
         <Control x:type="Image">
           <Name>OSD</Name>
           <Id>3</Id>
-          <Width>1280</Width>
+          <Width>1024</Width>
           <Height>320</Height>
           <PosY>405</PosY>
           <VisibleCondition />
@@ -82,7 +97,7 @@
           <Width>1200</Width>
           <Height>90</Height>
           <PosX>40</PosX>
-          <PosY>439</PosY>
+          <PosY>430</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -91,10 +106,8 @@
           </LabelStyle>
           <LabelText>#Play.Current.Title</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollDelay>2</ScrollDelay>
           <ScrollSpeed>4</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
           <ScrollSeperator>   |   </ScrollSeperator>
         </Control>
         <Control x:type="Label">
@@ -103,7 +116,7 @@
           <Width>1200</Width>
           <Height>70</Height>
           <PosX>40</PosX>
-          <PosY>525</PosY>
+          <PosY>528</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -112,10 +125,8 @@
           </LabelStyle>
           <LabelText>#Play.Current.Artist+ - +#Play.Current.Album</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollDelay>2</ScrollDelay>
           <ScrollSpeed>4</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
           <ScrollSeperator>   |   </ScrollSeperator>
         </Control>
         <Control x:type="Label">
@@ -152,9 +163,9 @@
           </LabelStyle>
           <LabelText>#Rockstar.SelectedTrack.AlbumYear</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>4</ScrollSpeed>
+          <ScrollSeperator>  |  </ScrollSeperator>
         </Control>
         <Control x:type="Label">
           <Name>Duration Label</Name>
@@ -188,7 +199,7 @@
           <LabelStyle StyleId="Titan50_White">
             <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#Rockstar.SelectedTrack.TrackDuration</LabelText>
+          <LabelText>#duration</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -254,42 +265,18 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="Music Cover" />
+          <ImageStyle StyleId="Logo_Image" />
           <Image>#Play.Current.Thumb</Image>
           <ImageStretch>Uniform</ImageStretch>
+          <ImageCornerRadius>20</ImageCornerRadius>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Button">
-          <Name>Play Menu</Name>
-          <Id>16</Id>
-          <Width>1280</Width>
-          <Height>200</Height>
-          <PosY>520</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ButtonStyle>
-            <NoFocusBrush />
-            <NoFocusBorderBrush />
-            <FocusBrush />
-            <FocusBorderBrush />
-            <ShadeBrush />
-            <GlossBrush />
-            <EnableLabel>false</EnableLabel>
-            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-          </ButtonStyle>
-          <LabelText>NewButton</LabelText>
-          <Actions>
-            <Action Action="OpenWindow" Param="901" />
-          </Actions>
         </Control>
       </GroupControls>
     </Control>
     <Control x:type="Group">
       <Name>Window Name</Name>
       <Id>17</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>156</Height>
       <VisibleCondition />
       <Animations />
@@ -325,11 +312,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>50</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan50_White">
+            <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>#Rockstar.PluginName</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -341,18 +325,15 @@
           <Id>20</Id>
           <Width>426</Width>
           <Height>110</Height>
-          <PosX>855</PosX>
+          <PosX>599</PosX>
           <PosY>-10</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>70</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan70">
+            <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -363,19 +344,16 @@
           <Id>21</Id>
           <Width>694</Width>
           <Height>70</Height>
-          <PosX>580</PosX>
-          <PosY>80</PosY>
-          <VisibleCondition>!IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <PosX>324</PosX>
+          <PosY>60</PosY>
+          <VisibleCondition>!IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>60</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan60">
+            <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#Date</LabelText>
+          <LabelText>#date</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -386,51 +364,22 @@
           <Id>22</Id>
           <Width>694</Width>
           <Height>70</Height>
-          <PosX>580</PosX>
-          <PosY>80</PosY>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <PosX>324</PosX>
+          <PosY>60</PosY>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>60</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan60">
+            <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#Date+ | +#WorldWeather.TodayTemperature</LabelText>
+          <LabelText>#date+ | +#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
       </GroupControls>
-    </Control>
-    <Control x:type="Button">
-      <Name>Play_Menu</Name>
-      <Id>23</Id>
-      <Width>1280</Width>
-      <Height>130</Height>
-      <VisibleCondition>!IsPlayer(None)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations />
-      <MediaPortalFocusControls />
-      <ButtonStyle>
-        <NoFocusBrush />
-        <NoFocusBorderBrush />
-        <FocusBrush />
-        <FocusBorderBrush />
-        <ShadeBrush />
-        <GlossBrush />
-        <EnableLabel>false</EnableLabel>
-        <FontType>Titan</FontType>
-        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00B7FF" />
-      </ButtonStyle>
-      <LabelText>NewButton</LabelText>
-      <Actions>
-        <Action Action="OpenDialog" Param="904" />
-      </Actions>
     </Control>
   </WindowControls>
   <VisibleCondition>IsPlayer(Rockstar)</VisibleCondition>

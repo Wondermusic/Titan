@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalWindow">
   <IsDefault>false</IsDefault>
-  <Width>1280</Width>
-  <Height>720</Height>
+  <Width>1024</Width>
+  <Height>768</Height>
   <Name>Weather</Name>
   <Id>21</Id>
   <BackgroundBrush />
@@ -11,8 +11,9 @@
     <Control x:type="Image">
       <Name>Background Image</Name>
       <Id>1</Id>
-      <Width>1280</Width>
-      <Height>720</Height>
+      <Width>1366</Width>
+      <Height>768</Height>
+      <PosX>-171</PosX>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -24,8 +25,8 @@
     <Control x:type="Group">
       <Name>Weather</Name>
       <Id>65</Id>
-      <Width>1280</Width>
-      <Height>720</Height>
+      <Width>1024</Width>
+      <Height>768</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -34,8 +35,8 @@
         <Control x:type="Group">
           <Name>Today Condition</Name>
           <Id>66</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -44,10 +45,10 @@
             <Control x:type="Image">
               <Name>current weather icon</Name>
               <Id>67</Id>
-              <Width>187</Width>
-              <Height>187</Height>
-              <PosX>1050</PosX>
-              <PosY>89</PosY>
+              <Width>150</Width>
+              <Height>150</Height>
+              <PosX>1108</PosX>
+              <PosY>137</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -95,10 +96,10 @@
             <Control x:type="Image">
               <Name>current Moonphase image</Name>
               <Id>70</Id>
-              <Width>80</Width>
-              <Height>80</Height>
-              <PosX>1024</PosX>
-              <PosY>290</PosY>
+              <Width>50</Width>
+              <Height>50</Height>
+              <PosX>800</PosX>
+              <PosY>292</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -256,8 +257,8 @@
         <Control x:type="Group">
           <Name>Devider</Name>
           <Id>79</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -418,8 +419,8 @@
         <Control x:type="Group">
           <Name>Forecast Day 0</Name>
           <Id>90</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -516,8 +517,8 @@
         <Control x:type="Group">
           <Name>Forecast Day 1</Name>
           <Id>96</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -614,8 +615,8 @@
         <Control x:type="Group">
           <Name>Forecast Day 2</Name>
           <Id>102</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -712,8 +713,8 @@
         <Control x:type="Group">
           <Name>Forecast Day 3</Name>
           <Id>108</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -810,8 +811,8 @@
         <Control x:type="Group">
           <Name>Forecast Day 4</Name>
           <Id>114</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -910,7 +911,7 @@
     <Control x:type="Group">
       <Name>Window Name</Name>
       <Id>2</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>156</Height>
       <VisibleCondition />
       <Animations />
@@ -932,7 +933,7 @@
             <BorderThickness>0,0,0,0</BorderThickness>
             <CornerRadius>0,0,0,0</CornerRadius>
           </ImageStyle>
-          <Image>\icon_plugin.png</Image>
+          <Image>#WorldWeather.TodayIconImage</Image>
           <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
@@ -946,15 +947,12 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>50</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan50_White">
+            <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#currentmodule</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
+          <LabelText>#WorldWeather.Location</LabelText>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
         <Control x:type="Label">
@@ -962,18 +960,15 @@
           <Id>5</Id>
           <Width>426</Width>
           <Height>110</Height>
-          <PosX>855</PosX>
+          <PosX>599</PosX>
           <PosY>-10</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>70</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan70">
+            <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -984,19 +979,16 @@
           <Id>6</Id>
           <Width>694</Width>
           <Height>70</Height>
-          <PosX>580</PosX>
-          <PosY>80</PosY>
-          <VisibleCondition>!IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <PosX>324</PosX>
+          <PosY>60</PosY>
+          <VisibleCondition>!IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>60</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan60">
+            <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#Date</LabelText>
+          <LabelText>#date</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -1007,19 +999,16 @@
           <Id>7</Id>
           <Width>694</Width>
           <Height>70</Height>
-          <PosX>580</PosX>
-          <PosY>80</PosY>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <PosX>324</PosX>
+          <PosY>60</PosY>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>60</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan60">
+            <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#Date+ | +#WorldWeather.TodayTemperature</LabelText>
+          <LabelText>#date+ | +#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -1030,7 +1019,7 @@
     <Control x:type="Button">
       <Name>Menu</Name>
       <Id>121</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>130</Height>
       <VisibleCondition />
       <Animations />
@@ -1085,6 +1074,8 @@
         <Width>250</Width>
         <Height>50</Height>
         <ItemMargin>1,1,1,1</ItemMargin>
+        <SelectedZoomX>1</SelectedZoomX>
+        <SelectedZoomY>1</SelectedZoomY>
       </VerticalItemStyle>
       <HorizontalItemStyle>
         <BorderThickness>1,1,1,1</BorderThickness>
@@ -1104,6 +1095,8 @@
         <Width>135</Width>
         <Height>207</Height>
         <ItemMargin>1,1,1,1</ItemMargin>
+        <SelectedZoomX>1</SelectedZoomX>
+        <SelectedZoomY>1</SelectedZoomY>
       </HorizontalItemStyle>
       <CoverFlowItemStyle>
         <BorderThickness>1,1,1,1</BorderThickness>
@@ -1122,6 +1115,8 @@
         <ImageVerticalAlignment>Top</ImageVerticalAlignment>
         <Width>135</Width>
         <Height>207</Height>
+        <SelectedZoomX>1</SelectedZoomX>
+        <SelectedZoomY>1</SelectedZoomY>
       </CoverFlowItemStyle>
     </Control>
   </WindowControls>

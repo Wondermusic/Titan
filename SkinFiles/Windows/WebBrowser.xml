@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalWindow">
   <IsDefault>false</IsDefault>
-  <Width>1280</Width>
-  <Height>720</Height>
+  <Width>1024</Width>
+  <Height>768</Height>
   <Name>WebBrowser</Name>
   <Id>22</Id>
   <BackgroundBrush />
@@ -11,8 +11,9 @@
     <Control x:type="Image">
       <Name>Background Image</Name>
       <Id>1</Id>
-      <Width>1280</Width>
-      <Height>720</Height>
+      <Width>1366</Width>
+      <Height>768</Height>
+      <PosX>-171</PosX>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -24,7 +25,7 @@
     <Control x:type="Label">
       <Name>Status</Name>
       <Id>9</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>50</Height>
       <PosY>340</PosY>
       <VisibleCondition />
@@ -34,14 +35,14 @@
         <FontSize>20</FontSize>
       </LabelStyle>
       <LabelText>#MPD2.BrowseStatus</LabelText>
-      <IsScrollingEnabled>false</IsScrollingEnabled>
-      <ScrollSpeed>2</ScrollSpeed>
-      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>5</ScrollSpeed>
+      <ScrollSeperator>  |  </ScrollSeperator>
     </Control>
     <Control x:type="Label">
       <Name>URL</Name>
       <Id>10</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>50</Height>
       <PosY>400</PosY>
       <VisibleCondition />
@@ -51,16 +52,14 @@
         <FontSize>20</FontSize>
       </LabelStyle>
       <LabelText>#MPD2.Browseurl</LabelText>
-      <IsScrollingEnabled>false</IsScrollingEnabled>
       <ScrollDelay>2</ScrollDelay>
       <ScrollSpeed>10</ScrollSpeed>
-      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
       <ScrollSeperator>  |  </ScrollSeperator>
     </Control>
     <Control x:type="Group">
       <Name>Window Name</Name>
       <Id>2</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>156</Height>
       <VisibleCondition />
       <Animations />
@@ -96,11 +95,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>50</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan50_White">
+            <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>#currentmodule</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -112,18 +108,15 @@
           <Id>5</Id>
           <Width>426</Width>
           <Height>110</Height>
-          <PosX>855</PosX>
+          <PosX>599</PosX>
           <PosY>-10</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>70</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan70">
+            <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -134,19 +127,16 @@
           <Id>6</Id>
           <Width>694</Width>
           <Height>70</Height>
-          <PosX>580</PosX>
-          <PosY>80</PosY>
-          <VisibleCondition>!IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <PosX>324</PosX>
+          <PosY>60</PosY>
+          <VisibleCondition>!IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>60</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan60">
+            <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#Date</LabelText>
+          <LabelText>#date</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -157,19 +147,16 @@
           <Id>7</Id>
           <Width>694</Width>
           <Height>70</Height>
-          <PosX>580</PosX>
-          <PosY>80</PosY>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <PosX>324</PosX>
+          <PosY>60</PosY>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>60</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan60">
+            <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#Date+ | +#WorldWeather.TodayTemperature</LabelText>
+          <LabelText>#date+ | +#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -180,7 +167,7 @@
     <Control x:type="Button">
       <Name>Menu</Name>
       <Id>11</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>130</Height>
       <VisibleCondition />
       <Animations />

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalDialog">
-  <Name>MenuBottomRight</Name>
-  <Id>2015</Id>
+  <Name>Question</Name>
+  <Id>2005</Id>
   <Width>798</Width>
   <Height>579</Height>
   <PosX>245</PosX>
   <PosY>187</PosY>
   <BackgroundBrush x:type="ImageBrush" Image="\dialog_background.png" Stretch="Uniform" />
+  <BorderBrush />
   <DialogAnimations />
   <DialogControls>
     <Control x:type="Label">
@@ -25,13 +26,14 @@
         <FontSize>50</FontSize>
         <FontBrush x:type="ColorBrush" Color="#FF000000" />
       </LabelStyle>
-      <LabelText>#Dialog.Label4</LabelText>
-      <IsScrollingEnabled>false</IsScrollingEnabled>
-      <ScrollSpeed>2</ScrollSpeed>
+      <LabelText>#Dialog.Label1</LabelText>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>4</ScrollSpeed>
       <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+      <ScrollSeperator>  |  </ScrollSeperator>
     </Control>
     <Control x:type="Button">
-      <Name>Exit Button</Name>
+      <Name>ExitButton</Name>
       <Id>2</Id>
       <Width>50</Width>
       <Height>50</Height>
@@ -55,11 +57,11 @@
       <Image>exit_button_focus</Image>
       <LabelText>NewButton</LabelText>
       <Actions>
-        <Action Action="OpenDialog" Param="2015" />
+        <Action Action="MediaPortalWindow" Param="2005" />
       </Actions>
     </Control>
     <Control x:type="Label">
-      <Name>Dialog Line 1</Name>
+      <Name>TextArea1</Name>
       <Id>3</Id>
       <Width>668</Width>
       <Height>60</Height>
@@ -74,13 +76,14 @@
         <FontSize>34</FontSize>
         <FontBrush x:type="ColorBrush" Color="#FF000000" />
       </LabelStyle>
-      <LabelText>#Dialog.Label5</LabelText>
-      <IsScrollingEnabled>false</IsScrollingEnabled>
-      <ScrollSpeed>2</ScrollSpeed>
+      <LabelText>#Dialog.Label2</LabelText>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>4</ScrollSpeed>
       <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+      <ScrollSeperator>  |  </ScrollSeperator>
     </Control>
     <Control x:type="Label">
-      <Name>Dialog Line 2</Name>
+      <Name>TextArea2</Name>
       <Id>4</Id>
       <Width>668</Width>
       <Height>60</Height>
@@ -95,46 +98,83 @@
         <FontSize>34</FontSize>
         <FontBrush x:type="ColorBrush" Color="#FF000000" />
       </LabelStyle>
-      <LabelText>#Dialog.Label6</LabelText>
-      <IsScrollingEnabled>false</IsScrollingEnabled>
-      <ScrollSpeed>2</ScrollSpeed>
+      <LabelText>#Dialog.Label3</LabelText>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>4</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="Label">
+      <Name>TextArea3</Name>
+      <Id>5</Id>
+      <Width>668</Width>
+      <Height>60</Height>
+      <PosX>61</PosX>
+      <PosY>263</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle>
+        <FontType>Titan</FontType>
+        <FontWeight>Black</FontWeight>
+        <FontSize>34</FontSize>
+        <FontBrush x:type="ColorBrush" Color="#FF000000" />
+      </LabelStyle>
+      <LabelText>#Dialog.Label11</LabelText>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>4</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="Label">
+      <Name>TextArea4</Name>
+      <Id>6</Id>
+      <Width>668</Width>
+      <Height>60</Height>
+      <PosX>61</PosX>
+      <PosY>326</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle>
+        <FontType>Titan</FontType>
+        <FontWeight>Black</FontWeight>
+        <FontSize>34</FontSize>
+        <FontBrush x:type="ColorBrush" Color="#FF000000" />
+      </LabelStyle>
+      <LabelText>#Dialog.Label10</LabelText>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>4</ScrollSpeed>
       <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
     </Control>
     <Control x:type="List">
-      <Name>NewList</Name>
-      <Id>5</Id>
-      <Width>667</Width>
-      <Height>216</Height>
-      <PosX>66</PosX>
-      <PosY>266</PosY>
+      <Name>List</Name>
+      <Id>7</Id>
+      <Width>287</Width>
+      <Height>117</Height>
+      <PosX>253</PosX>
+      <PosY>373</PosY>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
       <ListControlStyle StyleId="empty" />
       <ListType>MediaPortalDialogList</ListType>
       <ListLayout>Auto</ListLayout>
-      <VerticalItemStyle StyleId="Dialog ListControl">
+      <VerticalItemStyle StyleId="DialogList Vertical">
         <SelectedZoomX>1</SelectedZoomX>
         <SelectedZoomY>1.5</SelectedZoomY>
       </VerticalItemStyle>
       <HorizontalItemStyle>
-        <BorderThickness>1,1,1,1</BorderThickness>
-        <CornerRadius>4,4,4,4</CornerRadius>
-        <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
-        <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
-        <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
-        <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+        <CornerRadius>15,15,15,15</CornerRadius>
+        <NoFocusBrush />
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="ColorBrush" Color="#ABF40D10" />
+        <FocusBorderBrush />
+        <FontType>Roboto</FontType>
         <FontSize>18</FontSize>
-        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-        <LabelMargin>3,3,3,3</LabelMargin>
-        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-        <EnableImage>true</EnableImage>
-        <ImageMargin>3,3,3,33</ImageMargin>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
         <ImageVerticalAlignment>Top</ImageVerticalAlignment>
         <Width>135</Width>
-        <Height>207</Height>
-        <ItemMargin>1,1,1,1</ItemMargin>
+        <Height>80</Height>
         <SelectedZoomX>1</SelectedZoomX>
         <SelectedZoomY>1</SelectedZoomY>
       </HorizontalItemStyle>
@@ -160,5 +200,5 @@
       </CoverFlowItemStyle>
     </Control>
   </DialogControls>
-  <VisibleCondition>IsMediaPortalDialog(2015)</VisibleCondition>
+  <VisibleCondition>IsMediaPortalDialog(2005)</VisibleCondition>
 </Dialog>

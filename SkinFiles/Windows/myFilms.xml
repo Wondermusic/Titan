@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalWindow">
   <IsDefault>false</IsDefault>
-  <Width>1280</Width>
-  <Height>720</Height>
+  <Width>1024</Width>
+  <Height>768</Height>
   <Name>myFilms</Name>
   <Id>11</Id>
   <BackgroundBrush />
@@ -11,8 +11,9 @@
     <Control x:type="Image">
       <Name>Background Image</Name>
       <Id>1</Id>
-      <Width>1280</Width>
-      <Height>720</Height>
+      <Width>1366</Width>
+      <Height>768</Height>
+      <PosX>-171</PosX>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -23,8 +24,8 @@
     <Control x:type="Group">
       <Name>ListControl Screen</Name>
       <Id>101</Id>
-      <Width>1280</Width>
-      <Height>720</Height>
+      <Width>1024</Width>
+      <Height>768</Height>
       <VisibleCondition>IsMediaPortalWindow(7986)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
@@ -34,8 +35,8 @@
         <Control x:type="Image">
           <Name>Fanart</Name>
           <Id>102</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -48,7 +49,7 @@
         <Control x:type="Image">
           <Name>Overlay</Name>
           <Id>103</Id>
-          <Width>1280</Width>
+          <Width>1024</Width>
           <Height>600</Height>
           <PosY>100</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
@@ -63,7 +64,7 @@
         <Control x:type="Image">
           <Name>Overlay CF+H</Name>
           <Id>198</Id>
-          <Width>1280</Width>
+          <Width>1024</Width>
           <Height>600</Height>
           <PosY>100</PosY>
           <VisibleCondition>!IsMediaPortalListLayout(Vertical)</VisibleCondition>
@@ -104,9 +105,18 @@
           <ListControlStyle StyleId="empty" />
           <ListType>MediaPortalListControl</ListType>
           <ListLayout>Auto</ListLayout>
-          <VerticalItemStyle StyleId="VideoList" />
-          <HorizontalItemStyle StyleId="VideoList Horizontal" />
-          <CoverFlowItemStyle StyleId="VideoList CoverFlow" />
+          <VerticalItemStyle StyleId="VideoList">
+            <SelectedZoomX>1</SelectedZoomX>
+            <SelectedZoomY>1.5</SelectedZoomY>
+          </VerticalItemStyle>
+          <HorizontalItemStyle StyleId="VideoList Horizontal">
+            <SelectedZoomX>1</SelectedZoomX>
+            <SelectedZoomY>1.5</SelectedZoomY>
+          </HorizontalItemStyle>
+          <CoverFlowItemStyle StyleId="VideoList CoverFlow">
+            <SelectedZoomX>1</SelectedZoomX>
+            <SelectedZoomY>1.5</SelectedZoomY>
+          </CoverFlowItemStyle>
         </Control>
         <Control x:type="Label">
           <Name>Title</Name>
@@ -122,9 +132,9 @@
             <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>#myfilms.user.mastertitle.value</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>4</ScrollSpeed>
+          <ScrollSeperator>  |  </ScrollSeperator>
         </Control>
         <Control x:type="Label">
           <Name>Current Module+itemcount</Name>
@@ -179,10 +189,8 @@
           </LabelStyle>
           <LabelText>#myfilms.db.description.value</LabelText>
           <IsVertical>true</IsVertical>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollDelay>2</ScrollDelay>
           <ScrollSpeed>5</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
           <ScrollSeperator>-------------------------------------</ScrollSeperator>
         </Control>
         <Control x:type="Image">
@@ -286,8 +294,8 @@
     <Control x:type="Group">
       <Name>Details Screen</Name>
       <Id>116</Id>
-      <Width>1280</Width>
-      <Height>720</Height>
+      <Width>1024</Width>
+      <Height>768</Height>
       <VisibleCondition>IsMediaPortalWindow(7987)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
@@ -297,8 +305,8 @@
         <Control x:type="Image">
           <Name>Fanart</Name>
           <Id>117</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -311,7 +319,7 @@
         <Control x:type="Image">
           <Name>Overlay</Name>
           <Id>118</Id>
-          <Width>1280</Width>
+          <Width>1024</Width>
           <Height>600</Height>
           <PosY>100</PosY>
           <VisibleCondition />
@@ -421,8 +429,8 @@
         <Control x:type="Group">
           <Name>General Informations</Name>
           <Id>125</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -442,9 +450,9 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.user.mastertitle.value</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Label">
               <Name>Rating Label</Name>
@@ -478,9 +486,9 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.db.year.value+ - +#myfilms.db.length.value+ min</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Image">
               <Name>Logos</Name>
@@ -511,17 +519,17 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.user.mastertitle.value</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
           </GroupControls>
         </Control>
         <Control x:type="Group">
           <Name>Overview</Name>
           <Id>131</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition>IsMediaPortalControlFocused(10000)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -560,9 +568,9 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.db.director.value</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Label">
               <Name>Country</Name>
@@ -596,9 +604,9 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.user.item1.value</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Label">
               <Name>Producer</Name>
@@ -632,9 +640,9 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.user.item2.value</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Label">
               <Name>Genre</Name>
@@ -668,9 +676,9 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.user.item3.value</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Label">
               <Name>Language</Name>
@@ -704,9 +712,9 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.user.item4.value</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Label">
               <Name>Date</Name>
@@ -740,9 +748,9 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.user.item5.value</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Label">
               <Name>Actor</Name>
@@ -776,9 +784,8 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.db.actors.value</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
               <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Label">
@@ -796,10 +803,7 @@
               </LabelStyle>
               <LabelText>#myfilms.db.description.value</LabelText>
               <IsVertical>true</IsVertical>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
               <ScrollSeperator>------------------------------------------------------------------------------------------------------</ScrollSeperator>
             </Control>
           </GroupControls>
@@ -807,8 +811,8 @@
         <Control x:type="Group">
           <Name>Description</Name>
           <Id>147</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition>IsMediaPortalControlFocused(10001)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -848,9 +852,8 @@
               </LabelStyle>
               <LabelText>#myfilms.db.description.value</LabelText>
               <IsVertical>true</IsVertical>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
               <ScrollSeperator>------------------------------------------------------------------------------------------------------</ScrollSeperator>
             </Control>
           </GroupControls>
@@ -858,8 +861,8 @@
         <Control x:type="Group">
           <Name>Comment</Name>
           <Id>150</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition>IsMediaPortalControlFocused(10002)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -899,9 +902,8 @@
               </LabelStyle>
               <LabelText>#myfilms.db.comments.value</LabelText>
               <IsVertical>true</IsVertical>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
               <ScrollSeperator>------------------------------------------------------------------------------------------------------</ScrollSeperator>
             </Control>
           </GroupControls>
@@ -909,8 +911,8 @@
         <Control x:type="Group">
           <Name>Actor Details</Name>
           <Id>153</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition>IsMediaPortalControlFocused(10003)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -950,9 +952,8 @@
               </LabelStyle>
               <LabelText>#myfilms.db.actors.value</LabelText>
               <IsVertical>true</IsVertical>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
               <ScrollSeperator>------------------------------------------------------------------------------------------------------</ScrollSeperator>
             </Control>
           </GroupControls>
@@ -960,8 +961,8 @@
         <Control x:type="Group">
           <Name>Technical Details</Name>
           <Id>156</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition>IsMediaPortalControlFocused(20004)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -1000,9 +1001,9 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.db.videoformat.value</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Label">
               <Name>Video Bitrate</Name>
@@ -1036,9 +1037,9 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.db.videobitrate.value+ kbit/sec.</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Label">
               <Name>Resolution</Name>
@@ -1072,9 +1073,9 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.db.resolution.value</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Label">
               <Name>Audio Format</Name>
@@ -1108,9 +1109,9 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.db.audioformat.value</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Label">
               <Name>Audio Bitrate</Name>
@@ -1144,9 +1145,9 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.db.audiobitrate.value+ kbit/sec.</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Label">
               <Name>Filesize</Name>
@@ -1180,9 +1181,9 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.db.size.value+ MB</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
             </Control>
             <Control x:type="Label">
               <Name>Info URL</Name>
@@ -1216,9 +1217,8 @@
                 <FontSize>20</FontSize>
               </LabelStyle>
               <LabelText>#myfilms.db.url.value</LabelText>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
               <ScrollSeperator>   |   </ScrollSeperator>
             </Control>
           </GroupControls>
@@ -1228,7 +1228,7 @@
     <Control x:type="Group">
       <Name>Window Name</Name>
       <Id>192</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>156</Height>
       <VisibleCondition />
       <Animations />
@@ -1264,11 +1264,8 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>50</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan50_White">
+            <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>#currentmodule</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -1280,18 +1277,15 @@
           <Id>195</Id>
           <Width>426</Width>
           <Height>110</Height>
-          <PosX>855</PosX>
+          <PosX>599</PosX>
           <PosY>-10</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>70</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan70">
+            <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#Time</LabelText>
+          <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -1302,19 +1296,16 @@
           <Id>196</Id>
           <Width>694</Width>
           <Height>70</Height>
-          <PosX>580</PosX>
-          <PosY>80</PosY>
-          <VisibleCondition>!IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <PosX>324</PosX>
+          <PosY>60</PosY>
+          <VisibleCondition>!IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>60</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan60">
+            <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#Date</LabelText>
+          <LabelText>#date</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -1325,19 +1316,16 @@
           <Id>197</Id>
           <Width>694</Width>
           <Height>70</Height>
-          <PosX>580</PosX>
-          <PosY>80</PosY>
-          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <PosX>324</PosX>
+          <PosY>60</PosY>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>60</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan60">
+            <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#Date+ | +#WorldWeather.TodayTemperature</LabelText>
+          <LabelText>#date+ | +#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -1348,7 +1336,7 @@
     <Control x:type="Button">
       <Name>Menu</Name>
       <Id>199</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>130</Height>
       <VisibleCondition>IsPlayer(None)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -1397,7 +1385,10 @@
           <ListControlStyle StyleId="empty" />
           <ListType>MediaPortalButtonGroup</ListType>
           <ListLayout>Auto</ListLayout>
-          <VerticalItemStyle StyleId="ActionMenu ListControl" />
+          <VerticalItemStyle StyleId="ActionMenu ListControl">
+            <SelectedZoomX>1</SelectedZoomX>
+            <SelectedZoomY>1.5</SelectedZoomY>
+          </VerticalItemStyle>
           <HorizontalItemStyle>
             <BorderThickness>1,1,1,1</BorderThickness>
             <CornerRadius>4,4,4,4</CornerRadius>
@@ -1416,6 +1407,8 @@
             <Width>135</Width>
             <Height>207</Height>
             <ItemMargin>1,1,1,1</ItemMargin>
+            <SelectedZoomX>1</SelectedZoomX>
+            <SelectedZoomY>1</SelectedZoomY>
           </HorizontalItemStyle>
           <CoverFlowItemStyle>
             <BorderThickness>1,1,1,1</BorderThickness>
@@ -1434,6 +1427,8 @@
             <ImageVerticalAlignment>Top</ImageVerticalAlignment>
             <Width>135</Width>
             <Height>207</Height>
+            <SelectedZoomX>1</SelectedZoomX>
+            <SelectedZoomY>1</SelectedZoomY>
           </CoverFlowItemStyle>
         </Control>
       </GroupControls>
@@ -1464,7 +1459,10 @@
           <ListControlStyle StyleId="empty" />
           <ListType>MediaPortalButtonGroup</ListType>
           <ListLayout>Auto</ListLayout>
-          <VerticalItemStyle StyleId="ActionMenu ListControl" />
+          <VerticalItemStyle StyleId="ActionMenu ListControl">
+            <SelectedZoomX>1</SelectedZoomX>
+            <SelectedZoomY>1.5</SelectedZoomY>
+          </VerticalItemStyle>
           <HorizontalItemStyle>
             <BorderThickness>1,1,1,1</BorderThickness>
             <CornerRadius>4,4,4,4</CornerRadius>
@@ -1483,6 +1481,8 @@
             <Width>135</Width>
             <Height>207</Height>
             <ItemMargin>1,1,1,1</ItemMargin>
+            <SelectedZoomX>1</SelectedZoomX>
+            <SelectedZoomY>1</SelectedZoomY>
           </HorizontalItemStyle>
           <CoverFlowItemStyle>
             <BorderThickness>1,1,1,1</BorderThickness>
@@ -1501,6 +1501,8 @@
             <ImageVerticalAlignment>Top</ImageVerticalAlignment>
             <Width>135</Width>
             <Height>207</Height>
+            <SelectedZoomX>1</SelectedZoomX>
+            <SelectedZoomY>1</SelectedZoomY>
           </CoverFlowItemStyle>
         </Control>
       </GroupControls>

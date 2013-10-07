@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="PlayerWindow">
   <IsDefault>false</IsDefault>
-  <Width>1280</Width>
-  <Height>720</Height>
+  <Width>1024</Width>
+  <Height>768</Height>
   <Name>MovingPicturesPlaying</Name>
   <Id>24</Id>
   <BackgroundBrush />
@@ -11,8 +11,8 @@
     <Control x:type="Group">
       <Name>Playing Screen</Name>
       <Id>1</Id>
-      <Width>1280</Width>
-      <Height>720</Height>
+      <Width>1024</Width>
+      <Height>768</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -27,8 +27,9 @@
         <Control x:type="Image">
           <Name>Fanart</Name>
           <Id>2</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1366</Width>
+          <Height>768</Height>
+          <PosX>-171</PosX>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -41,8 +42,8 @@
         <Control x:type="Image">
           <Name>Overlay</Name>
           <Id>3</Id>
-          <Width>1280</Width>
-          <Height>720</Height>
+          <Width>1024</Width>
+          <Height>768</Height>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -59,7 +60,7 @@
         <Control x:type="Image">
           <Name>osd</Name>
           <Id>4</Id>
-          <Width>1280</Width>
+          <Width>1024</Width>
           <Height>320</Height>
           <PosY>405</PosY>
           <VisibleCondition />
@@ -345,7 +346,7 @@
         <Control x:type="Button">
           <Name>Play Menu</Name>
           <Id>21</Id>
-          <Width>1280</Width>
+          <Width>1024</Width>
           <Height>200</Height>
           <PosY>520</PosY>
           <VisibleCondition />
@@ -372,7 +373,7 @@
     <Control x:type="Group">
       <Name>Window Name</Name>
       <Id>23</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>156</Height>
       <VisibleCondition />
       <Animations />
@@ -424,7 +425,7 @@
           <Id>26</Id>
           <Width>426</Width>
           <Height>110</Height>
-          <PosX>855</PosX>
+          <PosX>599</PosX>
           <PosY>-10</PosY>
           <VisibleCondition />
           <Animations />
@@ -446,7 +447,7 @@
           <Id>27</Id>
           <Width>694</Width>
           <Height>70</Height>
-          <PosX>580</PosX>
+          <PosX>324</PosX>
           <PosY>80</PosY>
           <VisibleCondition>!IsPluginEnabled(WorldWeather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -469,7 +470,7 @@
           <Id>28</Id>
           <Width>694</Width>
           <Height>70</Height>
-          <PosX>580</PosX>
+          <PosX>324</PosX>
           <PosY>80</PosY>
           <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -492,7 +493,7 @@
     <Control x:type="Button">
       <Name>Play_Menu</Name>
       <Id>22</Id>
-      <Width>1280</Width>
+      <Width>1024</Width>
       <Height>130</Height>
       <VisibleCondition>!IsPlayer(None)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
