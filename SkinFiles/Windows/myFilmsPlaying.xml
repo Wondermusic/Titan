@@ -21,9 +21,8 @@
         <Control x:type="Image">
           <Name>Fanart</Name>
           <Id>2</Id>
-          <Width>1366</Width>
+          <Width>1024</Width>
           <Height>768</Height>
-          <PosX>-171</PosX>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -237,7 +236,7 @@
           <ScrollSeperator>   |   </ScrollSeperator>
         </Control>
         <Control x:type="Image">
-          <Name>SelectedThumb Moving Pictures</Name>
+          <Name>SelectedThumb</Name>
           <Id>15</Id>
           <Width>350</Width>
           <Height>350</Height>
@@ -249,11 +248,11 @@
           <ImageStyle>
             <BorderThickness>1,1,1,1</BorderThickness>
             <CornerRadius>10,10,10,10</CornerRadius>
-            <BackgroundBrush x:type="ImageBrush" Image="\defaultVideoBig.png" Stretch="Uniform" />
+            <BackgroundBrush />
             <BorderBrush />
           </ImageStyle>
           <Image>#Play.Current.Thumb</Image>
-          <ImageStretch>None</ImageStretch>
+          <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="Image">
@@ -375,7 +374,7 @@
           <LabelStyle StyleId="Titan50_White">
             <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#currentmodule</LabelText>
+          <LabelText>myFilms</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -385,7 +384,7 @@
           <Id>25</Id>
           <Width>426</Width>
           <Height>110</Height>
-          <PosX>599</PosX>
+          <PosX>855</PosX>
           <PosY>-10</PosY>
           <VisibleCondition />
           <Animations />
@@ -404,7 +403,7 @@
           <Id>26</Id>
           <Width>694</Width>
           <Height>70</Height>
-          <PosX>324</PosX>
+          <PosX>580</PosX>
           <PosY>60</PosY>
           <VisibleCondition>!IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -424,7 +423,7 @@
           <Id>27</Id>
           <Width>694</Width>
           <Height>70</Height>
-          <PosX>324</PosX>
+          <PosX>580</PosX>
           <PosY>60</PosY>
           <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>

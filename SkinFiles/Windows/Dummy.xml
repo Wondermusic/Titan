@@ -35,9 +35,9 @@
       </LabelStyle>
       <LabelText>@notavailable</LabelText>
       <LabelTextAlignment>Center</LabelTextAlignment>
-      <IsScrollingEnabled>false</IsScrollingEnabled>
-      <ScrollSpeed>2</ScrollSpeed>
-      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>15</ScrollSpeed>
+      <ScrollSeperator>     |     </ScrollSeperator>
     </Control>
     <Control x:type="Group">
       <Name>Window Name</Name>

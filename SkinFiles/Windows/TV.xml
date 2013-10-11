@@ -35,9 +35,9 @@
         <Control x:type="Image">
           <Name>Fanart</Name>
           <Id>10</Id>
-          <Width>1311</Width>
+          <Width>1049</Width>
           <Height>543</Height>
-          <PosX>-16</PosX>
+          <PosX>-15</PosX>
           <PosY>150</PosY>
           <VisibleCondition />
           <Animations />
@@ -70,9 +70,9 @@
         <Control x:type="List">
           <Name>NewList</Name>
           <Id>30</Id>
-          <Width>752</Width>
+          <Width>604</Width>
           <Height>452</Height>
-          <PosX>504</PosX>
+          <PosX>399</PosX>
           <PosY>192</PosY>
           <VisibleCondition />
           <Animations />

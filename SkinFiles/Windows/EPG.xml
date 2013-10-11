@@ -65,8 +65,9 @@
           </LabelStyle>
           <LabelText>@EPG Info</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
-          <ScrollSpeed>10</ScrollSpeed>
-          <ScrollSeperator>  |  </ScrollSeperator>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>15</ScrollSpeed>
+          <ScrollSeperator>      |      </ScrollSeperator>
         </Control>
       </GroupControls>
     </Control>
@@ -133,9 +134,9 @@
         <Control x:type="List">
           <Name>List</Name>
           <Id>13</Id>
-          <Width>565</Width>
+          <Width>455</Width>
           <Height>525</Height>
-          <PosX>674</PosX>
+          <PosX>538</PosX>
           <PosY>132</PosY>
           <VisibleCondition />
           <Animations />
@@ -159,7 +160,7 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>14</Id>
-          <Width>1210</Width>
+          <Width>955</Width>
           <Height>50</Height>
           <PosX>35</PosX>
           <PosY>655</PosY>
@@ -178,7 +179,7 @@
         <Control x:type="Label">
           <Name>Search Title</Name>
           <Id>15</Id>
-          <Width>548</Width>
+          <Width>410</Width>
           <Height>50</Height>
           <PosX>130</PosX>
           <PosY>350</PosY>
@@ -189,14 +190,14 @@
             <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>#TV.Search.Title</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>10</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
         <Control x:type="Label">
           <Name>Search Time</Name>
           <Id>16</Id>
-          <Width>548</Width>
+          <Width>410</Width>
           <Height>50</Height>
           <PosX>130</PosX>
           <PosY>400</PosY>
@@ -214,7 +215,7 @@
         <Control x:type="Label">
           <Name>Summary</Name>
           <Id>17</Id>
-          <Width>650</Width>
+          <Width>510</Width>
           <Height>190</Height>
           <PosX>29</PosX>
           <PosY>460</PosY>
@@ -228,12 +229,12 @@
           <IsVertical>true</IsVertical>
           <ScrollDelay>2</ScrollDelay>
           <ScrollSpeed>5</ScrollSpeed>
-          <ScrollSeperator>------------------------------------------------------------------------</ScrollSeperator>
+          <ScrollSeperator>--------------------------------------------------------</ScrollSeperator>
         </Control>
         <Control x:type="List">
           <Name>List</Name>
           <Id>18</Id>
-          <Width>500</Width>
+          <Width>492</Width>
           <Height>200</Height>
           <PosX>40</PosX>
           <PosY>150</PosY>

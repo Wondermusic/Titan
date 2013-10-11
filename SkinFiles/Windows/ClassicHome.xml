@@ -40,7 +40,7 @@
         <Control x:type="List">
           <Name>List</Name>
           <Id>9</Id>
-          <Width>1225</Width>
+          <Width>972</Width>
           <Height>118</Height>
           <VisibleCondition />
           <Animations />
@@ -81,61 +81,6 @@
             <SelectedZoomX>1</SelectedZoomX>
             <SelectedZoomY>1</SelectedZoomY>
           </CoverFlowItemStyle>
-        </Control>
-      </GroupControls>
-    </Control>
-    <Control x:type="Group">
-      <Name>RSS-Ticker</Name>
-      <Id>10</Id>
-      <Width>1225</Width>
-      <Height>65</Height>
-      <PosX>28</PosX>
-      <PosY>650</PosY>
-      <VisibleCondition>IsPluginEnabled(InfoService)</VisibleCondition>
-      <Animations />
-      <MediaPortalFocusControls />
-      <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
-        <CornerRadius>0,0,0,0</CornerRadius>
-      </GroupStyle>
-      <GroupControls>
-        <Control x:type="Image">
-          <Name>Image</Name>
-          <Id>11</Id>
-          <Width>1225</Width>
-          <Height>77</Height>
-          <PosX>1</PosX>
-          <PosY>-13</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-          </ImageStyle>
-          <Image>\count_bg.png</Image>
-          <ImageStretch>Fill</ImageStretch>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Label">
-          <Name>Ticker</Name>
-          <Id>12</Id>
-          <Width>1180</Width>
-          <Height>70</Height>
-          <PosX>13</PosX>
-          <PosY>19</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontSize>36</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FF000000" />
-          </LabelStyle>
-          <LabelText>#infoservice.feed.1.titles</LabelText>
-          <ScrollDelay>2</ScrollDelay>
-          <ScrollSpeed>8</ScrollSpeed>
-          <ScrollSeperator>  |  </ScrollSeperator>
         </Control>
       </GroupControls>
     </Control>
@@ -247,12 +192,66 @@
         </Control>
       </GroupControls>
     </Control>
+    <Control x:type="Group">
+      <Name>RSS-Ticker</Name>
+      <Id>33</Id>
+      <Width>984</Width>
+      <Height>65</Height>
+      <PosX>20</PosX>
+      <PosY>650</PosY>
+      <VisibleCondition>IsPluginEnabled(InfoService)</VisibleCondition>
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,0,0</CornerRadius>
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Image">
+          <Name>NewImage</Name>
+          <Id>34</Id>
+          <Width>984</Width>
+          <Height>77</Height>
+          <PosY>-13</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle>
+            <BorderThickness>0,0,0,0</BorderThickness>
+            <CornerRadius>0,0,0,0</CornerRadius>
+          </ImageStyle>
+          <Image>\count_bg.png</Image>
+          <ImageStretch>Uniform</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Label">
+          <Name>Ticker</Name>
+          <Id>35</Id>
+          <Width>964</Width>
+          <Height>70</Height>
+          <PosX>10</PosX>
+          <PosY>12</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle>
+            <FontType>Titan</FontType>
+            <FontSize>36</FontSize>
+            <FontBrush x:type="ColorBrush" Color="#FF000000" />
+          </LabelStyle>
+          <LabelText>#infoservice.feed.1.titles</LabelText>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>8</ScrollSpeed>
+          <ScrollSeperator>  |  </ScrollSeperator>
+        </Control>
+      </GroupControls>
+    </Control>
     <Control x:type="Button">
       <Name>MPD++ Remote Button</Name>
       <Id>13</Id>
-      <Width>640</Width>
+      <Width>512</Width>
       <Height>150</Height>
-      <PosX>640</PosX>
+      <PosX>512</PosX>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -275,7 +274,7 @@
     <Control x:type="Button">
       <Name>Menu</Name>
       <Id>25</Id>
-      <Width>640</Width>
+      <Width>512</Width>
       <Height>150</Height>
       <VisibleCondition />
       <Animations />
@@ -299,7 +298,7 @@
     </Control>
     <Control x:type="Group">
       <Name>Action Menu</Name>
-      <Id>18</Id>
+      <Id>27</Id>
       <Width>1024</Width>
       <Height>200</Height>
       <PosY>303</PosY>
@@ -317,8 +316,8 @@
       <GroupControls>
         <Control x:type="Button">
           <Name>Background</Name>
-          <Id>24</Id>
-          <Width>1260</Width>
+          <Id>28</Id>
+          <Width>1004</Width>
           <Height>100</Height>
           <PosX>10</PosX>
           <PosY>35</PosY>
@@ -330,7 +329,7 @@
             <CornerRadius>25,25,25,25</CornerRadius>
             <NoFocusBrush x:type="ColorBrush" Color="#C800B7FF" />
             <NoFocusBorderBrush x:type="ColorBrush" Color="#FF878B8C" />
-            <FocusBrush x:type="ColorBrush" Color="#C800B7FF" />
+            <FocusBrush x:type="ColorBrush" Color="#C700B7FF" />
             <FocusBorderBrush x:type="ColorBrush" Color="#FF918888" />
             <ShadeBrush />
             <GlossBrush />
@@ -340,12 +339,12 @@
           </ButtonStyle>
           <LabelText>NewButton</LabelText>
           <Actions>
-            <Action Action="ControlVisible" Param="18" />
+            <Action Action="ControlVisible" Param="63" />
           </Actions>
         </Control>
         <Control x:type="Button">
           <Name>Restart Button</Name>
-          <Id>20</Id>
+          <Id>29</Id>
           <Width>70</Width>
           <Height>70</Height>
           <PosX>660</PosX>
@@ -375,10 +374,10 @@
         </Control>
         <Control x:type="Button">
           <Name>Shutdown Button</Name>
-          <Id>21</Id>
+          <Id>30</Id>
           <Width>70</Width>
           <Height>70</Height>
-          <PosX>810</PosX>
+          <PosX>775</PosX>
           <PosY>50</PosY>
           <VisibleCondition />
           <Animations />
@@ -405,10 +404,10 @@
         </Control>
         <Control x:type="Button">
           <Name>Close Button</Name>
-          <Id>22</Id>
+          <Id>31</Id>
           <Width>70</Width>
           <Height>70</Height>
-          <PosX>960</PosX>
+          <PosX>890</PosX>
           <PosY>50</PosY>
           <VisibleCondition />
           <Animations />
@@ -435,7 +434,7 @@
         </Control>
         <Control x:type="Label">
           <Name>Info</Name>
-          <Id>23</Id>
+          <Id>32</Id>
           <Width>574</Width>
           <Height>70</Height>
           <PosX>50</PosX>

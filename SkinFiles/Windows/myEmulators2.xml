@@ -56,9 +56,9 @@
         <Control x:type="Image">
           <Name>Overlay</Name>
           <Id>5</Id>
-          <Width>1311</Width>
+          <Width>1049</Width>
           <Height>543</Height>
-          <PosX>-16</PosX>
+          <PosX>-15</PosX>
           <PosY>150</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -72,9 +72,9 @@
         <Control x:type="Image">
           <Name>Overlay CF+H</Name>
           <Id>40</Id>
-          <Width>1311</Width>
+          <Width>1049</Width>
           <Height>543</Height>
-          <PosX>-16</PosX>
+          <PosX>-15</PosX>
           <PosY>150</PosY>
           <VisibleCondition>!IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -110,9 +110,9 @@
         <Control x:type="List">
           <Name>List</Name>
           <Id>7</Id>
-          <Width>1233</Width>
+          <Width>990</Width>
           <Height>474</Height>
-          <PosX>25</PosX>
+          <PosX>15</PosX>
           <PosY>180</PosY>
           <VisibleCondition />
           <Animations />
@@ -136,7 +136,7 @@
         <Control x:type="Label">
           <Name>selecteditem</Name>
           <Id>8</Id>
-          <Width>760</Width>
+          <Width>500</Width>
           <Height>60</Height>
           <PosX>496</PosX>
           <PosY>650</PosY>
@@ -189,7 +189,12 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="VideoCover" />
+          <ImageStyle>
+            <BorderThickness>0,0,0,0</BorderThickness>
+            <CornerRadius>10,10,10,10</CornerRadius>
+            <BackgroundBrush />
+            <BorderBrush />
+          </ImageStyle>
           <Image>#Emulators2.CurrentItem.coverpath</Image>
           <ImageStretch>Uniform</ImageStretch>
           <ImageCornerRadius>10</ImageCornerRadius>
@@ -198,7 +203,7 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>31</Id>
-          <Width>840</Width>
+          <Width>646</Width>
           <Height>50</Height>
           <PosX>362</PosX>
           <PosY>380</PosY>
@@ -216,7 +221,7 @@
         <Control x:type="Label">
           <Name>Company</Name>
           <Id>32</Id>
-          <Width>840</Width>
+          <Width>646</Width>
           <Height>40</Height>
           <PosX>363</PosX>
           <PosY>424</PosY>
@@ -234,7 +239,7 @@
         <Control x:type="Label">
           <Name>Summary</Name>
           <Id>33</Id>
-          <Width>860</Width>
+          <Width>646</Width>
           <Height>118</Height>
           <PosX>363</PosX>
           <PosY>475</PosY>
@@ -247,13 +252,13 @@
           <LabelText>#Emulators2.CurrentItem.description</LabelText>
           <IsVertical>true</IsVertical>
           <ScrollDelay>2</ScrollDelay>
-          <ScrollSpeed>4</ScrollSpeed>
-          <ScrollSeperator>-----------------------------------------------------------------------------------------------</ScrollSeperator>
+          <ScrollSpeed>6</ScrollSpeed>
+          <ScrollSeperator>-----------------------------------------------------------------------</ScrollSeperator>
         </Control>
         <Control x:type="Label">
           <Name>Year Label</Name>
           <Id>34</Id>
-          <Width>388</Width>
+          <Width>227</Width>
           <Height>35</Height>
           <PosX>363</PosX>
           <PosY>598</PosY>
@@ -271,9 +276,9 @@
         <Control x:type="Label">
           <Name>Year</Name>
           <Id>35</Id>
-          <Width>388</Width>
+          <Width>405</Width>
           <Height>35</Height>
-          <PosX>485</PosX>
+          <PosX>600</PosX>
           <PosY>598</PosY>
           <VisibleCondition />
           <Animations />
@@ -289,7 +294,7 @@
         <Control x:type="Label">
           <Name>Genre Label</Name>
           <Id>36</Id>
-          <Width>115</Width>
+          <Width>227</Width>
           <Height>35</Height>
           <PosX>363</PosX>
           <PosY>630</PosY>
@@ -307,9 +312,9 @@
         <Control x:type="Label">
           <Name>Genre</Name>
           <Id>37</Id>
-          <Width>388</Width>
+          <Width>405</Width>
           <Height>35</Height>
-          <PosX>485</PosX>
+          <PosX>600</PosX>
           <PosY>630</PosY>
           <VisibleCondition />
           <Animations />
@@ -325,7 +330,7 @@
         <Control x:type="Label">
           <Name>Last Played Label</Name>
           <Id>38</Id>
-          <Width>388</Width>
+          <Width>227</Width>
           <Height>35</Height>
           <PosX>363</PosX>
           <PosY>662</PosY>
@@ -343,9 +348,9 @@
         <Control x:type="Label">
           <Name>Last Played</Name>
           <Id>39</Id>
-          <Width>388</Width>
+          <Width>405</Width>
           <Height>35</Height>
-          <PosX>485</PosX>
+          <PosX>600</PosX>
           <PosY>662</PosY>
           <VisibleCondition />
           <Animations />

@@ -71,11 +71,12 @@
       </MediaPortalTags>
     </XmlProperty>
     <XmlProperty>
-      <SkinTag>#Anime3.Episode.Image</SkinTag>
+      <SkinTag>#MPD2.Thumb.Anime</SkinTag>
       <PropertyType>Image</PropertyType>
       <DesignerValue>New....</DesignerValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#Anime3.Episode.Image" />
+        <XmlMediaPortalTag Tag="#Anime3.GroupSeriesPoster" />
       </MediaPortalTags>
     </XmlProperty>
     <XmlProperty>
@@ -1964,6 +1965,14 @@
       <DesignerValue>standard MP3</DesignerValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#RadioTime.Selected.Format" />
+      </MediaPortalTags>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#myfilms.db.certification.value</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#myfilms.db.certification.value" />
       </MediaPortalTags>
     </XmlProperty>
   </Properties>

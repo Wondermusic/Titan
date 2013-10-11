@@ -36,9 +36,9 @@
         <Control x:type="Image">
           <Name>List Background</Name>
           <Id>28</Id>
-          <Width>1311</Width>
+          <Width>1049</Width>
           <Height>543</Height>
-          <PosX>-16</PosX>
+          <PosX>-15</PosX>
           <PosY>150</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <Animations />
@@ -51,9 +51,9 @@
         <Control x:type="Image">
           <Name>List Background CF+H</Name>
           <Id>49</Id>
-          <Width>1311</Width>
+          <Width>1049</Width>
           <Height>543</Height>
-          <PosX>-16</PosX>
+          <PosX>-15</PosX>
           <PosY>150</PosY>
           <VisibleCondition>!IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -85,7 +85,7 @@
         <Control x:type="Label">
           <Name>selcteditem</Name>
           <Id>30</Id>
-          <Width>760</Width>
+          <Width>500</Width>
           <Height>60</Height>
           <PosX>496</PosX>
           <PosY>650</PosY>
@@ -103,9 +103,9 @@
         <Control x:type="List">
           <Name>List</Name>
           <Id>32</Id>
-          <Width>1210</Width>
+          <Width>990</Width>
           <Height>469</Height>
-          <PosX>25</PosX>
+          <PosX>17</PosX>
           <PosY>180</PosY>
           <VisibleCondition />
           <Animations />
@@ -129,7 +129,7 @@
         <Control x:type="List">
           <Name>Button Group</Name>
           <Id>51</Id>
-          <Width>417</Width>
+          <Width>397</Width>
           <Height>437</Height>
           <PosX>25</PosX>
           <PosY>193</PosY>

@@ -50,8 +50,9 @@
         <Control x:type="Image">
           <Name>Overlay BG</Name>
           <Id>36</Id>
-          <Width>1024</Width>
+          <Width>1049</Width>
           <Height>600</Height>
+          <PosX>-15</PosX>
           <PosY>100</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -65,8 +66,9 @@
         <Control x:type="Image">
           <Name>Overlay BG CF+H</Name>
           <Id>59</Id>
-          <Width>1024</Width>
+          <Width>1049</Width>
           <Height>600</Height>
+          <PosX>-15</PosX>
           <PosY>100</PosY>
           <VisibleCondition>!IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -80,20 +82,15 @@
         <Control x:type="Image">
           <Name>Cover</Name>
           <Id>37</Id>
-          <Width>250</Width>
-          <Height>352</Height>
-          <PosX>55</PosX>
-          <PosY>160</PosY>
+          <Width>200</Width>
+          <Height>300</Height>
+          <PosX>25</PosX>
+          <PosY>145</PosY>
           <VisibleCondition>IsControlVisible(36)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>10,10,10,10</CornerRadius>
-            <BackgroundBrush />
-            <BorderBrush />
-          </ImageStyle>
+          <ImageStyle StyleId="Logo_Image" />
           <Image>#MPD2.Thumb.TVSeries</Image>
           <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -101,10 +98,10 @@
         <Control x:type="Image">
           <Name>Cover</Name>
           <Id>61</Id>
-          <Width>250</Width>
-          <Height>163</Height>
-          <PosX>55</PosX>
-          <PosY>360</PosY>
+          <Width>200</Width>
+          <Height>125</Height>
+          <PosX>25</PosX>
+          <PosY>322</PosY>
           <VisibleCondition>IsControlVisible(36)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -122,9 +119,9 @@
         <Control x:type="List">
           <Name>List</Name>
           <Id>38</Id>
-          <Width>1210</Width>
+          <Width>990</Width>
           <Height>518</Height>
-          <PosX>38</PosX>
+          <PosX>16</PosX>
           <PosY>137</PosY>
           <VisibleCondition />
           <Animations />
@@ -148,7 +145,7 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>39</Id>
-          <Width>760</Width>
+          <Width>500</Width>
           <Height>60</Height>
           <PosX>496</PosX>
           <PosY>655</PosY>
@@ -184,10 +181,10 @@
         <Control x:type="Label">
           <Name>Rating</Name>
           <Id>41</Id>
-          <Width>538</Width>
+          <Width>275</Width>
           <Height>40</Height>
-          <PosX>55</PosX>
-          <PosY>580</PosY>
+          <PosX>237</PosX>
+          <PosY>152</PosY>
           <VisibleCondition>IsControlVisible(36)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -203,10 +200,10 @@
         <Control x:type="Label">
           <Name>Summary</Name>
           <Id>42</Id>
-          <Width>365</Width>
-          <Height>406</Height>
-          <PosX>311</PosX>
-          <PosY>160</PosY>
+          <Width>487</Width>
+          <Height>183</Height>
+          <PosX>25</PosX>
+          <PosY>466</PosY>
           <VisibleCondition>IsControlVisible(36)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -216,16 +213,16 @@
           </LabelStyle>
           <LabelText>#TVSeries.Description</LabelText>
           <IsVertical>true</IsVertical>
-          <ScrollSpeed>4</ScrollSpeed>
-          <ScrollSeperator>----------------------------------------</ScrollSeperator>
+          <ScrollSpeed>5</ScrollSpeed>
+          <ScrollSeperator>------------------------------------------------------</ScrollSeperator>
         </Control>
         <Control x:type="Image">
           <Name>Star Rating</Name>
           <Id>43</Id>
           <Width>240</Width>
           <Height>26</Height>
-          <PosX>55</PosX>
-          <PosY>547</PosY>
+          <PosX>237</PosX>
+          <PosY>197</PosY>
           <VisibleCondition>IsControlVisible(36)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />

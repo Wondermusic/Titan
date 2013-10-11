@@ -56,8 +56,9 @@
         <Control x:type="Image">
           <Name>List Background</Name>
           <Id>36</Id>
-          <Width>1024</Width>
+          <Width>1049</Width>
           <Height>600</Height>
+          <PosX>-15</PosX>
           <PosY>100</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -71,8 +72,9 @@
         <Control x:type="Image">
           <Name>List Background CF+H</Name>
           <Id>59</Id>
-          <Width>1024</Width>
+          <Width>1049</Width>
           <Height>600</Height>
+          <PosX>-15</PosX>
           <PosY>100</PosY>
           <VisibleCondition>!IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -86,7 +88,7 @@
         <Control x:type="List">
           <Name>List</Name>
           <Id>37</Id>
-          <Width>1210</Width>
+          <Width>990</Width>
           <Height>518</Height>
           <PosX>38</PosX>
           <PosY>137</PosY>
@@ -112,7 +114,7 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>38</Id>
-          <Width>760</Width>
+          <Width>500</Width>
           <Height>60</Height>
           <PosX>496</PosX>
           <PosY>655</PosY>

@@ -348,74 +348,6 @@
       <SelectedZoomX>1</SelectedZoomX>
       <SelectedZoomY>1</SelectedZoomY>
     </ControlStyle>
-    <ControlStyle x:type="ListItemStyle" StyleId="MusicList">
-      <NoFocusBrush />
-      <NoFocusBorderBrush />
-      <FocusBrush x:type="GradientBrush">
-        <Angle>Horizontal</Angle>
-        <GradientStops>
-          <GradientStop Color="#FF00B7FF" Offset="0" />
-          <GradientStop Color="#63000000" Offset="0.021" />
-          <GradientStop Color="#6400B7FF" Offset="0.043" />
-          <GradientStop Color="#6400B7FF" Offset="0.065" />
-          <GradientStop Color="#6400B7FF" Offset="0.086" />
-          <GradientStop Color="#8400B7FF" Offset="0.209" />
-          <GradientStop Color="#1A00B7FF" Offset="1" />
-        </GradientStops>
-      </FocusBrush>
-      <FocusBorderBrush />
-      <ShadeBrush />
-      <FontType>Titan</FontType>
-      <FontSize>35</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FF00B7FF" />
-      <LabelMargin>30,0,0,0</LabelMargin>
-      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
-      <ImageMargin>3,3,3,3</ImageMargin>
-      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
-      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-      <ImageCornerRadius>4</ImageCornerRadius>
-      <Width>745</Width>
-      <Height>50</Height>
-      <ItemMargin>1,1,1,1</ItemMargin>
-      <HorizontalAlignment>Right</HorizontalAlignment>
-      <SelectedZoomX>1</SelectedZoomX>
-      <SelectedZoomY>1</SelectedZoomY>
-    </ControlStyle>
-    <ControlStyle x:type="ListItemStyle" StyleId="VideoList">
-      <NoFocusBrush />
-      <NoFocusBorderBrush />
-      <FocusBrush x:type="GradientBrush">
-        <Angle>Horizontal</Angle>
-        <GradientStops>
-          <GradientStop Color="#FF00B7FF" Offset="0" />
-          <GradientStop Color="#63000000" Offset="0.021" />
-          <GradientStop Color="#6400B7FF" Offset="0.043" />
-          <GradientStop Color="#6400B7FF" Offset="0.065" />
-          <GradientStop Color="#6400B7FF" Offset="0.086" />
-          <GradientStop Color="#8400B7FF" Offset="0.209" />
-          <GradientStop Color="#1A00B7FF" Offset="1" />
-        </GradientStops>
-      </FocusBrush>
-      <FocusBorderBrush />
-      <ShadeBrush />
-      <FontType>Titan</FontType>
-      <FontSize>35</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FF00B7FF" />
-      <LabelMargin>10,0,0,0</LabelMargin>
-      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
-      <ImageMargin>3,3,3,3</ImageMargin>
-      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
-      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-      <ImageCornerRadius>4</ImageCornerRadius>
-      <Width>500</Width>
-      <Height>50</Height>
-      <ItemMargin>1,1,1,1</ItemMargin>
-      <HorizontalAlignment>Right</HorizontalAlignment>
-      <SelectedZoomX>1</SelectedZoomX>
-      <SelectedZoomY>1</SelectedZoomY>
-    </ControlStyle>
     <ControlStyle x:type="ListItemStyle" StyleId="VideoList Horizontal">
       <BorderThickness>1,1,1,1</BorderThickness>
       <CornerRadius>12,12,12,12</CornerRadius>
@@ -458,50 +390,6 @@
       <ImageCornerRadius>10</ImageCornerRadius>
       <Width>216</Width>
       <Height>329</Height>
-      <SelectedZoomX>1</SelectedZoomX>
-      <SelectedZoomY>1</SelectedZoomY>
-    </ControlStyle>
-    <ControlStyle x:type="ListItemStyle" StyleId="MusicList Horizontal">
-      <BorderThickness>1,1,1,1</BorderThickness>
-      <CornerRadius>12,12,12,12</CornerRadius>
-      <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
-      <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
-      <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
-      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-      <FontSize>20</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-      <LabelMargin>3,3,3,3</LabelMargin>
-      <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-      <EnableImage>true</EnableImage>
-      <ImageMargin>3,5,3,33</ImageMargin>
-      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-      <ImageCornerRadius>10</ImageCornerRadius>
-      <Width>228</Width>
-      <Height>369</Height>
-      <ItemMargin>1,1,1,1</ItemMargin>
-      <SelectedZoomX>1</SelectedZoomX>
-      <SelectedZoomY>1</SelectedZoomY>
-    </ControlStyle>
-    <ControlStyle x:type="ListItemStyle" StyleId="MusicList CoverFlow">
-      <BorderThickness>1,1,1,1</BorderThickness>
-      <CornerRadius>10,10,10,10</CornerRadius>
-      <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
-      <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
-      <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
-      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-      <FontType>Titan</FontType>
-      <FontSize>20</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-      <LabelMargin>3,3,3,3</LabelMargin>
-      <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-      <EnableImage>true</EnableImage>
-      <ImageMargin>3,3,3,33</ImageMargin>
-      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-      <ImageCornerRadius>10</ImageCornerRadius>
-      <Width>219</Width>
-      <Height>300</Height>
       <SelectedZoomX>1</SelectedZoomX>
       <SelectedZoomY>1</SelectedZoomY>
     </ControlStyle>
@@ -629,6 +517,118 @@
           <GradientStop Color="#FFDC143C" Offset="1" />
         </GradientStops>
       </BarBackgroundBrush>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="VideoList">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Horizontal</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF00B7FF" Offset="0" />
+          <GradientStop Color="#63000000" Offset="0.021" />
+          <GradientStop Color="#6400B7FF" Offset="0.043" />
+          <GradientStop Color="#6400B7FF" Offset="0.065" />
+          <GradientStop Color="#6400B7FF" Offset="0.086" />
+          <GradientStop Color="#8400B7FF" Offset="0.209" />
+          <GradientStop Color="#1A00B7FF" Offset="1" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <ShadeBrush />
+      <FontType>Titan</FontType>
+      <FontSize>35</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF00B7FF" />
+      <LabelMargin>10,0,0,0</LabelMargin>
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>4</ImageCornerRadius>
+      <Width>455</Width>
+      <Height>50</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <HorizontalAlignment>Right</HorizontalAlignment>
+      <SelectedZoomX>1</SelectedZoomX>
+      <SelectedZoomY>1</SelectedZoomY>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="MusicList">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Horizontal</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF00B7FF" Offset="0" />
+          <GradientStop Color="#63000000" Offset="0.021" />
+          <GradientStop Color="#6400B7FF" Offset="0.043" />
+          <GradientStop Color="#6400B7FF" Offset="0.065" />
+          <GradientStop Color="#6400B7FF" Offset="0.086" />
+          <GradientStop Color="#8400B7FF" Offset="0.209" />
+          <GradientStop Color="#1A00B7FF" Offset="1" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <ShadeBrush />
+      <FontType>Titan</FontType>
+      <FontSize>35</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF00B7FF" />
+      <LabelMargin>30,0,0,0</LabelMargin>
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>4</ImageCornerRadius>
+      <Width>575</Width>
+      <Height>50</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <HorizontalAlignment>Right</HorizontalAlignment>
+      <SelectedZoomX>1</SelectedZoomX>
+      <SelectedZoomY>1</SelectedZoomY>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="MusicList Horizontal">
+      <BorderThickness>1,1,1,1</BorderThickness>
+      <CornerRadius>12,12,12,12</CornerRadius>
+      <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+      <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontSize>20</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+      <LabelMargin>3,3,3,3</LabelMargin>
+      <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+      <EnableImage>true</EnableImage>
+      <ImageMargin>3,5,3,33</ImageMargin>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>10</ImageCornerRadius>
+      <Width>226</Width>
+      <Height>360</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <SelectedZoomX>1</SelectedZoomX>
+      <SelectedZoomY>1</SelectedZoomY>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="MusicList CoverFlow">
+      <BorderThickness>1,1,1,1</BorderThickness>
+      <CornerRadius>10,10,10,10</CornerRadius>
+      <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+      <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontType>Titan</FontType>
+      <FontSize>20</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+      <LabelMargin>3,3,3,3</LabelMargin>
+      <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+      <EnableImage>true</EnableImage>
+      <ImageMargin>3,3,3,33</ImageMargin>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>10</ImageCornerRadius>
+      <Width>215</Width>
+      <Height>300</Height>
+      <SelectedZoomX>1</SelectedZoomX>
+      <SelectedZoomY>1</SelectedZoomY>
     </ControlStyle>
   </ControlStyles>
 </StyleCollection>

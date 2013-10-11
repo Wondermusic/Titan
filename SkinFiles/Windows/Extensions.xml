@@ -40,7 +40,7 @@
         <Control x:type="Image">
           <Name>Background</Name>
           <Id>41</Id>
-          <Width>1311</Width>
+          <Width>1050</Width>
           <Height>543</Height>
           <PosX>-4</PosX>
           <VisibleCondition />
@@ -98,7 +98,7 @@
         <Control x:type="List">
           <Name>List</Name>
           <Id>39</Id>
-          <Width>1233</Width>
+          <Width>990</Width>
           <Height>474</Height>
           <PosX>25</PosX>
           <PosY>34</PosY>
@@ -216,9 +216,9 @@
         <Control x:type="Image">
           <Name>Background</Name>
           <Id>40</Id>
-          <Width>1311</Width>
+          <Width>1050</Width>
           <Height>543</Height>
-          <PosX>-16</PosX>
+          <PosX>-4</PosX>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -235,7 +235,7 @@
         <Control x:type="Label">
           <Name>Name</Name>
           <Id>25</Id>
-          <Width>1220</Width>
+          <Width>972</Width>
           <Height>50</Height>
           <PosX>42</PosX>
           <PosY>503</PosY>
@@ -322,16 +322,13 @@
           <Id>29</Id>
           <Width>270</Width>
           <Height>50</Height>
-          <PosX>508</PosX>
+          <PosX>360</PosX>
           <PosY>39</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>40</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FF656FD3" />
+          <LabelStyle StyleId="Titan 40 Blue">
+            <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>@Version+:</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -341,18 +338,15 @@
         <Control x:type="Label">
           <Name>Version</Name>
           <Id>30</Id>
-          <Width>461</Width>
+          <Width>375</Width>
           <Height>50</Height>
-          <PosX>799</PosX>
+          <PosX>640</PosX>
           <PosY>39</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>40</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan40 White">
+            <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>#MPE.Selected.Version</LabelText>
           <ScrollDelay>2</ScrollDelay>
@@ -364,16 +358,13 @@
           <Id>31</Id>
           <Width>270</Width>
           <Height>50</Height>
-          <PosX>508</PosX>
+          <PosX>360</PosX>
           <PosY>79</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>40</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FF656FD3" />
+          <LabelStyle StyleId="Titan 40 Blue">
+            <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>@Author+:</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -383,18 +374,15 @@
         <Control x:type="Label">
           <Name>Author</Name>
           <Id>32</Id>
-          <Width>461</Width>
+          <Width>375</Width>
           <Height>50</Height>
-          <PosX>799</PosX>
+          <PosX>640</PosX>
           <PosY>79</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>40</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan40 White">
+            <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>#MPE.Selected.Author</LabelText>
           <ScrollDelay>2</ScrollDelay>
@@ -406,16 +394,13 @@
           <Id>33</Id>
           <Width>270</Width>
           <Height>50</Height>
-          <PosX>508</PosX>
+          <PosX>360</PosX>
           <PosY>119</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>40</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FF656FD3" />
+          <LabelStyle StyleId="Titan 40 Blue">
+            <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>@Release Date+:</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -425,18 +410,15 @@
         <Control x:type="Label">
           <Name>Release</Name>
           <Id>34</Id>
-          <Width>461</Width>
+          <Width>375</Width>
           <Height>50</Height>
-          <PosX>799</PosX>
+          <PosX>640</PosX>
           <PosY>119</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>40</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan40 White">
+            <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>#MPE.Selected.ReleaseDate</LabelText>
           <ScrollDelay>2</ScrollDelay>
@@ -448,16 +430,13 @@
           <Id>35</Id>
           <Width>270</Width>
           <Height>50</Height>
-          <PosX>508</PosX>
+          <PosX>360</PosX>
           <PosY>159</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>40</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FF656FD3" />
+          <LabelStyle StyleId="Titan 40 Blue">
+            <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>@ID+:</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -467,18 +446,15 @@
         <Control x:type="Label">
           <Name>ID</Name>
           <Id>36</Id>
-          <Width>461</Width>
+          <Width>375</Width>
           <Height>50</Height>
-          <PosX>799</PosX>
+          <PosX>640</PosX>
           <PosY>159</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontType>Titan</FontType>
-            <FontWeight>Black</FontWeight>
-            <FontSize>40</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          <LabelStyle StyleId="Titan40 White">
+            <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>#MPE.Selected.Id</LabelText>
           <ScrollDelay>2</ScrollDelay>
@@ -504,11 +480,11 @@
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="Label">
-          <Name>ID Label</Name>
+          <Name>Description</Name>
           <Id>46</Id>
-          <Width>758</Width>
+          <Width>650</Width>
           <Height>286</Height>
-          <PosX>508</PosX>
+          <PosX>360</PosX>
           <PosY>215</PosY>
           <VisibleCondition />
           <Animations />

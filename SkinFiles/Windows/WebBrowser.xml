@@ -27,7 +27,7 @@
       <Id>9</Id>
       <Width>1024</Width>
       <Height>50</Height>
-      <PosY>340</PosY>
+      <PosY>600</PosY>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -44,7 +44,7 @@
       <Id>10</Id>
       <Width>1024</Width>
       <Height>50</Height>
-      <PosY>400</PosY>
+      <PosY>680</PosY>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />

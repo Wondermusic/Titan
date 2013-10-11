@@ -48,8 +48,9 @@
             <Control x:type="Image">
               <Name>Overlay BG</Name>
               <Id>73</Id>
-              <Width>1024</Width>
+              <Width>1049</Width>
               <Height>600</Height>
+              <PosX>-15</PosX>
               <PosY>100</PosY>
               <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -63,8 +64,9 @@
             <Control x:type="Image">
               <Name>Overlay BG CF+H</Name>
               <Id>101</Id>
-              <Width>1024</Width>
+              <Width>1049</Width>
               <Height>600</Height>
+              <PosX>-15</PosX>
               <PosY>100</PosY>
               <VisibleCondition>!IsMediaPortalListLayout(Vertical)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -99,10 +101,10 @@
             <Control x:type="List">
               <Name>List</Name>
               <Id>75</Id>
-              <Width>1210</Width>
+              <Width>990</Width>
               <Height>518</Height>
-              <PosX>38</PosX>
-              <PosY>153</PosY>
+              <PosX>16</PosX>
+              <PosY>137</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -125,7 +127,7 @@
             <Control x:type="Label">
               <Name>Title</Name>
               <Id>76</Id>
-              <Width>760</Width>
+              <Width>500</Width>
               <Height>60</Height>
               <PosX>496</PosX>
               <PosY>655</PosY>
@@ -408,8 +410,9 @@
             <Control x:type="Image">
               <Name>Overlay BG</Name>
               <Id>40</Id>
-              <Width>1024</Width>
+              <Width>1049</Width>
               <Height>600</Height>
+              <PosX>-15</PosX>
               <PosY>100</PosY>
               <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -423,8 +426,9 @@
             <Control x:type="Image">
               <Name>Overlay BG CF+H</Name>
               <Id>34</Id>
-              <Width>1024</Width>
+              <Width>1049</Width>
               <Height>600</Height>
+              <PosX>-15</PosX>
               <PosY>100</PosY>
               <VisibleCondition>!IsMediaPortalListLayout(Vertical)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -454,10 +458,10 @@
             <Control x:type="List">
               <Name>List</Name>
               <Id>42</Id>
-              <Width>1210</Width>
+              <Width>990</Width>
               <Height>518</Height>
-              <PosX>38</PosX>
-              <PosY>153</PosY>
+              <PosX>16</PosX>
+              <PosY>137</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -480,7 +484,7 @@
             <Control x:type="Label">
               <Name>Title</Name>
               <Id>43</Id>
-              <Width>760</Width>
+              <Width>500</Width>
               <Height>60</Height>
               <PosX>496</PosX>
               <PosY>655</PosY>
@@ -516,7 +520,7 @@
             <Control x:type="Label">
               <Name>Recorded Time/Date</Name>
               <Id>45</Id>
-              <Width>610</Width>
+              <Width>450</Width>
               <Height>50</Height>
               <PosX>55</PosX>
               <PosY>433</PosY>
@@ -535,7 +539,7 @@
             <Control x:type="Label">
               <Name>Summary</Name>
               <Id>46</Id>
-              <Width>610</Width>
+              <Width>450</Width>
               <Height>164</Height>
               <PosX>55</PosX>
               <PosY>484</PosY>
@@ -549,7 +553,7 @@
               <LabelText>#TV.RecordedTV.Description</LabelText>
               <IsVertical>true</IsVertical>
               <ScrollDelay>2</ScrollDelay>
-              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSpeed>5</ScrollSpeed>
               <ScrollSeperator>---------------------------------------------</ScrollSeperator>
             </Control>
           </GroupControls>

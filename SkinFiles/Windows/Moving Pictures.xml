@@ -214,12 +214,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-            <BackgroundBrush />
-            <BorderBrush />
-          </ImageStyle>
+          <ImageStyle StyleId="Logo_Image" />
           <Image>#MPD2.fanart.MovingPictures</Image>
           <ImageStretch>Fill</ImageStretch>
           <CoverImage x:type="ImageBrush" Image="\fanart_overlay.png" Stretch="Fill" />
@@ -228,8 +223,9 @@
         <Control x:type="Image">
           <Name>Movielist BG</Name>
           <Id>128</Id>
-          <Width>1024</Width>
+          <Width>1049</Width>
           <Height>600</Height>
+          <PosX>-15</PosX>
           <PosY>116</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -248,8 +244,9 @@
         <Control x:type="Image">
           <Name>Movielist BG CF+H</Name>
           <Id>231</Id>
-          <Width>1024</Width>
+          <Width>1049</Width>
           <Height>600</Height>
+          <PosX>-15</PosX>
           <PosY>116</PosY>
           <VisibleCondition>!IsControlVisible(128)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -270,8 +267,8 @@
           <Id>130</Id>
           <Width>250</Width>
           <Height>352</Height>
-          <PosX>55</PosX>
-          <PosY>166</PosY>
+          <PosX>20</PosX>
+          <PosY>156</PosY>
           <VisibleCondition>IsControlVisible(128)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -305,9 +302,9 @@
         <Control x:type="List">
           <Name>List</Name>
           <Id>132</Id>
-          <Width>1210</Width>
+          <Width>990</Width>
           <Height>518</Height>
-          <PosX>38</PosX>
+          <PosX>15</PosX>
           <PosY>153</PosY>
           <VisibleCondition />
           <Animations />
@@ -331,7 +328,7 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>133</Id>
-          <Width>760</Width>
+          <Width>500</Width>
           <Height>60</Height>
           <PosX>496</PosX>
           <PosY>670</PosY>
@@ -343,7 +340,7 @@
           </LabelStyle>
           <LabelText>#MovingPictures.SelectedMovie.title</LabelText>
           <ScrollDelay>2</ScrollDelay>
-          <ScrollSpeed>4</ScrollSpeed>
+          <ScrollSpeed>8</ScrollSpeed>
           <ScrollSeperator>  |  </ScrollSeperator>
         </Control>
         <Control x:type="Label">
@@ -369,8 +366,8 @@
           <Id>135</Id>
           <Width>200</Width>
           <Height>22</Height>
-          <PosX>320</PosX>
-          <PosY>171</PosY>
+          <PosX>282</PosX>
+          <PosY>164</PosY>
           <VisibleCondition>IsControlVisible(128)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -390,8 +387,8 @@
           <Id>136</Id>
           <Width>140</Width>
           <Height>35</Height>
-          <PosX>530</PosX>
-          <PosY>169</PosY>
+          <PosX>282</PosX>
+          <PosY>191</PosY>
           <VisibleCondition>IsControlVisible(128)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -407,10 +404,10 @@
         <Control x:type="Label">
           <Name>Summary</Name>
           <Id>137</Id>
-          <Width>358</Width>
-          <Height>434</Height>
-          <PosX>320</PosX>
-          <PosY>215</PosY>
+          <Width>508</Width>
+          <Height>156</Height>
+          <PosX>21</PosX>
+          <PosY>512</PosY>
           <VisibleCondition>IsControlVisible(128)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -421,16 +418,16 @@
           <LabelText>#MovingPictures.SelectedMovie.summary</LabelText>
           <IsVertical>true</IsVertical>
           <ScrollDelay>2</ScrollDelay>
-          <ScrollSpeed>4</ScrollSpeed>
-          <ScrollSeperator>------------------------------------</ScrollSeperator>
+          <ScrollSpeed>6</ScrollSpeed>
+          <ScrollSeperator>---------------------------------------------------------------</ScrollSeperator>
         </Control>
         <Control x:type="Image">
           <Name>Video Codec</Name>
           <Id>138</Id>
           <Width>66</Width>
           <Height>45</Height>
-          <PosX>70</PosX>
-          <PosY>521</PosY>
+          <PosX>280</PosX>
+          <PosY>250</PosY>
           <VisibleCondition>IsControlVisible(128)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -445,8 +442,8 @@
           <Id>139</Id>
           <Width>66</Width>
           <Height>45</Height>
-          <PosX>140</PosX>
-          <PosY>521</PosY>
+          <PosX>360</PosX>
+          <PosY>250</PosY>
           <VisibleCondition>IsControlVisible(128)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -461,8 +458,8 @@
           <Id>140</Id>
           <Width>66</Width>
           <Height>45</Height>
-          <PosX>210</PosX>
-          <PosY>521</PosY>
+          <PosX>440</PosX>
+          <PosY>250</PosY>
           <VisibleCondition>IsControlVisible(128)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -477,8 +474,8 @@
           <Id>141</Id>
           <Width>66</Width>
           <Height>45</Height>
-          <PosX>70</PosX>
-          <PosY>581</PosY>
+          <PosX>280</PosX>
+          <PosY>310</PosY>
           <VisibleCondition>IsControlVisible(128)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -493,8 +490,8 @@
           <Id>142</Id>
           <Width>66</Width>
           <Height>45</Height>
-          <PosX>140</PosX>
-          <PosY>581</PosY>
+          <PosX>360</PosX>
+          <PosY>310</PosY>
           <VisibleCondition>IsControlVisible(128)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -509,8 +506,8 @@
           <Id>143</Id>
           <Width>66</Width>
           <Height>45</Height>
-          <PosX>210</PosX>
-          <PosY>581</PosY>
+          <PosX>440</PosX>
+          <PosY>310</PosY>
           <VisibleCondition>IsControlVisible(128)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -557,8 +554,9 @@
         <Control x:type="Image">
           <Name>Movielist BG</Name>
           <Id>146</Id>
-          <Width>1024</Width>
+          <Width>1049</Width>
           <Height>600</Height>
+          <PosX>-15</PosX>
           <PosY>100</PosY>
           <VisibleCondition />
           <Animations />
@@ -611,7 +609,7 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>149</Id>
-          <Width>931</Width>
+          <Width>680</Width>
           <Height>70</Height>
           <PosX>320</PosX>
           <PosY>143</PosY>
@@ -629,7 +627,7 @@
         <Control x:type="Label">
           <Name>Genres</Name>
           <Id>150</Id>
-          <Width>931</Width>
+          <Width>680</Width>
           <Height>50</Height>
           <PosX>320</PosX>
           <PosY>215</PosY>
@@ -660,7 +658,7 @@
         <Control x:type="Label">
           <Name>StarRating Label</Name>
           <Id>152</Id>
-          <Width>600</Width>
+          <Width>450</Width>
           <Height>45</Height>
           <PosX>549</PosX>
           <PosY>263</PosY>
@@ -678,7 +676,7 @@
         <Control x:type="Label">
           <Name>Summary</Name>
           <Id>153</Id>
-          <Width>931</Width>
+          <Width>680</Width>
           <Height>186</Height>
           <PosX>320</PosX>
           <PosY>465</PosY>
@@ -691,13 +689,13 @@
           <LabelText>#MovingPictures.SelectedMovie.summary</LabelText>
           <IsVertical>true</IsVertical>
           <ScrollDelay>2</ScrollDelay>
-          <ScrollSpeed>4</ScrollSpeed>
-          <ScrollSeperator>-----------------------------------------------------------------------</ScrollSeperator>
+          <ScrollSpeed>6</ScrollSpeed>
+          <ScrollSeperator>-------------------------------------------------------------------------------------</ScrollSeperator>
         </Control>
         <Control x:type="Label">
           <Name>Director Label</Name>
           <Id>154</Id>
-          <Width>388</Width>
+          <Width>275</Width>
           <Height>36</Height>
           <PosX>320</PosX>
           <PosY>306</PosY>
@@ -715,9 +713,9 @@
         <Control x:type="Label">
           <Name>Director</Name>
           <Id>155</Id>
-          <Width>545</Width>
+          <Width>400</Width>
           <Height>36</Height>
-          <PosX>706</PosX>
+          <PosX>600</PosX>
           <PosY>306</PosY>
           <VisibleCondition />
           <Animations />
@@ -731,7 +729,7 @@
         <Control x:type="Label">
           <Name>Writer Label</Name>
           <Id>156</Id>
-          <Width>388</Width>
+          <Width>275</Width>
           <Height>36</Height>
           <PosX>320</PosX>
           <PosY>335</PosY>
@@ -749,9 +747,9 @@
         <Control x:type="Label">
           <Name>Writers</Name>
           <Id>157</Id>
-          <Width>545</Width>
+          <Width>400</Width>
           <Height>36</Height>
-          <PosX>706</PosX>
+          <PosX>600</PosX>
           <PosY>335</PosY>
           <VisibleCondition />
           <Animations />
@@ -765,7 +763,7 @@
         <Control x:type="Label">
           <Name>Actors Label</Name>
           <Id>158</Id>
-          <Width>388</Width>
+          <Width>275</Width>
           <Height>36</Height>
           <PosX>320</PosX>
           <PosY>364</PosY>
@@ -783,9 +781,9 @@
         <Control x:type="Label">
           <Name>Actors</Name>
           <Id>159</Id>
-          <Width>545</Width>
+          <Width>400</Width>
           <Height>36</Height>
-          <PosX>706</PosX>
+          <PosX>600</PosX>
           <PosY>364</PosY>
           <VisibleCondition />
           <Animations />
@@ -799,7 +797,7 @@
         <Control x:type="Label">
           <Name>Year Label</Name>
           <Id>160</Id>
-          <Width>388</Width>
+          <Width>275</Width>
           <Height>36</Height>
           <PosX>320</PosX>
           <PosY>392</PosY>
@@ -817,9 +815,9 @@
         <Control x:type="Label">
           <Name>Year</Name>
           <Id>161</Id>
-          <Width>545</Width>
+          <Width>400</Width>
           <Height>36</Height>
-          <PosX>706</PosX>
+          <PosX>600</PosX>
           <PosY>392</PosY>
           <VisibleCondition />
           <Animations />
@@ -833,7 +831,7 @@
         <Control x:type="Label">
           <Name>Runtime Label</Name>
           <Id>162</Id>
-          <Width>388</Width>
+          <Width>275</Width>
           <Height>36</Height>
           <PosX>320</PosX>
           <PosY>421</PosY>
@@ -851,9 +849,9 @@
         <Control x:type="Label">
           <Name>Runtime</Name>
           <Id>163</Id>
-          <Width>545</Width>
+          <Width>400</Width>
           <Height>36</Height>
-          <PosX>706</PosX>
+          <PosX>600</PosX>
           <PosY>421</PosY>
           <VisibleCondition />
           <Animations />
@@ -963,7 +961,7 @@
         <Control x:type="Label">
           <Name>Movie Title</Name>
           <Id>170</Id>
-          <Width>760</Width>
+          <Width>500</Width>
           <Height>60</Height>
           <PosX>496</PosX>
           <PosY>655</PosY>
@@ -1033,8 +1031,9 @@
         <Control x:type="Image">
           <Name>BG</Name>
           <Id>174</Id>
-          <Width>1024</Width>
+          <Width>1049</Width>
           <Height>600</Height>
+          <PosX>-15</PosX>
           <PosY>100</PosY>
           <VisibleCondition />
           <Animations />
@@ -1082,7 +1081,7 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>177</Id>
-          <Width>931</Width>
+          <Width>680</Width>
           <Height>70</Height>
           <PosX>320</PosX>
           <PosY>145</PosY>
@@ -1118,7 +1117,7 @@
         <Control x:type="Label">
           <Name>Description Label</Name>
           <Id>179</Id>
-          <Width>925</Width>
+          <Width>680</Width>
           <Height>376</Height>
           <PosX>320</PosX>
           <PosY>274</PosY>
@@ -1131,7 +1130,7 @@
           <LabelText>#MovingPictures.SelectedMovie.summary</LabelText>
           <IsVertical>true</IsVertical>
           <ScrollDelay>2</ScrollDelay>
-          <ScrollSpeed>4</ScrollSpeed>
+          <ScrollSpeed>6</ScrollSpeed>
           <ScrollSeperator>---------------------------------------------------------------------------</ScrollSeperator>
         </Control>
       </GroupControls>
@@ -1162,12 +1161,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-            <BackgroundBrush />
-            <BorderBrush />
-          </ImageStyle>
+          <ImageStyle StyleId="Logo_Image" />
           <Image>#MPD2.fanart.MovingPictures</Image>
           <ImageStretch>Fill</ImageStretch>
           <CoverImage x:type="ImageBrush" Image="\fanart_overlay.png" Stretch="Fill" />
@@ -1225,7 +1219,7 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>185</Id>
-          <Width>931</Width>
+          <Width>680</Width>
           <Height>58</Height>
           <PosX>320</PosX>
           <PosY>160</PosY>
@@ -1262,7 +1256,7 @@
         <Control x:type="Label">
           <Name>Video Format Label</Name>
           <Id>187</Id>
-          <Width>635</Width>
+          <Width>385</Width>
           <Height>50</Height>
           <PosX>610</PosX>
           <PosY>250</PosY>
@@ -1298,7 +1292,7 @@
         <Control x:type="Label">
           <Name>Video Framerate Label</Name>
           <Id>189</Id>
-          <Width>635</Width>
+          <Width>385</Width>
           <Height>50</Height>
           <PosX>610</PosX>
           <PosY>300</PosY>
@@ -1334,7 +1328,7 @@
         <Control x:type="Label">
           <Name>Resolution Label</Name>
           <Id>191</Id>
-          <Width>635</Width>
+          <Width>385</Width>
           <Height>50</Height>
           <PosX>610</PosX>
           <PosY>350</PosY>
@@ -1370,7 +1364,7 @@
         <Control x:type="Label">
           <Name>Audio Format Label</Name>
           <Id>193</Id>
-          <Width>635</Width>
+          <Width>385</Width>
           <Height>50</Height>
           <PosX>610</PosX>
           <PosY>400</PosY>
@@ -1406,7 +1400,7 @@
         <Control x:type="Label">
           <Name>Audio ChannelsLabel</Name>
           <Id>195</Id>
-          <Width>635</Width>
+          <Width>385</Width>
           <Height>50</Height>
           <PosX>610</PosX>
           <PosY>450</PosY>
@@ -1442,7 +1436,7 @@
         <Control x:type="Label">
           <Name>Date added Label</Name>
           <Id>197</Id>
-          <Width>635</Width>
+          <Width>385</Width>
           <Height>50</Height>
           <PosX>610</PosX>
           <PosY>500</PosY>
@@ -1478,7 +1472,7 @@
         <Control x:type="Label">
           <Name>Info URL Label</Name>
           <Id>199</Id>
-          <Width>635</Width>
+          <Width>385</Width>
           <Height>50</Height>
           <PosX>610</PosX>
           <PosY>550</PosY>

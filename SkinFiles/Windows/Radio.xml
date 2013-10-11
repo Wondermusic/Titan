@@ -35,9 +35,9 @@
         <Control x:type="Image">
           <Name>Overlay</Name>
           <Id>12</Id>
-          <Width>1311</Width>
+          <Width>1049</Width>
           <Height>543</Height>
-          <PosX>-16</PosX>
+          <PosX>-15</PosX>
           <PosY>150</PosY>
           <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -51,9 +51,9 @@
         <Control x:type="Image">
           <Name>Overlay CF+H</Name>
           <Id>79</Id>
-          <Width>1311</Width>
+          <Width>1049</Width>
           <Height>543</Height>
-          <PosX>-16</PosX>
+          <PosX>-15</PosX>
           <PosY>150</PosY>
           <VisibleCondition>!IsMediaPortalListLayout(Vertical)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -109,7 +109,7 @@
         <Control x:type="List">
           <Name>List</Name>
           <Id>15</Id>
-          <Width>1210</Width>
+          <Width>990</Width>
           <Height>474</Height>
           <PosX>25</PosX>
           <PosY>180</PosY>
@@ -153,7 +153,7 @@
         <Control x:type="Label">
           <Name>selecteditem</Name>
           <Id>17</Id>
-          <Width>760</Width>
+          <Width>500</Width>
           <Height>50</Height>
           <PosX>496</PosX>
           <PosY>650</PosY>
@@ -171,7 +171,7 @@
         <Control x:type="Label">
           <Name>Screen Name</Name>
           <Id>84</Id>
-          <Width>487</Width>
+          <Width>400</Width>
           <Height>50</Height>
           <PosX>68</PosX>
           <PosY>63</PosY>
@@ -189,7 +189,7 @@
         <Control x:type="Label">
           <Name>Info 1</Name>
           <Id>85</Id>
-          <Width>475</Width>
+          <Width>400</Width>
           <Height>50</Height>
           <PosX>21</PosX>
           <PosY>538</PosY>
@@ -208,7 +208,7 @@
         <Control x:type="Label">
           <Name>Info 2</Name>
           <Id>86</Id>
-          <Width>475</Width>
+          <Width>400</Width>
           <Height>50</Height>
           <PosX>21</PosX>
           <PosY>588</PosY>
@@ -255,9 +255,9 @@
         <Control x:type="Image">
           <Name>BG</Name>
           <Id>50</Id>
-          <Width>1311</Width>
+          <Width>1049</Width>
           <Height>644</Height>
-          <PosX>-16</PosX>
+          <PosX>-15</PosX>
           <PosY>100</PosY>
           <VisibleCondition />
           <Animations />
@@ -270,24 +270,24 @@
         <Control x:type="Image">
           <Name>Image</Name>
           <Id>51</Id>
-          <Width>435</Width>
-          <Height>435</Height>
+          <Width>350</Width>
+          <Height>350</Height>
           <PosX>29</PosX>
           <PosY>195</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="Radio Cover" />
+          <ImageStyle StyleId="Logo_Image" />
           <Image>#RadioTime.Selected.Logo</Image>
-          <ImageStretch>None</ImageStretch>
+          <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="Button">
           <Name>Preset Button 1</Name>
           <Id>52</Id>
-          <Width>750</Width>
+          <Width>600</Width>
           <Height>50</Height>
-          <PosX>500</PosX>
+          <PosX>400</PosX>
           <PosY>190</PosY>
           <VisibleCondition />
           <Animations />
@@ -301,9 +301,9 @@
         <Control x:type="Button">
           <Name>Preset Button 2</Name>
           <Id>53</Id>
-          <Width>750</Width>
+          <Width>600</Width>
           <Height>50</Height>
-          <PosX>500</PosX>
+          <PosX>400</PosX>
           <PosY>240</PosY>
           <VisibleCondition />
           <Animations />
@@ -317,9 +317,9 @@
         <Control x:type="Button">
           <Name>Preset Button 3</Name>
           <Id>54</Id>
-          <Width>750</Width>
+          <Width>600</Width>
           <Height>50</Height>
-          <PosX>500</PosX>
+          <PosX>400</PosX>
           <PosY>290</PosY>
           <VisibleCondition />
           <Animations />
@@ -333,9 +333,9 @@
         <Control x:type="Button">
           <Name>Preset Button 4</Name>
           <Id>55</Id>
-          <Width>750</Width>
+          <Width>600</Width>
           <Height>50</Height>
-          <PosX>500</PosX>
+          <PosX>400</PosX>
           <PosY>340</PosY>
           <VisibleCondition />
           <Animations />
@@ -349,9 +349,9 @@
         <Control x:type="Button">
           <Name>Preset Button 5</Name>
           <Id>56</Id>
-          <Width>750</Width>
+          <Width>600</Width>
           <Height>50</Height>
-          <PosX>500</PosX>
+          <PosX>400</PosX>
           <PosY>390</PosY>
           <VisibleCondition />
           <Animations />
@@ -365,9 +365,9 @@
         <Control x:type="Button">
           <Name>Preset Button 6</Name>
           <Id>57</Id>
-          <Width>750</Width>
+          <Width>600</Width>
           <Height>50</Height>
-          <PosX>500</PosX>
+          <PosX>400</PosX>
           <PosY>440</PosY>
           <VisibleCondition />
           <Animations />
@@ -381,9 +381,9 @@
         <Control x:type="Button">
           <Name>Preset Button 7</Name>
           <Id>58</Id>
-          <Width>750</Width>
+          <Width>600</Width>
           <Height>50</Height>
-          <PosX>500</PosX>
+          <PosX>400</PosX>
           <PosY>490</PosY>
           <VisibleCondition />
           <Animations />
@@ -397,9 +397,9 @@
         <Control x:type="Button">
           <Name>Preset Button 8</Name>
           <Id>59</Id>
-          <Width>750</Width>
+          <Width>600</Width>
           <Height>50</Height>
-          <PosX>500</PosX>
+          <PosX>400</PosX>
           <PosY>540</PosY>
           <VisibleCondition />
           <Animations />
@@ -413,9 +413,9 @@
         <Control x:type="Button">
           <Name>Preset Button 9</Name>
           <Id>60</Id>
-          <Width>750</Width>
+          <Width>600</Width>
           <Height>50</Height>
-          <PosX>500</PosX>
+          <PosX>400</PosX>
           <PosY>590</PosY>
           <VisibleCondition />
           <Animations />
@@ -429,9 +429,9 @@
         <Control x:type="Button">
           <Name>Preset Button 10</Name>
           <Id>61</Id>
-          <Width>750</Width>
+          <Width>600</Width>
           <Height>50</Height>
-          <PosX>500</PosX>
+          <PosX>400</PosX>
           <PosY>640</PosY>
           <VisibleCondition />
           <Animations />
@@ -448,7 +448,7 @@
           <Width>200</Width>
           <Height>53</Height>
           <PosX>29</PosX>
-          <PosY>640</PosY>
+          <PosY>560</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls>
@@ -463,7 +463,7 @@
           <Id>63</Id>
           <Width>200</Width>
           <Height>53</Height>
-          <PosX>264</PosX>
+          <PosX>29</PosX>
           <PosY>640</PosY>
           <VisibleCondition />
           <Animations />
@@ -477,7 +477,7 @@
         <Control x:type="Label">
           <Name>Screen Name</Name>
           <Id>64</Id>
-          <Width>487</Width>
+          <Width>400</Width>
           <Height>50</Height>
           <PosX>68</PosX>
           <PosY>63</PosY>

@@ -27,9 +27,8 @@
         <Control x:type="Image">
           <Name>Fanart</Name>
           <Id>2</Id>
-          <Width>1366</Width>
+          <Width>1024</Width>
           <Height>768</Height>
-          <PosX>-171</PosX>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -145,7 +144,12 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="VideoCover" />
+          <ImageStyle>
+            <BorderThickness>0,0,0,0</BorderThickness>
+            <CornerRadius>10,10,10,10</CornerRadius>
+            <BackgroundBrush />
+            <BorderBrush />
+          </ImageStyle>
           <Image>#Play.Current.Thumb</Image>
           <ImageStretch>Uniform</ImageStretch>
           <ImageCornerRadius>10</ImageCornerRadius>
@@ -270,7 +274,7 @@
           <LabelStyle StyleId="Titan50_White">
             <FontSize>20</FontSize>
           </LabelStyle>
-          <LabelText>#currentmodule</LabelText>
+          <LabelText>myAnime3</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -280,7 +284,7 @@
           <Id>19</Id>
           <Width>426</Width>
           <Height>110</Height>
-          <PosX>599</PosX>
+          <PosX>855</PosX>
           <PosY>-10</PosY>
           <VisibleCondition />
           <Animations />
@@ -299,7 +303,7 @@
           <Id>20</Id>
           <Width>694</Width>
           <Height>70</Height>
-          <PosX>324</PosX>
+          <PosX>580</PosX>
           <PosY>60</PosY>
           <VisibleCondition>!IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -319,7 +323,7 @@
           <Id>21</Id>
           <Width>694</Width>
           <Height>70</Height>
-          <PosX>324</PosX>
+          <PosX>580</PosX>
           <PosY>60</PosY>
           <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>

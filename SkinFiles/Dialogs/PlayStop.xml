@@ -4,8 +4,8 @@
   <Id>102</Id>
   <Width>798</Width>
   <Height>579</Height>
-  <PosX>245</PosX>
-  <PosY>187</PosY>
+  <PosX>109</PosX>
+  <PosY>91</PosY>
   <BackgroundBrush x:type="ImageBrush" Image="\dialog_background.png" Stretch="Uniform" />
   <DialogAnimations />
   <DialogControls>

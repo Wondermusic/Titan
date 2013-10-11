@@ -25,9 +25,9 @@
     <Control x:type="Image">
       <Name>Overlay</Name>
       <Id>9</Id>
-      <Width>1311</Width>
-      <Height>543</Height>
-      <PosX>-16</PosX>
+      <Width>1049</Width>
+      <Height>570</Height>
+      <PosX>-15</PosX>
       <PosY>150</PosY>
       <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -41,9 +41,9 @@
     <Control x:type="Image">
       <Name>Overlay CF+H</Name>
       <Id>33</Id>
-      <Width>1311</Width>
-      <Height>543</Height>
-      <PosX>-16</PosX>
+      <Width>1049</Width>
+      <Height>570</Height>
+      <PosX>-15</PosX>
       <PosY>150</PosY>
       <VisibleCondition>!IsMediaPortalListLayout(Vertical)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -70,8 +70,8 @@
           <Id>18</Id>
           <Width>390</Width>
           <Height>50</Height>
-          <PosX>98</PosX>
-          <PosY>185</PosY>
+          <PosX>25</PosX>
+          <PosY>265</PosY>
           <VisibleCondition />
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -89,7 +89,7 @@
           <Id>19</Id>
           <Width>80</Width>
           <Height>80</Height>
-          <PosX>18</PosX>
+          <PosX>25</PosX>
           <PosY>183</PosY>
           <VisibleCondition>IsControlVisible(9)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -103,9 +103,9 @@
         <Control x:type="List">
           <Name>List</Name>
           <Id>20</Id>
-          <Width>1233</Width>
+          <Width>990</Width>
           <Height>474</Height>
-          <PosX>25</PosX>
+          <PosX>15</PosX>
           <PosY>180</PosY>
           <VisibleCondition />
           <Animations />
@@ -129,10 +129,10 @@
         <Control x:type="Label">
           <Name>Description</Name>
           <Id>21</Id>
-          <Width>470</Width>
-          <Height>378</Height>
+          <Width>399</Width>
+          <Height>328</Height>
           <PosX>20</PosX>
-          <PosY>270</PosY>
+          <PosY>320</PosY>
           <VisibleCondition>IsControlVisible(9)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
@@ -163,8 +163,10 @@
         <Control x:type="Label">
           <Name>Action</Name>
           <Id>23</Id>
-          <Width>200</Width>
+          <Width>334</Width>
           <Height>40</Height>
+          <PosX>19</PosX>
+          <PosY>682</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -181,8 +183,8 @@
           <Id>24</Id>
           <Width>300</Width>
           <Height>35</Height>
-          <PosX>590</PosX>
-          <PosY>658</PosY>
+          <PosX>400</PosX>
+          <PosY>682</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -199,8 +201,8 @@
           <Id>25</Id>
           <Width>300</Width>
           <Height>35</Height>
-          <PosX>950</PosX>
-          <PosY>658</PosY>
+          <PosX>700</PosX>
+          <PosY>682</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -208,6 +210,7 @@
             <FontSize>20</FontSize>
           </LabelStyle>
           <LabelText>Install: +#UpdateControl.InstallOverallProgress+ %</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -217,7 +220,7 @@
           <Id>26</Id>
           <Width>400</Width>
           <Height>70</Height>
-          <PosX>35</PosX>
+          <PosX>25</PosX>
           <PosY>180</PosY>
           <VisibleCondition />
           <Animations />
@@ -233,7 +236,7 @@
           <Id>27</Id>
           <Width>400</Width>
           <Height>70</Height>
-          <PosX>35</PosX>
+          <PosX>25</PosX>
           <PosY>250</PosY>
           <VisibleCondition />
           <Animations />
@@ -249,7 +252,7 @@
           <Id>28</Id>
           <Width>400</Width>
           <Height>70</Height>
-          <PosX>35</PosX>
+          <PosX>25</PosX>
           <PosY>320</PosY>
           <VisibleCondition />
           <Animations />
@@ -265,7 +268,7 @@
           <Id>29</Id>
           <Width>400</Width>
           <Height>70</Height>
-          <PosX>35</PosX>
+          <PosX>25</PosX>
           <PosY>390</PosY>
           <VisibleCondition />
           <Animations />
@@ -281,7 +284,7 @@
           <Id>30</Id>
           <Width>400</Width>
           <Height>70</Height>
-          <PosX>35</PosX>
+          <PosX>25</PosX>
           <PosY>460</PosY>
           <VisibleCondition />
           <Animations />
@@ -297,7 +300,7 @@
           <Id>31</Id>
           <Width>400</Width>
           <Height>70</Height>
-          <PosX>35</PosX>
+          <PosX>25</PosX>
           <PosY>530</PosY>
           <VisibleCondition />
           <Animations />
@@ -313,7 +316,7 @@
           <Id>32</Id>
           <Width>400</Width>
           <Height>70</Height>
-          <PosX>35</PosX>
+          <PosX>25</PosX>
           <PosY>600</PosY>
           <VisibleCondition />
           <Animations />
