@@ -61,20 +61,16 @@
           <Id>4</Id>
           <Width>280</Width>
           <Height>280</Height>
-          <PosX>500</PosX>
+          <PosX>372</PosX>
           <PosY>140</PosY>
           <Center3DX>1</Center3DX>
           <VisibleCondition>IsPlayer(IsRadio)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>10,10,10,10</CornerRadius>
-            <BackgroundBrush />
-            <BorderBrush />
-          </ImageStyle>
+          <ImageStyle StyleId="Logo_Image" />
           <Image>#Play.Current.Thumb</Image>
+          <DefaultImage>\DefaultMyradioBig.png</DefaultImage>
           <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
@@ -95,16 +91,14 @@
         <Control x:type="Label">
           <Name>Radio Station</Name>
           <Id>7</Id>
-          <Width>1205</Width>
+          <Width>944</Width>
           <Height>90</Height>
-          <PosX>38</PosX>
+          <PosX>40</PosX>
           <PosY>411</PosY>
           <VisibleCondition>IsPlayer(IsRadio)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan80">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Titan80" />
           <LabelText>#Play.Current.Title</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
           <ScrollDelay>2</ScrollDelay>
@@ -113,16 +107,14 @@
         <Control x:type="Label">
           <Name>Playtime Label</Name>
           <Id>11</Id>
-          <Width>1205</Width>
+          <Width>944</Width>
           <Height>70</Height>
-          <PosX>38</PosX>
+          <PosX>40</PosX>
           <PosY>516</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan60">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Titan60" />
           <LabelText>Playtime:</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -132,16 +124,14 @@
         <Control x:type="Label">
           <Name>Current Playtime</Name>
           <Id>12</Id>
-          <Width>1205</Width>
+          <Width>944</Width>
           <Height>90</Height>
-          <PosX>38</PosX>
+          <PosX>40</PosX>
           <PosY>589</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan80">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Titan80" />
           <LabelText>#currentplaytime</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -151,7 +141,7 @@
         <Control x:type="Equalizer">
           <Name>Equalizer</Name>
           <Id>13</Id>
-          <Width>430</Width>
+          <Width>302</Width>
           <Height>280</Height>
           <PosX>40</PosX>
           <PosY>140</PosY>
@@ -170,9 +160,9 @@
         <Control x:type="Equalizer">
           <Name>Equalizer</Name>
           <Id>14</Id>
-          <Width>430</Width>
+          <Width>302</Width>
           <Height>280</Height>
-          <PosX>800</PosX>
+          <PosX>672</PosX>
           <PosY>140</PosY>
           <VisibleCondition>IsPlayer(RadioTime)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -241,19 +231,15 @@
           <Id>28</Id>
           <Width>280</Width>
           <Height>280</Height>
-          <PosX>500</PosX>
+          <PosX>372</PosX>
           <PosY>140</PosY>
           <VisibleCondition>IsPlayer(RadioTime)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>10,10,10,10</CornerRadius>
-            <BackgroundBrush />
-            <BorderBrush />
-          </ImageStyle>
+          <ImageStyle StyleId="Logo_Image" />
           <Image>#RadioTime.Selected.Logo</Image>
+          <DefaultImage>\DefaultMyradioBig.png</DefaultImage>
           <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
@@ -274,17 +260,15 @@
         <Control x:type="Label">
           <Name>RadioTime Station</Name>
           <Id>31</Id>
-          <Width>1205</Width>
+          <Width>944</Width>
           <Height>90</Height>
-          <PosX>38</PosX>
+          <PosX>40</PosX>
           <PosY>411</PosY>
           <VisibleCondition>IsPlayer(RadioTime)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan80">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Titan80" />
           <LabelText>#RadioTime.Play.Station</LabelText>
           <ScrollDelay>2</ScrollDelay>
           <ScrollSpeed>8</ScrollSpeed>
@@ -292,7 +276,7 @@
         <Control x:type="Label">
           <Name>RadioTime Location</Name>
           <Id>32</Id>
-          <Width>750</Width>
+          <Width>484</Width>
           <Height>80</Height>
           <PosX>38</PosX>
           <PosY>501</PosY>
@@ -300,9 +284,7 @@
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan70">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Titan70" />
           <LabelText>#RadioTime.Play.Location</LabelText>
           <ScrollDelay>2</ScrollDelay>
           <ScrollSpeed>8</ScrollSpeed>
@@ -310,7 +292,7 @@
         <Control x:type="Label">
           <Name>RadioTime Description</Name>
           <Id>33</Id>
-          <Width>750</Width>
+          <Width>484</Width>
           <Height>80</Height>
           <PosX>38</PosX>
           <PosY>591</PosY>
@@ -318,9 +300,7 @@
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan70">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Titan70" />
           <LabelText>#RadioTime.Play.Description</LabelText>
           <ScrollDelay>2</ScrollDelay>
           <ScrollSpeed>8</ScrollSpeed>
@@ -330,14 +310,12 @@
           <Id>34</Id>
           <Width>400</Width>
           <Height>70</Height>
-          <PosX>838</PosX>
+          <PosX>582</PosX>
           <PosY>516</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan60">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Titan60" />
           <LabelText>Playtime:</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -349,14 +327,12 @@
           <Id>35</Id>
           <Width>400</Width>
           <Height>90</Height>
-          <PosX>838</PosX>
+          <PosX>582</PosX>
           <PosY>589</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan80">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Titan80" />
           <LabelText>#currentplaytime</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -366,7 +342,7 @@
         <Control x:type="Equalizer">
           <Name>Equalizer</Name>
           <Id>36</Id>
-          <Width>430</Width>
+          <Width>302</Width>
           <Height>280</Height>
           <PosX>40</PosX>
           <PosY>140</PosY>
@@ -385,9 +361,9 @@
         <Control x:type="Equalizer">
           <Name>Equalizer</Name>
           <Id>37</Id>
-          <Width>430</Width>
+          <Width>302</Width>
           <Height>280</Height>
-          <PosX>800</PosX>
+          <PosX>672</PosX>
           <PosY>140</PosY>
           <VisibleCondition>IsPlayer(RadioTime)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
@@ -440,9 +416,7 @@
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan50_White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Titan50_White" />
           <LabelText>RadioTime</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -459,9 +433,7 @@
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan50_White">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Titan50_White" />
           <LabelText>Radio</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
@@ -477,9 +449,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan70">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Titan70" />
           <LabelText>#time</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -497,9 +467,7 @@
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan60">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Titan60" />
           <LabelText>#date</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -517,9 +485,7 @@
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan60">
-            <FontSize>20</FontSize>
-          </LabelStyle>
+          <LabelStyle StyleId="Titan60" />
           <LabelText>#date+ | +#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>

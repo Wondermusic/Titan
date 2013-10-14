@@ -87,16 +87,14 @@
             <Control x:type="Label">
               <Name>Title</Name>
               <Id>18</Id>
-              <Width>1200</Width>
+              <Width>944</Width>
               <Height>110</Height>
               <PosX>40</PosX>
               <PosY>450</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Titan90">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Titan90" />
               <LabelText>#Play.Current.Title</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <ScrollDelay>2</ScrollDelay>
@@ -108,7 +106,7 @@
               <Id>19</Id>
               <Width>280</Width>
               <Height>280</Height>
-              <PosX>500</PosX>
+              <PosX>372</PosX>
               <PosY>140</PosY>
               <VisibleCondition />
               <Animations />
@@ -126,7 +124,7 @@
             <Control x:type="ProgressBar">
               <Name>ProgressBar</Name>
               <Id>20</Id>
-              <Width>550</Width>
+              <Width>309</Width>
               <Height>27</Height>
               <PosX>365</PosX>
               <PosY>620</PosY>
@@ -146,9 +144,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Titan80">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Titan80" />
               <LabelText>#currentplaytime</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -159,14 +155,12 @@
               <Id>22</Id>
               <Width>325</Width>
               <Height>100</Height>
-              <PosX>919</PosX>
+              <PosX>671</PosX>
               <PosY>590</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Titan80">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Titan80" />
               <LabelText>#currentremaining</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -178,7 +172,7 @@
               <Id>23</Id>
               <Width>89</Width>
               <Height>61</Height>
-              <PosX>396</PosX>
+              <PosX>268</PosX>
               <PosY>665</PosY>
               <VisibleCondition />
               <Animations />
@@ -193,7 +187,7 @@
               <Id>24</Id>
               <Width>89</Width>
               <Height>61</Height>
-              <PosX>496</PosX>
+              <PosX>368</PosX>
               <PosY>665</PosY>
               <VisibleCondition />
               <Animations />
@@ -208,7 +202,7 @@
               <Id>25</Id>
               <Width>89</Width>
               <Height>61</Height>
-              <PosX>596</PosX>
+              <PosX>468</PosX>
               <PosY>665</PosY>
               <VisibleCondition />
               <Animations />
@@ -223,7 +217,7 @@
               <Id>26</Id>
               <Width>89</Width>
               <Height>61</Height>
-              <PosX>696</PosX>
+              <PosX>568</PosX>
               <PosY>665</PosY>
               <VisibleCondition />
               <Animations />
@@ -238,7 +232,7 @@
               <Id>27</Id>
               <Width>89</Width>
               <Height>61</Height>
-              <PosX>796</PosX>
+              <PosX>668</PosX>
               <PosY>665</PosY>
               <VisibleCondition />
               <Animations />
@@ -289,9 +283,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Titan50_White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Titan50_White" />
               <LabelText>Recordings</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -307,9 +299,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Titan70">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Titan70" />
               <LabelText>#time</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -327,9 +317,7 @@
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Titan60">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Titan60" />
               <LabelText>#date</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -347,9 +335,7 @@
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Titan60">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Titan60" />
               <LabelText>#date+ | +#WorldWeather.TodayTemperature</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -426,16 +412,14 @@
             <Control x:type="Label">
               <Name>Title</Name>
               <Id>50</Id>
-              <Width>1200</Width>
+              <Width>944</Width>
               <Height>110</Height>
               <PosX>40</PosX>
               <PosY>450</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Titan90">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Titan90" />
               <LabelText>#Play.Current.Title</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <ScrollDelay>2</ScrollDelay>
@@ -445,27 +429,23 @@
             <Control x:type="Image">
               <Name>Cover</Name>
               <Id>51</Id>
-              <Width>350</Width>
-              <Height>350</Height>
-              <PosX>465</PosX>
-              <PosY>81</PosY>
+              <Width>280</Width>
+              <Height>280</Height>
+              <PosX>372</PosX>
+              <PosY>145</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <ImageStyle>
-                <BorderThickness>0,0,0,0</BorderThickness>
-                <CornerRadius>10,10,10,10</CornerRadius>
-                <BackgroundBrush />
-                <BorderBrush />
-              </ImageStyle>
+              <ImageStyle StyleId="Logo_Image" />
               <Image>#Play.Current.Thumb</Image>
+              <DefaultImage>\defaultVideoBig.png</DefaultImage>
               <ImageStretch>Uniform</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
             <Control x:type="ProgressBar">
               <Name>ProgressBar</Name>
               <Id>52</Id>
-              <Width>550</Width>
+              <Width>309</Width>
               <Height>27</Height>
               <PosX>365</PosX>
               <PosY>620</PosY>
@@ -485,9 +465,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Titan80">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Titan80" />
               <LabelText>#currentplaytime</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -498,14 +476,12 @@
               <Id>54</Id>
               <Width>325</Width>
               <Height>100</Height>
-              <PosX>919</PosX>
+              <PosX>671</PosX>
               <PosY>590</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Titan80">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Titan80" />
               <LabelText>#currentremaining</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -517,7 +493,7 @@
               <Id>55</Id>
               <Width>89</Width>
               <Height>61</Height>
-              <PosX>396</PosX>
+              <PosX>268</PosX>
               <PosY>665</PosY>
               <VisibleCondition />
               <Animations />
@@ -532,7 +508,7 @@
               <Id>56</Id>
               <Width>89</Width>
               <Height>61</Height>
-              <PosX>496</PosX>
+              <PosX>368</PosX>
               <PosY>665</PosY>
               <VisibleCondition />
               <Animations />
@@ -547,7 +523,7 @@
               <Id>57</Id>
               <Width>89</Width>
               <Height>61</Height>
-              <PosX>596</PosX>
+              <PosX>468</PosX>
               <PosY>665</PosY>
               <VisibleCondition />
               <Animations />
@@ -562,7 +538,7 @@
               <Id>58</Id>
               <Width>89</Width>
               <Height>61</Height>
-              <PosX>696</PosX>
+              <PosX>568</PosX>
               <PosY>665</PosY>
               <VisibleCondition />
               <Animations />
@@ -577,7 +553,7 @@
               <Id>59</Id>
               <Width>89</Width>
               <Height>61</Height>
-              <PosX>796</PosX>
+              <PosX>668</PosX>
               <PosY>665</PosY>
               <VisibleCondition />
               <Animations />
@@ -628,9 +604,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Titan50_White">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Titan50_White" />
               <LabelText>Video</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
@@ -646,9 +620,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Titan70">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Titan70" />
               <LabelText>#time</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -666,9 +638,7 @@
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Titan60">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Titan60" />
               <LabelText>#date</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
@@ -686,9 +656,7 @@
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Titan60">
-                <FontSize>20</FontSize>
-              </LabelStyle>
+              <LabelStyle StyleId="Titan60" />
               <LabelText>#date+ | +#WorldWeather.TodayTemperature</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>

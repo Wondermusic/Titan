@@ -23,7 +23,6 @@
       <SkinTag>#RadioTime.Selected.Logo</SkinTag>
       <PropertyType>Image</PropertyType>
       <DesignerValue>\defaultMyRadioBig.png</DesignerValue>
-      <DefaultValue>\defaultMyRadioBig.png</DefaultValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#RadioTime.Selected.Logo" />
       </MediaPortalTags>
@@ -91,7 +90,6 @@
       <SkinTag>#Play.Current.Video.Thumb</SkinTag>
       <PropertyType>Image</PropertyType>
       <DesignerValue>\defaultVideoBig.png</DesignerValue>
-      <DefaultValue>\defaultVideoBig.png</DefaultValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#Play.Current.Video.Thumb" />
       </MediaPortalTags>
@@ -100,7 +98,6 @@
       <SkinTag>#Play.Current.Thumb</SkinTag>
       <PropertyType>Image</PropertyType>
       <DesignerValue>\defaultVideoBig.png</DesignerValue>
-      <DefaultValue>\defaultVideoBig.png</DefaultValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#Play.Current.Thumb" />
       </MediaPortalTags>
@@ -126,7 +123,6 @@
       <SkinTag>#MovingPictures.Coverart</SkinTag>
       <PropertyType>Image</PropertyType>
       <DesignerValue>\defaultVideoBig.png</DesignerValue>
-      <DefaultValue>\defaultVideoBig.png</DefaultValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#MovingPictures.Coverart" />
       </MediaPortalTags>
@@ -135,7 +131,6 @@
       <SkinTag>#MPE.Selected.Icon</SkinTag>
       <PropertyType>Image</PropertyType>
       <DesignerValue>\defaultExtensionBig.png</DesignerValue>
-      <DefaultValue>\defaultExtensionBig.png</DefaultValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#MPE.Selected.Icon" />
       </MediaPortalTags>
@@ -144,7 +139,6 @@
       <SkinTag>#selectedthumb</SkinTag>
       <PropertyType>Image</PropertyType>
       <DesignerValue>\defaultAudioBig.png</DesignerValue>
-      <DefaultValue>\defaultAudioBig.png</DefaultValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#selectedthumb" />
       </MediaPortalTags>
@@ -178,7 +172,6 @@
       <SkinTag>#MPD2.Thumb.TVSeries</SkinTag>
       <PropertyType>Image</PropertyType>
       <DesignerValue>\defaultVideoBig.png</DesignerValue>
-      <DefaultValue>\defaultVideoBig.png</DefaultValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#TVSeries.SeriesPoster" />
         <XmlMediaPortalTag Tag="#TVSeries.SeasonPoster" />
