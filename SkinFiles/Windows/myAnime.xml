@@ -213,13 +213,13 @@
             <CornerRadius>0,0,0,0</CornerRadius>
           </ImageStyle>
           <Image>\icon_movies.png</Image>
-          <ImageStretch>None</ImageStretch>
+          <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="Label">
           <Name>Name of Window</Name>
           <Id>62</Id>
-          <Width>563</Width>
+          <Width>650</Width>
           <Height>60</Height>
           <PosX>68</PosX>
           <PosY>9</PosY>
@@ -237,49 +237,13 @@
           <Id>63</Id>
           <Width>426</Width>
           <Height>110</Height>
-          <PosX>855</PosX>
+          <PosX>599</PosX>
           <PosY>-10</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan70" />
           <LabelText>#time</LabelText>
-          <LabelTextAlignment>Right</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="Label">
-          <Name>Date</Name>
-          <Id>64</Id>
-          <Width>694</Width>
-          <Height>70</Height>
-          <PosX>580</PosX>
-          <PosY>60</PosY>
-          <VisibleCondition>!IsPluginEnabled(World Weather)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan60" />
-          <LabelText>#date</LabelText>
-          <LabelTextAlignment>Right</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="Label">
-          <Name>Date</Name>
-          <Id>65</Id>
-          <Width>694</Width>
-          <Height>70</Height>
-          <PosX>580</PosX>
-          <PosY>60</PosY>
-          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan60" />
-          <LabelText>#date+ | +#WorldWeather.TodayTemperature</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>

@@ -69,7 +69,7 @@
         <Control x:type="Label">
           <Name>Name of Window</Name>
           <Id>5</Id>
-          <Width>563</Width>
+          <Width>650</Width>
           <Height>60</Height>
           <PosX>68</PosX>
           <PosY>9</PosY>
