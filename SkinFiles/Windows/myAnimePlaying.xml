@@ -27,8 +27,9 @@
         <Control x:type="Image">
           <Name>Fanart</Name>
           <Id>2</Id>
-          <Width>1024</Width>
+          <Width>1366</Width>
           <Height>768</Height>
+          <PosX>-171</PosX>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />

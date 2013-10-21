@@ -615,7 +615,7 @@
       <FocusBrush />
       <FocusBorderBrush />
       <FontType>Titan</FontType>
-      <FontSize>35</FontSize>
+      <FontSize>32</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>

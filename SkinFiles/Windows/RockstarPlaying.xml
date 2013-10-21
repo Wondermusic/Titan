@@ -33,6 +33,19 @@
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="Image">
+          <Name>Overlay</Name>
+          <Id>25</Id>
+          <Width>1024</Width>
+          <Height>768</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\fanart_overlay.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
           <Name>Fanart</Name>
           <Id>2</Id>
           <Width>1366</Width>

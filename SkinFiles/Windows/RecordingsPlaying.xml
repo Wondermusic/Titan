@@ -8,19 +8,6 @@
   <BackgroundBrush />
   <WindowAnimations />
   <WindowControls>
-    <Control x:type="Image">
-      <Name>Background Image</Name>
-      <Id>1</Id>
-      <Width>1366</Width>
-      <Height>768</Height>
-      <PosX>-171</PosX>
-      <VisibleCondition />
-      <Animations />
-      <MediaPortalFocusControls />
-      <ImageStyle StyleId="Background" />
-      <ImageStretch>None</ImageStretch>
-      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-    </Control>
     <Control x:type="Group">
       <Name>Playing Screen</Name>
       <Id>2</Id>
