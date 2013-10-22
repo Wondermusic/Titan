@@ -15,7 +15,7 @@
   <TextVerticalScrollSeperator>---------------------------------</TextVerticalScrollSeperator>
   <SkinOptions>
     <SkinOption Name="Default" Group="BasicHome" IsEnabled="true" IsPreviewImageEnabled="true" PreviewImage="\Preview_Default.png" />
-    <SkinOption Name="Extended" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\Preview_Extended.png" />
+    <SkinOption Name="Extended" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\Preview_Extended.png" Description="Attention: You have to rename the Pictures in C:\ProgramData\MPDisplay++\Skin\Titan\Images\BasicHomeImages as you name your Menu Items in Titan BasicHome Editor." />
   </SkinOptions>
   <SkinName>Titan</SkinName>
   <Author>Wondermusic</Author>

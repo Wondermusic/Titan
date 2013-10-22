@@ -192,7 +192,7 @@
         <Control x:type="Equalizer">
           <Name>Equalizer</Name>
           <Id>13</Id>
-          <Width>430</Width>
+          <Width>302</Width>
           <Height>280</Height>
           <PosX>40</PosX>
           <PosY>140</PosY>
@@ -210,9 +210,9 @@
         <Control x:type="Equalizer">
           <Name>Equalizer</Name>
           <Id>14</Id>
-          <Width>430</Width>
+          <Width>302</Width>
           <Height>280</Height>
-          <PosX>800</PosX>
+          <PosX>677</PosX>
           <PosY>140</PosY>
           <VisibleCondition />
           <Animations />
