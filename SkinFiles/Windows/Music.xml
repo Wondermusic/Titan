@@ -74,7 +74,7 @@
         <Control x:type="Label">
           <Name>Current Module+itemcount</Name>
           <Id>35</Id>
-          <Width>435</Width>
+          <Width>309</Width>
           <Height>60</Height>
           <PosX>29</PosX>
           <PosY>650</PosY>
@@ -82,7 +82,7 @@
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan 40" />
-          <LabelText>#currentmodule+: +#itemcount</LabelText>
+          <LabelText>@Files+: +#itemcount</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -90,9 +90,9 @@
         <Control x:type="Label">
           <Name>selcteditem</Name>
           <Id>36</Id>
-          <Width>500</Width>
+          <Width>644</Width>
           <Height>60</Height>
-          <PosX>496</PosX>
+          <PosX>352</PosX>
           <PosY>650</PosY>
           <VisibleCondition />
           <Animations />

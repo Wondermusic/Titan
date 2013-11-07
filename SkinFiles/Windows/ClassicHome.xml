@@ -18,7 +18,7 @@
       <Animations />
       <MediaPortalFocusControls />
       <ImageStyle StyleId="Background" />
-      <Image>#MPD2.fanartBH</Image>
+      <Image>\BasicHomeImages\Hovers\+#itemName+.jpg</Image>
       <ImageStretch>Fill</ImageStretch>
       <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
     </Control>

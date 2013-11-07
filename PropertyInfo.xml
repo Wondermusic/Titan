@@ -246,33 +246,6 @@
       </MediaPortalTags>
     </XmlProperty>
     <XmlProperty>
-      <SkinTag>#MPD2.fanartBH</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <DesignerValue>New....</DesignerValue>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#fanarthandler.music.scraper.backdrop1.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.music.scraper.backdrop2.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.tvseries.backdrop1.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.tvseries.backdrop2.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.tv.userdef.backdrop1.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.tv.userdef.backdrop2.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.movingpicture.backdrop1.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.movingpicture.backdrop2.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.picture.userdef.backdrop2.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.picture.userdef.backdrop1.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.movie.scraper.backdrop1.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.movie.scraper.backdrop2.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.scorecenter.userdef.backdrop2.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.scorecenter.userdef.backdrop1.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.movie.userdef.backdrop2.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.movie.userdef.backdrop1.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.plugins.userdef.backdrop2.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.plugins.userdef.backdrop1.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.games.userdef.backdrop1.any" />
-        <XmlMediaPortalTag Tag="#fanarthandler.games.userdef.backdrop2.any" />
-      </MediaPortalTags>
-    </XmlProperty>
-    <XmlProperty>
       <SkinTag>#WorldWeather.ForecastDay4IconImage</SkinTag>
       <PropertyType>Image</PropertyType>
       <DesignerValue>New....</DesignerValue>
