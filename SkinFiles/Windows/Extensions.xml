@@ -312,7 +312,6 @@
       <PosX>-12</PosX>
       <PosY>119</PosY>
       <VisibleCondition>IsMediaPortalControlFocused(50)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle>

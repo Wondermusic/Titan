@@ -29,28 +29,11 @@
       <Height>570</Height>
       <PosX>-15</PosX>
       <PosY>150</PosY>
-      <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
       <ImageStyle StyleId="Logo_Image" />
       <Image>\panel_list_music.png</Image>
-      <ImageStretch>Fill</ImageStretch>
-      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-    </Control>
-    <Control x:type="Image">
-      <Name>Overlay CF+H</Name>
-      <Id>33</Id>
-      <Width>1049</Width>
-      <Height>570</Height>
-      <PosX>-15</PosX>
-      <PosY>150</PosY>
-      <VisibleCondition>!IsMediaPortalListLayout(Vertical)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations />
-      <MediaPortalFocusControls />
-      <ImageStyle StyleId="Logo_Image" />
-      <Image>\panel_thumbs_noinfo.png</Image>
       <ImageStretch>Fill</ImageStretch>
       <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
     </Control>
@@ -59,7 +42,7 @@
       <Id>17</Id>
       <Width>1024</Width>
       <Height>768</Height>
-      <VisibleCondition>!IsControlVisible(12)</VisibleCondition>
+      <VisibleCondition>IsMediaPortalControlFocused(50)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
@@ -141,7 +124,6 @@
       <Width>1024</Width>
       <Height>768</Height>
       <VisibleCondition>IsMediaPortalControlFocused(2) || IsMediaPortalControlFocused(3) || IsMediaPortalControlFocused(4) || IsMediaPortalControlFocused(5) || IsMediaPortalControlFocused(6) || IsMediaPortalControlFocused(7) || IsMediaPortalControlFocused(8)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle StyleId="Empty" />
@@ -421,4 +403,5 @@
     </Control>
   </WindowControls>
   <VisibleCondition>IsMediaPortalWindow(7984)</VisibleCondition>
+  <DefaultMediaPortalFocusedControlId>2</DefaultMediaPortalFocusedControlId>
 </Window>

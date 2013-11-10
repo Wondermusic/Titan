@@ -25,8 +25,7 @@
       <Id>101</Id>
       <Width>1024</Width>
       <Height>768</Height>
-      <VisibleCondition>IsMediaPortalWindow(7986)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle StyleId="Empty" />

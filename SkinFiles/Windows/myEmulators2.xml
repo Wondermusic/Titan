@@ -26,8 +26,7 @@
       <Id>3</Id>
       <Width>1024</Width>
       <Height>768</Height>
-      <VisibleCondition>IsMediaPortalWindow(7942)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle>
@@ -147,7 +146,7 @@
       <Id>28</Id>
       <Width>1024</Width>
       <Height>768</Height>
-      <VisibleCondition>IsMediaPortalControlFocused(6) || IsMediaPortalControlFocused(7)</VisibleCondition>
+      <VisibleCondition>IsMediaPortalControlFocused(6) || IsMediaPortalControlFocused(10001) || IsMediaPortalControlFocused(10002)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
@@ -440,4 +439,5 @@
     </Control>
   </WindowControls>
   <VisibleCondition>IsMediaPortalWindow(7942)</VisibleCondition>
+  <DefaultMediaPortalFocusedControlId>50</DefaultMediaPortalFocusedControlId>
 </Window>
