@@ -34,36 +34,6 @@
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="Image">
-          <Name>BG</Name>
-          <Id>2</Id>
-          <Width>1049</Width>
-          <Height>368</Height>
-          <PosX>-15</PosX>
-          <PosY>110</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
-          <Image>\osd_bg.png</Image>
-          <ImageStretch>Fill</ImageStretch>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Image">
-          <Name>OSD</Name>
-          <Id>3</Id>
-          <Width>394</Width>
-          <Height>240</Height>
-          <PosX>624</PosX>
-          <PosY>479</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
-          <Image>\tv_info_bg_2.png</Image>
-          <ImageStretch>Fill</ImageStretch>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Image">
           <Name>Overlay</Name>
           <Id>25</Id>
           <Width>1024</Width>
@@ -82,8 +52,8 @@
           <Id>4</Id>
           <Width>220</Width>
           <Height>220</Height>
-          <PosX>25</PosX>
-          <PosY>489</PosY>
+          <PosX>7</PosX>
+          <PosY>66</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -96,10 +66,10 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>5</Id>
-          <Width>994</Width>
+          <Width>790</Width>
           <Height>100</Height>
-          <PosX>15</PosX>
-          <PosY>133</PosY>
+          <PosX>235</PosX>
+          <PosY>114</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -112,15 +82,15 @@
         <Control x:type="Label">
           <Name>Channel</Name>
           <Id>6</Id>
-          <Width>300</Width>
+          <Width>783</Width>
           <Height>60</Height>
-          <PosX>256</PosX>
-          <PosY>570</PosY>
+          <PosX>235</PosX>
+          <PosY>66</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan50_White" />
-          <LabelText>#TV.View.channel</LabelText>
+          <LabelText>#TV.View.channel+ / +#TV.View.start+ - +#TV.View.stop</LabelText>
           <ScrollDelay>2</ScrollDelay>
           <ScrollSpeed>10</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -131,8 +101,8 @@
           <Id>7</Id>
           <Width>994</Width>
           <Height>50</Height>
-          <PosX>15</PosX>
-          <PosY>238</PosY>
+          <PosX>235</PosX>
+          <PosY>211</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -147,8 +117,8 @@
           <Id>8</Id>
           <Width>380</Width>
           <Height>50</Height>
-          <PosX>630</PosX>
-          <PosY>484</PosY>
+          <PosX>10</PosX>
+          <PosY>550</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -159,28 +129,12 @@
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
         <Control x:type="Label">
-          <Name>Next Time</Name>
-          <Id>9</Id>
-          <Width>380</Width>
-          <Height>60</Height>
-          <PosX>630</PosX>
-          <PosY>600</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan50_White" />
-          <LabelText>#TV.Next.start+ - +#TV.Next.stop</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="Label">
           <Name>Next Title</Name>
           <Id>10</Id>
-          <Width>380</Width>
+          <Width>1005</Width>
           <Height>60</Height>
-          <PosX>630</PosX>
-          <PosY>540</PosY>
+          <PosX>10</PosX>
+          <PosY>600</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -193,10 +147,10 @@
         <Control x:type="Label">
           <Name>Next Genre</Name>
           <Id>11</Id>
-          <Width>380</Width>
+          <Width>1005</Width>
           <Height>60</Height>
-          <PosX>630</PosX>
-          <PosY>656</PosY>
+          <PosX>10</PosX>
+          <PosY>650</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -207,34 +161,17 @@
           <ScrollSeperator>   |   </ScrollSeperator>
         </Control>
         <Control x:type="Label">
-          <Name>TV Start</Name>
-          <Id>12</Id>
-          <Width>345</Width>
-          <Height>90</Height>
-          <PosX>25</PosX>
-          <PosY>328</PosY>
+          <Name>Next Time</Name>
+          <Id>9</Id>
+          <Width>1005</Width>
+          <Height>60</Height>
+          <PosX>10</PosX>
+          <PosY>700</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan80" />
-          <LabelText>#TV.View.start</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="Label">
-          <Name>TV End</Name>
-          <Id>13</Id>
-          <Width>331</Width>
-          <Height>90</Height>
-          <PosX>671</PosX>
-          <PosY>328</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan80" />
-          <LabelText>#TV.View.stop</LabelText>
-          <LabelTextAlignment>Right</LabelTextAlignment>
+          <LabelStyle StyleId="Titan50_White" />
+          <LabelText>#TV.Next.start+ - +#TV.Next.stop</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -242,10 +179,10 @@
         <Control x:type="ProgressBar">
           <Name>ProgressBar 1</Name>
           <Id>14</Id>
-          <Width>974</Width>
+          <Width>1000</Width>
           <Height>37</Height>
-          <PosX>25</PosX>
-          <PosY>423</PosY>
+          <PosX>12</PosX>
+          <PosY>508</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -273,10 +210,10 @@
         <Control x:type="ProgressBar">
           <Name>ProgressBar 2</Name>
           <Id>15</Id>
-          <Width>974</Width>
+          <Width>1000</Width>
           <Height>37</Height>
-          <PosX>25</PosX>
-          <PosY>423</PosY>
+          <PosX>12</PosX>
+          <PosY>508</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -300,6 +237,24 @@
             </BarBackgroundBrush>
           </ProgressBarStyle>
           <ProgressValue>#TV.Record.percent2</ProgressValue>
+        </Control>
+        <Control x:type="Label">
+          <Name>Description</Name>
+          <Id>27</Id>
+          <Width>1000</Width>
+          <Height>211</Height>
+          <PosX>12</PosX>
+          <PosY>286</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Titan40 White" />
+          <LabelText>#TV.View.description</LabelText>
+          <IsVertical>true</IsVertical>
+          <ScrollDelay>2</ScrollDelay>
+          <ScrollSpeed>4</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ScrollSeperator>--------------------------------------------------------------------</ScrollSeperator>
         </Control>
       </GroupControls>
     </Control>
@@ -344,7 +299,7 @@
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan50_White" />
-          <LabelText>#currentmodule</LabelText>
+          <LabelText>TV</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
