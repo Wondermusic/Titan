@@ -79,7 +79,6 @@
             <NoFocusBrush />
             <NoFocusBorderBrush />
             <FocusBrush x:type="GradientBrush">
-              <Angle>Horizontal</Angle>
               <GradientStops>
                 <GradientStop Color="#FF00B7FF" Offset="0" />
                 <GradientStop Color="#63000000" Offset="0.021" />
@@ -89,6 +88,7 @@
                 <GradientStop Color="#8400B7FF" Offset="0.209" />
                 <GradientStop Color="#1A00B7FF" Offset="1" />
               </GradientStops>
+              <Angle>Horizontal</Angle>
             </FocusBrush>
             <FocusBorderBrush />
             <ShadeBrush />
@@ -237,8 +237,7 @@
       <Id>29</Id>
       <Width>1024</Width>
       <Height>130</Height>
-      <VisibleCondition>IsPlayer(None)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <VisibleCondition>IsSkinOptionEnabled(Default) || IsSkinOptionEnabled(Extended)</VisibleCondition>
       <Animations />
       <MediaPortalFocusControls />
       <ButtonStyle>

@@ -12,6 +12,83 @@
   </WindowAnimations>
   <WindowControls>
     <Control x:type="Group">
+      <Name>Basic Screen</Name>
+      <Id>141</Id>
+      <Width>1024</Width>
+      <Height>768</Height>
+      <VisibleCondition />
+      <Animations>
+        <Animation x:type="Slide" Condition="VisibleTrue" Duration="1000" Easing="EaseIn" StartY="768" />
+        <Animation x:type="Slide" Condition="VisibleFalse" Duration="1000" Easing="EaseOut" EndY="768" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Empty" />
+      <GroupControls>
+        <Control x:type="Image">
+          <Name>NewImage</Name>
+          <Id>142</Id>
+          <Width>1366</Width>
+          <Height>768</Height>
+          <PosX>-177</PosX>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\splashscreen.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Button">
+          <Name>NewButton</Name>
+          <Id>143</Id>
+          <Width>355</Width>
+          <Height>73</Height>
+          <PosX>10</PosX>
+          <PosY>666</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle StyleId="Weather" />
+          <LabelText>Exit MPD</LabelText>
+          <Actions>
+            <Action Action="Exit" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>NewButton</Name>
+          <Id>144</Id>
+          <Width>355</Width>
+          <Height>73</Height>
+          <PosX>659</PosX>
+          <PosY>666</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle StyleId="Weather" />
+          <LabelText>Reconnect to Server</LabelText>
+          <Actions>
+            <Action Action="Connect" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>NewButton</Name>
+          <Id>151</Id>
+          <Width>287</Width>
+          <Height>73</Height>
+          <PosX>369</PosX>
+          <PosY>666</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle StyleId="Weather" />
+          <LabelText>System Info</LabelText>
+          <Actions>
+            <Action Action="ControlVisible" Param="122" />
+          </Actions>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
       <Name>Main Window</Name>
       <Id>1</Id>
       <Width>1024</Width>
@@ -41,13 +118,16 @@
       </GroupControls>
     </Control>
     <Control x:type="Group">
-      <Name>SystemInfo</Name>
-      <Id>122</Id>
+      <Name>Settings </Name>
+      <Id>9</Id>
       <Width>1024</Width>
-      <Height>566</Height>
+      <Height>574</Height>
       <VisibleCondition />
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations />
+      <Animations>
+        <Animation x:type="Slide" Condition="VisibleTrue" Duration="1000" Easing="EaseOut" StartY="-580" />
+        <Animation x:type="Slide" Condition="VisibleFalse" Duration="1000" Easing="EaseIn" EndY="-580" />
+      </Animations>
       <MediaPortalFocusControls />
       <GroupStyle>
         <BorderThickness>0,0,0,0</BorderThickness>
@@ -57,6 +137,479 @@
         <GlossBrush />
       </GroupStyle>
       <GroupControls>
+        <Control x:type="Image">
+          <Name>Window Name</Name>
+          <Id>54</Id>
+          <Width>462</Width>
+          <Height>58</Height>
+          <PosX>20</PosX>
+          <PosY>10</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Settings\Settings text.png</Image>
+          <ImageStretch>Uniform</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Overlay</Name>
+          <Id>42</Id>
+          <Width>1014</Width>
+          <Height>370</Height>
+          <PosX>5</PosX>
+          <PosY>176</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle>
+            <BorderThickness>0,0,0,0</BorderThickness>
+            <CornerRadius>0,0,0,0</CornerRadius>
+          </ImageStyle>
+          <Image>\Settings\Background Overlay.png</Image>
+          <ImageStretch>Uniform</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Label">
+          <Name>Preview Label</Name>
+          <Id>47</Id>
+          <Width>295</Width>
+          <Height>40</Height>
+          <PosX>35</PosX>
+          <PosY>303</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle>
+            <FontSize>30</FontSize>
+            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          </LabelStyle>
+          <LabelText>@Preview</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>Preview</Name>
+          <Id>43</Id>
+          <Width>270</Width>
+          <Height>174</Height>
+          <PosX>47</PosX>
+          <PosY>340</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <ImageStretch>Fill</ImageStretch>
+          <ImageCornerRadius>15</ImageCornerRadius>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Frame</Name>
+          <Id>44</Id>
+          <Width>302</Width>
+          <Height>200</Height>
+          <PosX>34</PosX>
+          <PosY>327</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Settings\Frame.png</Image>
+          <ImageStretch>Uniform</ImageStretch>
+          <ImageCornerRadius>10</ImageCornerRadius>
+          <CoverImage />
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Label">
+          <Name>Label</Name>
+          <Id>45</Id>
+          <Width>295</Width>
+          <Height>40</Height>
+          <PosX>35</PosX>
+          <PosY>170</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle>
+            <FontSize>30</FontSize>
+            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          </LabelStyle>
+          <LabelText>Skin</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="List">
+          <Name>Skin List</Name>
+          <Id>106</Id>
+          <Width>295</Width>
+          <Height>100</Height>
+          <PosX>35</PosX>
+          <PosY>205</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ListControlStyle StyleId="empty" />
+          <ListType>MPDisplaySkins</ListType>
+          <ListLayout>Auto</ListLayout>
+          <VerticalItemStyle StyleId="Settings Lists" />
+          <HorizontalItemStyle>
+            <BorderThickness>1,1,1,1</BorderThickness>
+            <CornerRadius>4,4,4,4</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FontSize>18</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>3,3,3,3</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+            <ImageMargin>3,3,3,33</ImageMargin>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <Width>135</Width>
+            <Height>207</Height>
+            <ItemMargin>1,1,1,1</ItemMargin>
+          </HorizontalItemStyle>
+          <CoverFlowItemStyle>
+            <BorderThickness>1,1,1,1</BorderThickness>
+            <CornerRadius>4,4,4,4</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FontSize>18</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>3,3,3,3</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+            <ImageMargin>3,3,3,33</ImageMargin>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <Width>135</Width>
+            <Height>207</Height>
+          </CoverFlowItemStyle>
+        </Control>
+        <Control x:type="Rectangle">
+          <Name>Devider</Name>
+          <Id>116</Id>
+          <Width>5</Width>
+          <Height>350</Height>
+          <PosX>341</PosX>
+          <PosY>160</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <BorderThickness>0,0,0,0</BorderThickness>
+          <CornerRadius>0,0,0,0</CornerRadius>
+          <BackgroundBrush />
+          <ShadeBrush x:type="GradientBrush">
+            <GradientStops>
+              <GradientStop Color="Transparent" Offset="0.36" />
+              <GradientStop Color="#FFC0C0C0" Offset="0.475" />
+              <GradientStop Color="Transparent" Offset="0.626" />
+            </GradientStops>
+            <Angle>Horizontal</Angle>
+          </ShadeBrush>
+          <GlossBrush x:type="GradientBrush">
+            <GradientStops>
+              <GradientStop Color="Transparent" Offset="0" />
+              <GradientStop Color="#FFC0C0C0" Offset="0.468" />
+              <GradientStop Color="Transparent" Offset="1" />
+            </GradientStops>
+            <Angle>Vertical</Angle>
+          </GlossBrush>
+        </Control>
+        <Control x:type="Label">
+          <Name>Option Label</Name>
+          <Id>49</Id>
+          <Width>295</Width>
+          <Height>40</Height>
+          <PosX>369</PosX>
+          <PosY>170</PosY>
+          <VisibleCondition />
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle>
+            <FontSize>30</FontSize>
+            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          </LabelStyle>
+          <LabelText>@SkinOption</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="List">
+          <Name>Option List</Name>
+          <Id>107</Id>
+          <Width>295</Width>
+          <Height>109</Height>
+          <PosX>367</PosX>
+          <PosY>222</PosY>
+          <VisibleCondition />
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ListControlStyle StyleId="empty" />
+          <ListType>MPDisplayStyles</ListType>
+          <ListLayout>Auto</ListLayout>
+          <VerticalItemStyle StyleId="Settings Lists" />
+          <HorizontalItemStyle>
+            <BorderThickness>1,1,1,1</BorderThickness>
+            <CornerRadius>4,4,4,4</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FontSize>18</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>3,3,3,3</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+            <ImageMargin>3,3,3,33</ImageMargin>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <Width>135</Width>
+            <Height>207</Height>
+            <ItemMargin>1,1,1,1</ItemMargin>
+          </HorizontalItemStyle>
+          <CoverFlowItemStyle>
+            <BorderThickness>1,1,1,1</BorderThickness>
+            <CornerRadius>4,4,4,4</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FontSize>18</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>3,3,3,3</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+            <ImageMargin>3,3,3,33</ImageMargin>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <Width>135</Width>
+            <Height>207</Height>
+          </CoverFlowItemStyle>
+        </Control>
+        <Control x:type="Rectangle">
+          <Name>Devider</Name>
+          <Id>117</Id>
+          <Width>5</Width>
+          <Height>350</Height>
+          <PosX>682</PosX>
+          <PosY>160</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <BorderThickness>0,0,0,0</BorderThickness>
+          <CornerRadius>0,0,0,0</CornerRadius>
+          <BackgroundBrush />
+          <ShadeBrush x:type="GradientBrush">
+            <GradientStops>
+              <GradientStop Color="Transparent" Offset="0.36" />
+              <GradientStop Color="#FFC0C0C0" Offset="0.475" />
+              <GradientStop Color="Transparent" Offset="0.626" />
+            </GradientStops>
+            <Angle>Horizontal</Angle>
+          </ShadeBrush>
+          <GlossBrush x:type="GradientBrush">
+            <GradientStops>
+              <GradientStop Color="Transparent" Offset="0" />
+              <GradientStop Color="#FFC0C0C0" Offset="0.468" />
+              <GradientStop Color="Transparent" Offset="1" />
+            </GradientStops>
+            <Angle>Vertical</Angle>
+          </GlossBrush>
+        </Control>
+        <Control x:type="Label">
+          <Name>Language Label</Name>
+          <Id>52</Id>
+          <Width>280</Width>
+          <Height>40</Height>
+          <PosX>716</PosX>
+          <PosY>170</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle>
+            <FontSize>30</FontSize>
+            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          </LabelStyle>
+          <LabelText>@Language</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="List">
+          <Name>Language List</Name>
+          <Id>108</Id>
+          <Width>295</Width>
+          <Height>300</Height>
+          <PosX>708</PosX>
+          <PosY>210</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ListControlStyle StyleId="empty" />
+          <ListType>MPDisplayLanguages</ListType>
+          <ListLayout>Auto</ListLayout>
+          <VerticalItemStyle StyleId="Settings Lists" />
+          <HorizontalItemStyle>
+            <BorderThickness>1,1,1,1</BorderThickness>
+            <CornerRadius>4,4,4,4</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FontSize>18</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>3,3,3,3</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+            <ImageMargin>3,3,3,33</ImageMargin>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <Width>135</Width>
+            <Height>207</Height>
+            <ItemMargin>1,1,1,1</ItemMargin>
+          </HorizontalItemStyle>
+          <CoverFlowItemStyle>
+            <BorderThickness>1,1,1,1</BorderThickness>
+            <CornerRadius>4,4,4,4</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FontSize>18</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>3,3,3,3</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+            <ImageMargin>3,3,3,33</ImageMargin>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <Width>135</Width>
+            <Height>207</Height>
+          </CoverFlowItemStyle>
+        </Control>
+        <Control x:type="Label">
+          <Name>Style Label</Name>
+          <Id>118</Id>
+          <Width>295</Width>
+          <Height>40</Height>
+          <PosX>369</PosX>
+          <PosY>340</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle>
+            <FontSize>30</FontSize>
+            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          </LabelStyle>
+          <LabelText>Style</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="List">
+          <Name>Style List</Name>
+          <Id>119</Id>
+          <Width>295</Width>
+          <Height>109</Height>
+          <PosX>367</PosX>
+          <PosY>387</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ListControlStyle StyleId="empty" />
+          <ListType>MPDisplayStyles</ListType>
+          <ListLayout>Auto</ListLayout>
+          <VerticalItemStyle StyleId="Settings Lists" />
+          <HorizontalItemStyle>
+            <BorderThickness>1,1,1,1</BorderThickness>
+            <CornerRadius>4,4,4,4</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FontSize>18</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>3,3,3,3</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+            <ImageMargin>3,3,3,33</ImageMargin>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <Width>135</Width>
+            <Height>207</Height>
+            <ItemMargin>1,1,1,1</ItemMargin>
+          </HorizontalItemStyle>
+          <CoverFlowItemStyle>
+            <BorderThickness>1,1,1,1</BorderThickness>
+            <CornerRadius>4,4,4,4</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FontSize>18</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>3,3,3,3</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+            <ImageMargin>3,3,3,33</ImageMargin>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <Width>135</Width>
+            <Height>207</Height>
+          </CoverFlowItemStyle>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
+      <Name>SystemInfo</Name>
+      <Id>122</Id>
+      <Width>1024</Width>
+      <Height>566</Height>
+      <VisibleCondition />
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations>
+        <Animation x:type="Slide" Condition="VisibleTrue" Duration="1000" Easing="EaseOut" StartY="-566" />
+        <Animation x:type="Slide" Condition="VisibleFalse" Duration="1000" Easing="EaseIn" EndY="-566" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,20,20</CornerRadius>
+        <BackgroundBrush x:type="ColorBrush" Color="#FF272727" />
+        <BorderBrush />
+        <GlossBrush />
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Image">
+          <Name>Main Background</Name>
+          <Id>150</Id>
+          <Width>1024</Width>
+          <Height>768</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle>
+            <BorderThickness>0,0,0,0</BorderThickness>
+            <CornerRadius>0,0,0,0</CornerRadius>
+          </ImageStyle>
+          <Image>\Settings\MainBackground.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
         <Control x:type="Label">
           <Name>Time</Name>
           <Id>123</Id>
@@ -319,586 +872,90 @@
       </GroupControls>
     </Control>
     <Control x:type="Group">
-      <Name>Settings </Name>
-      <Id>9</Id>
+      <Name>Button Group</Name>
+      <Id>145</Id>
       <Width>1024</Width>
-      <Height>574</Height>
-      <VisibleCondition />
+      <Height>188</Height>
+      <PosY>580</PosY>
+      <VisibleCondition>IsControlVisible(122)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
-        <Animation x:type="Slide" Condition="VisibleTrue" Duration="500" Delay="500" Easing="EaseOut" StartY="-580" />
-        <Animation x:type="Slide" Condition="VisibleFalse" Duration="500" Easing="EaseIn" EndY="-580" />
+        <Animation x:type="Slide" Condition="VisibleTrue" Duration="1000" Easing="EaseOut" StartY="-188" EndY="580" />
+        <Animation x:type="Slide" Condition="VisibleFalse" Duration="1000" Easing="EaseIn" StartY="580" EndY="-188" />
       </Animations>
       <MediaPortalFocusControls />
       <GroupStyle>
         <BorderThickness>0,0,0,0</BorderThickness>
-        <CornerRadius>0,0,20,20</CornerRadius>
-        <BackgroundBrush x:type="ColorBrush" Color="#FF272727" />
-        <BorderBrush />
-        <GlossBrush />
+        <CornerRadius>0,0,0,0</CornerRadius>
       </GroupStyle>
       <GroupControls>
-        <Control x:type="Image">
-          <Name>Window Name</Name>
-          <Id>54</Id>
-          <Width>462</Width>
-          <Height>58</Height>
-          <PosX>20</PosX>
-          <PosY>10</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
-          <Image>\Settings\Settings text.png</Image>
-          <ImageStretch>Uniform</ImageStretch>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Image">
-          <Name>Overlay</Name>
-          <Id>42</Id>
-          <Width>1014</Width>
-          <Height>370</Height>
-          <PosX>5</PosX>
-          <PosY>176</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-          </ImageStyle>
-          <Image>\Settings\Background Overlay.png</Image>
-          <ImageStretch>Uniform</ImageStretch>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Label">
-          <Name>Preview Label</Name>
-          <Id>47</Id>
-          <Width>295</Width>
-          <Height>40</Height>
-          <PosX>35</PosX>
-          <PosY>303</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontSize>30</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-          </LabelStyle>
-          <LabelText>@Preview</LabelText>
-          <LabelTextAlignment>Center</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="Image">
-          <Name>Preview</Name>
-          <Id>43</Id>
-          <Width>270</Width>
-          <Height>174</Height>
-          <PosX>47</PosX>
-          <PosY>340</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
-          <ImageStretch>Fill</ImageStretch>
-          <ImageCornerRadius>15</ImageCornerRadius>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Image">
-          <Name>Frame</Name>
-          <Id>44</Id>
-          <Width>302</Width>
-          <Height>200</Height>
-          <PosX>34</PosX>
-          <PosY>327</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
-          <Image>\Settings\Frame.png</Image>
-          <ImageStretch>Uniform</ImageStretch>
-          <ImageCornerRadius>10</ImageCornerRadius>
-          <CoverImage />
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Label">
-          <Name>Label</Name>
-          <Id>45</Id>
-          <Width>295</Width>
-          <Height>40</Height>
-          <PosX>35</PosX>
-          <PosY>170</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontSize>30</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-          </LabelStyle>
-          <LabelText>Skin</LabelText>
-          <LabelTextAlignment>Center</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="List">
-          <Name>Skin List</Name>
-          <Id>106</Id>
-          <Width>295</Width>
-          <Height>100</Height>
-          <PosX>35</PosX>
-          <PosY>205</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ListControlStyle StyleId="empty" />
-          <ListType>MPDisplaySkins</ListType>
-          <ListLayout>Auto</ListLayout>
-          <VerticalItemStyle StyleId="Settings Lists" />
-          <HorizontalItemStyle>
-            <BorderThickness>1,1,1,1</BorderThickness>
-            <CornerRadius>4,4,4,4</CornerRadius>
-            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-            <FontSize>18</FontSize>
-            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <LabelMargin>3,3,3,3</LabelMargin>
-            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-            <EnableImage>true</EnableImage>
-            <ImageMargin>3,3,3,33</ImageMargin>
-            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-            <Width>135</Width>
-            <Height>207</Height>
-            <ItemMargin>1,1,1,1</ItemMargin>
-          </HorizontalItemStyle>
-          <CoverFlowItemStyle>
-            <BorderThickness>1,1,1,1</BorderThickness>
-            <CornerRadius>4,4,4,4</CornerRadius>
-            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-            <FontSize>18</FontSize>
-            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <LabelMargin>3,3,3,3</LabelMargin>
-            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-            <EnableImage>true</EnableImage>
-            <ImageMargin>3,3,3,33</ImageMargin>
-            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-            <Width>135</Width>
-            <Height>207</Height>
-          </CoverFlowItemStyle>
-        </Control>
-        <Control x:type="Rectangle">
-          <Name>Devider</Name>
-          <Id>116</Id>
-          <Width>5</Width>
-          <Height>350</Height>
-          <PosX>341</PosX>
-          <PosY>160</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <BorderThickness>0,0,0,0</BorderThickness>
-          <CornerRadius>0,0,0,0</CornerRadius>
-          <BackgroundBrush />
-          <ShadeBrush x:type="GradientBrush">
-            <Angle>Horizontal</Angle>
-            <GradientStops>
-              <GradientStop Color="Transparent" Offset="0.36" />
-              <GradientStop Color="#FFC0C0C0" Offset="0.475" />
-              <GradientStop Color="Transparent" Offset="0.626" />
-            </GradientStops>
-          </ShadeBrush>
-          <GlossBrush x:type="GradientBrush">
-            <Angle>Vertical</Angle>
-            <GradientStops>
-              <GradientStop Color="Transparent" Offset="0" />
-              <GradientStop Color="#FFC0C0C0" Offset="0.468" />
-              <GradientStop Color="Transparent" Offset="1" />
-            </GradientStops>
-          </GlossBrush>
-        </Control>
-        <Control x:type="Label">
-          <Name>Option Label</Name>
-          <Id>49</Id>
-          <Width>295</Width>
-          <Height>40</Height>
-          <PosX>369</PosX>
-          <PosY>170</PosY>
-          <VisibleCondition />
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontSize>30</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-          </LabelStyle>
-          <LabelText>@SkinOption</LabelText>
-          <LabelTextAlignment>Center</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="List">
-          <Name>Option List</Name>
-          <Id>107</Id>
-          <Width>295</Width>
-          <Height>109</Height>
-          <PosX>367</PosX>
-          <PosY>222</PosY>
-          <VisibleCondition />
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
-          <Animations />
-          <MediaPortalFocusControls />
-          <ListControlStyle StyleId="empty" />
-          <ListType>MPDisplayStyles</ListType>
-          <ListLayout>Auto</ListLayout>
-          <VerticalItemStyle StyleId="Settings Lists" />
-          <HorizontalItemStyle>
-            <BorderThickness>1,1,1,1</BorderThickness>
-            <CornerRadius>4,4,4,4</CornerRadius>
-            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-            <FontSize>18</FontSize>
-            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <LabelMargin>3,3,3,3</LabelMargin>
-            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-            <EnableImage>true</EnableImage>
-            <ImageMargin>3,3,3,33</ImageMargin>
-            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-            <Width>135</Width>
-            <Height>207</Height>
-            <ItemMargin>1,1,1,1</ItemMargin>
-          </HorizontalItemStyle>
-          <CoverFlowItemStyle>
-            <BorderThickness>1,1,1,1</BorderThickness>
-            <CornerRadius>4,4,4,4</CornerRadius>
-            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-            <FontSize>18</FontSize>
-            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <LabelMargin>3,3,3,3</LabelMargin>
-            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-            <EnableImage>true</EnableImage>
-            <ImageMargin>3,3,3,33</ImageMargin>
-            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-            <Width>135</Width>
-            <Height>207</Height>
-          </CoverFlowItemStyle>
-        </Control>
-        <Control x:type="Rectangle">
-          <Name>Devider</Name>
-          <Id>117</Id>
-          <Width>5</Width>
-          <Height>350</Height>
-          <PosX>682</PosX>
-          <PosY>160</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <BorderThickness>0,0,0,0</BorderThickness>
-          <CornerRadius>0,0,0,0</CornerRadius>
-          <BackgroundBrush />
-          <ShadeBrush x:type="GradientBrush">
-            <Angle>Horizontal</Angle>
-            <GradientStops>
-              <GradientStop Color="Transparent" Offset="0.36" />
-              <GradientStop Color="#FFC0C0C0" Offset="0.475" />
-              <GradientStop Color="Transparent" Offset="0.626" />
-            </GradientStops>
-          </ShadeBrush>
-          <GlossBrush x:type="GradientBrush">
-            <Angle>Vertical</Angle>
-            <GradientStops>
-              <GradientStop Color="Transparent" Offset="0" />
-              <GradientStop Color="#FFC0C0C0" Offset="0.468" />
-              <GradientStop Color="Transparent" Offset="1" />
-            </GradientStops>
-          </GlossBrush>
-        </Control>
-        <Control x:type="Label">
-          <Name>Language Label</Name>
-          <Id>52</Id>
-          <Width>280</Width>
-          <Height>40</Height>
-          <PosX>716</PosX>
-          <PosY>170</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontSize>30</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-          </LabelStyle>
-          <LabelText>@Language</LabelText>
-          <LabelTextAlignment>Center</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="List">
-          <Name>Language List</Name>
-          <Id>108</Id>
-          <Width>295</Width>
-          <Height>300</Height>
-          <PosX>708</PosX>
-          <PosY>210</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ListControlStyle StyleId="empty" />
-          <ListType>MPDisplayLanguages</ListType>
-          <ListLayout>Auto</ListLayout>
-          <VerticalItemStyle StyleId="Settings Lists" />
-          <HorizontalItemStyle>
-            <BorderThickness>1,1,1,1</BorderThickness>
-            <CornerRadius>4,4,4,4</CornerRadius>
-            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-            <FontSize>18</FontSize>
-            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <LabelMargin>3,3,3,3</LabelMargin>
-            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-            <EnableImage>true</EnableImage>
-            <ImageMargin>3,3,3,33</ImageMargin>
-            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-            <Width>135</Width>
-            <Height>207</Height>
-            <ItemMargin>1,1,1,1</ItemMargin>
-          </HorizontalItemStyle>
-          <CoverFlowItemStyle>
-            <BorderThickness>1,1,1,1</BorderThickness>
-            <CornerRadius>4,4,4,4</CornerRadius>
-            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-            <FontSize>18</FontSize>
-            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <LabelMargin>3,3,3,3</LabelMargin>
-            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-            <EnableImage>true</EnableImage>
-            <ImageMargin>3,3,3,33</ImageMargin>
-            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-            <Width>135</Width>
-            <Height>207</Height>
-          </CoverFlowItemStyle>
-        </Control>
-        <Control x:type="Label">
-          <Name>Style Label</Name>
-          <Id>118</Id>
-          <Width>295</Width>
-          <Height>40</Height>
-          <PosX>369</PosX>
-          <PosY>340</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle>
-            <FontSize>30</FontSize>
-            <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-          </LabelStyle>
-          <LabelText>Style</LabelText>
-          <LabelTextAlignment>Center</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="List">
-          <Name>Style List</Name>
-          <Id>119</Id>
-          <Width>295</Width>
-          <Height>109</Height>
-          <PosX>367</PosX>
-          <PosY>387</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ListControlStyle StyleId="empty" />
-          <ListType>MPDisplayStyles</ListType>
-          <ListLayout>Auto</ListLayout>
-          <VerticalItemStyle StyleId="Settings Lists" />
-          <HorizontalItemStyle>
-            <BorderThickness>1,1,1,1</BorderThickness>
-            <CornerRadius>4,4,4,4</CornerRadius>
-            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-            <FontSize>18</FontSize>
-            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <LabelMargin>3,3,3,3</LabelMargin>
-            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-            <EnableImage>true</EnableImage>
-            <ImageMargin>3,3,3,33</ImageMargin>
-            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-            <Width>135</Width>
-            <Height>207</Height>
-            <ItemMargin>1,1,1,1</ItemMargin>
-          </HorizontalItemStyle>
-          <CoverFlowItemStyle>
-            <BorderThickness>1,1,1,1</BorderThickness>
-            <CornerRadius>4,4,4,4</CornerRadius>
-            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-            <FontSize>18</FontSize>
-            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
-            <LabelMargin>3,3,3,3</LabelMargin>
-            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
-            <EnableImage>true</EnableImage>
-            <ImageMargin>3,3,3,33</ImageMargin>
-            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-            <Width>135</Width>
-            <Height>207</Height>
-          </CoverFlowItemStyle>
-        </Control>
-      </GroupControls>
-    </Control>
-    <Control x:type="Button">
-      <Name>Settings notActive</Name>
-      <Id>115</Id>
-      <Width>274</Width>
-      <Height>75</Height>
-      <PosX>30</PosX>
-      <PosY>580</PosY>
-      <VisibleCondition>!IsControlVisible(9)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations />
-      <MediaPortalFocusControls />
-      <ButtonStyle StyleId="MPDHome Button" />
-      <Image>\Settings\notactive.png</Image>
-      <LabelText>@Settings</LabelText>
-      <Actions>
-        <Action Action="ControlVisible" Param="9" />
-      </Actions>
-    </Control>
-    <Control x:type="Button">
-      <Name>Settings Active</Name>
-      <Id>114</Id>
-      <Width>274</Width>
-      <Height>75</Height>
-      <PosX>30</PosX>
-      <PosY>580</PosY>
-      <VisibleCondition>IsControlVisible(9)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations />
-      <MediaPortalFocusControls />
-      <ButtonStyle StyleId="MPDHome Button" />
-      <Image>\Settings\active.png</Image>
-      <LabelText>@Settings</LabelText>
-      <Actions>
-        <Action Action="ControlVisible" Param="9" />
-      </Actions>
-    </Control>
-    <Control x:type="Button">
-      <Name>MP Button</Name>
-      <Id>140</Id>
-      <Width>274</Width>
-      <Height>78</Height>
-      <PosX>424</PosX>
-      <PosY>580</PosY>
-      <VisibleCondition>IsMediaPortalConnected</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations />
-      <MediaPortalFocusControls />
-      <ButtonStyle StyleId="MPDHome Button" />
-      <LabelText>MediaPortal</LabelText>
-      <Actions>
-        <Action Action="OpenWindow" Param="0" />
-      </Actions>
-    </Control>
-    <Control x:type="Button">
-      <Name>Exit Button</Name>
-      <Id>36</Id>
-      <Width>274</Width>
-      <Height>78</Height>
-      <PosX>728</PosX>
-      <PosY>580</PosY>
-      <VisibleCondition />
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations />
-      <MediaPortalFocusControls />
-      <ButtonStyle StyleId="MPDHome Button" />
-      <LabelText>@Exit</LabelText>
-      <Actions>
-        <Action Action="Exit" Param="C:\Program Files\MPDisplay++\MPDisplay.exe" />
-      </Actions>
-    </Control>
-    <Control x:type="Group">
-      <Name>NewGroup</Name>
-      <Id>141</Id>
-      <Width>1024</Width>
-      <Height>768</Height>
-      <VisibleCondition />
-      <Animations />
-      <MediaPortalFocusControls />
-      <GroupStyle StyleId="Empty" />
-      <GroupControls>
-        <Control x:type="Image">
-          <Name>NewImage</Name>
-          <Id>142</Id>
-          <Width>1366</Width>
-          <Height>768</Height>
-          <PosX>-177</PosX>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
-          <Image>\splashscreen.png</Image>
-          <ImageStretch>Fill</ImageStretch>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
         <Control x:type="Button">
-          <Name>NewButton</Name>
-          <Id>143</Id>
-          <Width>355</Width>
-          <Height>73</Height>
-          <PosX>10</PosX>
-          <PosY>666</PosY>
-          <VisibleCondition />
+          <Name>Settings notActive</Name>
+          <Id>146</Id>
+          <Width>274</Width>
+          <Height>75</Height>
+          <PosX>30</PosX>
+          <PosY>580</PosY>
+          <VisibleCondition>!IsControlVisible(9)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
-          <ButtonStyle StyleId="Weather" />
-          <LabelText>Exit MPD</LabelText>
+          <ButtonStyle StyleId="MPDHome Button" />
+          <Image>\Settings\notactive.png</Image>
+          <LabelText>@Settings</LabelText>
           <Actions>
-            <Action Action="Exit" />
+            <Action Action="ControlVisible" Param="9" />
           </Actions>
         </Control>
         <Control x:type="Button">
-          <Name>NewButton</Name>
-          <Id>144</Id>
-          <Width>355</Width>
-          <Height>73</Height>
-          <PosX>659</PosX>
-          <PosY>666</PosY>
+          <Name>Settings Active</Name>
+          <Id>147</Id>
+          <Width>274</Width>
+          <Height>75</Height>
+          <PosX>30</PosX>
+          <PosY>580</PosY>
+          <VisibleCondition>IsControlVisible(9)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle StyleId="MPDHome Button" />
+          <Image>\Settings\active.png</Image>
+          <LabelText>@Settings</LabelText>
+          <Actions>
+            <Action Action="ControlVisible" Param="9" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Exit Button</Name>
+          <Id>149</Id>
+          <Width>274</Width>
+          <Height>78</Height>
+          <PosX>728</PosX>
+          <PosY>580</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ButtonStyle StyleId="Weather" />
-          <LabelText>Reconnect to Server</LabelText>
+          <ButtonStyle StyleId="MPDHome Button" />
+          <LabelText>@Exit</LabelText>
           <Actions>
-            <Action Action="Connect" />
+            <Action Action="ControlVisible" Param="122" />
+            <Action Action="ControlVisible" Param="141" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>MP Button</Name>
+          <Id>148</Id>
+          <Width>274</Width>
+          <Height>78</Height>
+          <PosX>424</PosX>
+          <PosY>580</PosY>
+          <VisibleCondition>IsMediaPortalConnected</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle StyleId="MPDHome Button" />
+          <LabelText>MediaPortal</LabelText>
+          <Actions>
+            <Action Action="OpenWindow" Param="0" />
           </Actions>
         </Control>
       </GroupControls>

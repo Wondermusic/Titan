@@ -98,7 +98,6 @@
             <NoFocusBrush />
             <NoFocusBorderBrush />
             <FocusBrush x:type="GradientBrush">
-              <Angle>Horizontal</Angle>
               <GradientStops>
                 <GradientStop Color="#FF00B7FF" Offset="0" />
                 <GradientStop Color="#63000000" Offset="0.021" />
@@ -108,6 +107,7 @@
                 <GradientStop Color="#8400B7FF" Offset="0.209" />
                 <GradientStop Color="#1A00B7FF" Offset="1" />
               </GradientStops>
+              <Angle>Horizontal</Angle>
             </FocusBrush>
             <FocusBorderBrush />
             <ShadeBrush />
@@ -212,7 +212,6 @@
             <NoFocusBrush />
             <NoFocusBorderBrush />
             <FocusBrush x:type="GradientBrush">
-              <Angle>Horizontal</Angle>
               <GradientStops>
                 <GradientStop Color="#FF00B7FF" Offset="0" />
                 <GradientStop Color="#63000000" Offset="0.021" />
@@ -222,6 +221,7 @@
                 <GradientStop Color="#8400B7FF" Offset="0.209" />
                 <GradientStop Color="#1A00B7FF" Offset="1" />
               </GradientStops>
+              <Angle>Horizontal</Angle>
             </FocusBrush>
             <FocusBorderBrush />
             <ShadeBrush />
@@ -248,12 +248,12 @@
             <FocusBrush x:type="ColorBrush" Color="#FF00B7FF" />
             <FocusBorderBrush />
             <ShadeBrush x:type="GradientBrush">
-              <Angle>Vertical</Angle>
               <GradientStops>
                 <GradientStop Color="Transparent" Offset="0" />
                 <GradientStop Color="#FF00B7FF" Offset="0.496" />
                 <GradientStop Color="Transparent" Offset="1" />
               </GradientStops>
+              <Angle>Vertical</Angle>
             </ShadeBrush>
             <FontType>Titan</FontType>
             <FontSize>25</FontSize>
@@ -423,7 +423,7 @@
       <Id>22</Id>
       <Width>1024</Width>
       <Height>130</Height>
-      <VisibleCondition />
+      <VisibleCondition>IsSkinOptionEnabled(Default) || IsSkinOptionEnabled(Extended)</VisibleCondition>
       <Animations />
       <MediaPortalFocusControls />
       <ButtonStyle>

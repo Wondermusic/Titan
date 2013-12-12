@@ -361,7 +361,7 @@
       <Id>24</Id>
       <Width>1024</Width>
       <Height>130</Height>
-      <VisibleCondition />
+      <VisibleCondition>IsSkinOptionEnabled(Default) || IsSkinOptionEnabled(Extended)</VisibleCondition>
       <Animations />
       <MediaPortalFocusControls />
       <ButtonStyle>
