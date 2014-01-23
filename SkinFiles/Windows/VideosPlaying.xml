@@ -88,9 +88,10 @@
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
-          <Image>#Play.Current.Thumb</Image>
+          <Image>#thumb</Image>
           <DefaultImage>\defaultVideoBig.png</DefaultImage>
           <ImageStretch>Uniform</ImageStretch>
+          <ImageCornerRadius>10</ImageCornerRadius>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="ProgressBar">

@@ -93,7 +93,7 @@
             <BackgroundBrush />
             <BorderBrush />
           </ImageStyle>
-          <Image>#TV.RecordedTV.thumb</Image>
+          <Image>#TV.Record.thumb</Image>
           <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
