@@ -125,15 +125,6 @@
       <IsInternal>false</IsInternal>
     </XmlProperty>
     <XmlProperty>
-      <SkinTag>#MovingPictures.UserMovieSettings.watched</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <DesignerValue>New....</DesignerValue>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#MovingPictures.UserMovieSettings.watched" />
-      </MediaPortalTags>
-      <IsInternal>false</IsInternal>
-    </XmlProperty>
-    <XmlProperty>
       <SkinTag>#MovingPictures.Coverart</SkinTag>
       <PropertyType>Image</PropertyType>
       <DesignerValue>\defaultVideoBig.png</DesignerValue>
@@ -175,16 +166,6 @@
       <DesignerValue>New....</DesignerValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#TV.View.thumb" />
-      </MediaPortalTags>
-      <IsInternal>false</IsInternal>
-    </XmlProperty>
-    <XmlProperty>
-      <SkinTag>#MPD2.fanart.TVSeries</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <DesignerValue>New....</DesignerValue>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#TVSeries.Fanart.1" />
-        <XmlMediaPortalTag Tag="#TVSeries.Fanart.2" />
       </MediaPortalTags>
       <IsInternal>false</IsInternal>
     </XmlProperty>
@@ -309,6 +290,30 @@
       <IsInternal>false</IsInternal>
     </XmlProperty>
     <XmlProperty>
+      <SkinTag>#MovingPictures.SelectedMovie.backdropfullpath</SkinTag>
+      <PropertyType>Image</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#MovingPictures.SelectedMovie.backdropfullpath" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#TVSeries.Current.Fanart</SkinTag>
+      <PropertyType>Image</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#TVSeries.Current.Fanart" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#fanarthandler.music.overlay.play</SkinTag>
+      <PropertyType>Image</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#fanarthandler.music.overlay.play" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
       <SkinTag>#percentage</SkinTag>
       <PropertyType>Number</PropertyType>
       <DesignerValue>25</DesignerValue>
@@ -341,6 +346,15 @@
       <DesignerValue>50</DesignerValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#TV.Record.percent2" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#MovingPictures.UserMovieSettings.watched</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#MovingPictures.UserMovieSettings.watched" />
       </MediaPortalTags>
       <IsInternal>false</IsInternal>
     </XmlProperty>
@@ -2266,6 +2280,58 @@
       <DesignerValue>16</DesignerValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#mpaarating" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#TVSeries.Series.RatingPath2</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#TVSeries.Series.RatingPath2" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#stream.genre</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>test</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#stream.genre" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#stream.country</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>Deutschland</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#stream.country" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#stream.city</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>Wuppertal</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#stream.city" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#active.Station</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>Radio Wuppertal</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#active.Station" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#stream.description</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#stream.description" />
       </MediaPortalTags>
       <IsInternal>false</IsInternal>
     </XmlProperty>

@@ -39,10 +39,13 @@
           <Height>768</Height>
           <PosX>-171</PosX>
           <VisibleCondition />
-          <Animations />
+          <Animations>
+            <Animation x:type="Fade" Condition="PropertyChanging" Duration="1000" Delay="100" Easing="EaseInOut" From="100" To="0" />
+            <Animation x:type="Fade" Condition="PropertyChanged" Duration="500" Easing="EaseInOut" />
+          </Animations>
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
-          <Image>#MPD2.fanart.TVSeries</Image>
+          <Image>#TVSeries.Current.Fanart</Image>
           <ImageStretch>Fill</ImageStretch>
           <CoverImage x:type="ImageBrush" Image="\fanart_overlay.png" Stretch="Fill" />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -82,7 +85,7 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>63</Id>
-          <Width>959</Width>
+          <Width>579</Width>
           <Height>60</Height>
           <PosX>29</PosX>
           <PosY>655</PosY>
@@ -91,7 +94,7 @@
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan 40" />
-          <LabelText>#selecteditem</LabelText>
+          <LabelText>#TVSeries.Series.Pretty_Name</LabelText>
           <ScrollDelay>2</ScrollDelay>
           <ScrollSpeed>10</ScrollSpeed>
           <ScrollSeperator>   |   </ScrollSeperator>
@@ -194,6 +197,43 @@
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
           <Image>\Logos\Stars\+#MPD2.TVSeries.RatingPath</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Label">
+          <Name>Rating</Name>
+          <Id>64</Id>
+          <Width>64</Width>
+          <Height>40</Height>
+          <PosX>926</PosX>
+          <PosY>660</PosY>
+          <VisibleCondition>IsControlVisible(59)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle>
+            <FontType>Titan</FontType>
+            <FontSize>30</FontSize>
+            <FontBrush x:type="ColorBrush" Color="#FF000000" />
+          </LabelStyle>
+          <LabelText>#MPD2.TVSeries.Rating</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>Star Rating</Name>
+          <Id>65</Id>
+          <Width>240</Width>
+          <Height>26</Height>
+          <PosX>679</PosX>
+          <PosY>665</PosY>
+          <VisibleCondition>IsControlVisible(59)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\Stars\+#TVSeries.Series.RatingPath2</Image>
           <ImageStretch>Fill</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>

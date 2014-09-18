@@ -22,6 +22,30 @@
       <ImageStretch>Fill</ImageStretch>
       <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
     </Control>
+    <Control x:type="Rectangle">
+      <Name>NewRectangle</Name>
+      <Id>37</Id>
+      <Width>1024</Width>
+      <Height>768</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="GradientBrush">
+        <GradientStops>
+          <GradientStop Color="#06000000" Offset="0.259" />
+          <GradientStop Color="#87000000" Offset="0.137" />
+          <GradientStop Color="#FF000000" Offset="0" />
+          <GradientStop Color="#FF000000" Offset="0" />
+          <GradientStop Color="#06000000" Offset="0.734" />
+          <GradientStop Color="#87000000" Offset="0.82" />
+          <GradientStop Color="#FF000000" Offset="0.9" />
+          <GradientStop Color="#FF000000" Offset="1" />
+        </GradientStops>
+        <Angle>Vertical</Angle>
+      </BackgroundBrush>
+    </Control>
     <Control x:type="Group">
       <Name>Menu</Name>
       <Id>8</Id>

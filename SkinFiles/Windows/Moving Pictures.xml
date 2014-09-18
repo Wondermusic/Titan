@@ -812,8 +812,7 @@
           <Height>45</Height>
           <PosX>70</PosX>
           <PosY>521</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
@@ -828,8 +827,7 @@
           <Height>45</Height>
           <PosX>140</PosX>
           <PosY>521</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
@@ -844,8 +842,7 @@
           <Height>45</Height>
           <PosX>210</PosX>
           <PosY>521</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
@@ -860,8 +857,7 @@
           <Height>45</Height>
           <PosX>70</PosX>
           <PosY>581</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
@@ -876,8 +872,7 @@
           <Height>45</Height>
           <PosX>140</PosX>
           <PosY>581</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
@@ -892,46 +887,13 @@
           <Height>45</Height>
           <PosX>210</PosX>
           <PosY>581</PosY>
-          <VisibleCondition>IsControlVisible(32)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
           <Image>\Logos\+#MPD2.Video.Subs+.png</Image>
           <ImageStretch>Fill</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Label">
-          <Name>Movie Title</Name>
-          <Id>170</Id>
-          <Width>500</Width>
-          <Height>60</Height>
-          <PosX>496</PosX>
-          <PosY>655</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan 40" />
-          <LabelText>#MovingPictures.SelectedMovie.title</LabelText>
-          <ScrollDelay>2</ScrollDelay>
-          <ScrollSpeed>4</ScrollSpeed>
-          <ScrollSeperator>  |  </ScrollSeperator>
-        </Control>
-        <Control x:type="Label">
-          <Name>itemcount</Name>
-          <Id>171</Id>
-          <Width>435</Width>
-          <Height>60</Height>
-          <PosX>29</PosX>
-          <PosY>655</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan 40" />
-          <LabelText>@items+: +#MovingPictures.general.itemcount</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
       </GroupControls>
     </Control>
@@ -1067,6 +1029,96 @@
           <ScrollSpeed>6</ScrollSpeed>
           <ScrollSeperator>---------------------------------------------------------------------------</ScrollSeperator>
         </Control>
+        <Control x:type="Image">
+          <Name>Video Codec</Name>
+          <Id>241</Id>
+          <Width>66</Width>
+          <Height>45</Height>
+          <PosX>70</PosX>
+          <PosY>521</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MovingPictures.LocalMedia.videocodec+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Video Resolution</Name>
+          <Id>242</Id>
+          <Width>66</Width>
+          <Height>45</Height>
+          <PosX>140</PosX>
+          <PosY>521</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MovingPictures.LocalMedia.videoresolution+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Video Aspect Ratio</Name>
+          <Id>243</Id>
+          <Width>66</Width>
+          <Height>45</Height>
+          <PosX>210</PosX>
+          <PosY>521</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MovingPictures.LocalMedia.videoaspectratio+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Audio Codec</Name>
+          <Id>244</Id>
+          <Width>66</Width>
+          <Height>45</Height>
+          <PosX>70</PosX>
+          <PosY>581</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MovingPictures.LocalMedia.audiocodec+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Audio Channels</Name>
+          <Id>245</Id>
+          <Width>66</Width>
+          <Height>45</Height>
+          <PosX>140</PosX>
+          <PosY>581</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MovingPictures.LocalMedia.audiochannels+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Subtitles</Name>
+          <Id>246</Id>
+          <Width>66</Width>
+          <Height>45</Height>
+          <PosX>210</PosX>
+          <PosY>581</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MPD2.Video.Subs+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
       </GroupControls>
     </Control>
     <Control x:type="Group">
@@ -1074,7 +1126,7 @@
       <Id>180</Id>
       <Width>1024</Width>
       <Height>768</Height>
-      <VisibleCondition>IsMediaPortalControlFocused(20002)</VisibleCondition>
+      <VisibleCondition>IsMediaPortalControlFocused(20002) || IsMediaPortalControlFocused(10002)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
@@ -1104,8 +1156,9 @@
         <Control x:type="Image">
           <Name>BG</Name>
           <Id>182</Id>
-          <Width>1024</Width>
+          <Width>1049</Width>
           <Height>600</Height>
+          <PosX>-15</PosX>
           <PosY>100</PosY>
           <VisibleCondition />
           <Animations />
@@ -1392,6 +1445,96 @@
           <ScrollSpeed>4</ScrollSpeed>
           <ScrollSeperator>  |  </ScrollSeperator>
         </Control>
+        <Control x:type="Image">
+          <Name>Video Codec</Name>
+          <Id>235</Id>
+          <Width>66</Width>
+          <Height>45</Height>
+          <PosX>70</PosX>
+          <PosY>521</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MovingPictures.LocalMedia.videocodec+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Video Resolution</Name>
+          <Id>236</Id>
+          <Width>66</Width>
+          <Height>45</Height>
+          <PosX>140</PosX>
+          <PosY>521</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MovingPictures.LocalMedia.videoresolution+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Video Aspect Ratio</Name>
+          <Id>237</Id>
+          <Width>66</Width>
+          <Height>45</Height>
+          <PosX>210</PosX>
+          <PosY>521</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MovingPictures.LocalMedia.videoaspectratio+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Audio Codec</Name>
+          <Id>238</Id>
+          <Width>66</Width>
+          <Height>45</Height>
+          <PosX>70</PosX>
+          <PosY>581</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MovingPictures.LocalMedia.audiocodec+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Audio Channels</Name>
+          <Id>239</Id>
+          <Width>66</Width>
+          <Height>45</Height>
+          <PosX>140</PosX>
+          <PosY>581</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MovingPictures.LocalMedia.audiochannels+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Subtitles</Name>
+          <Id>240</Id>
+          <Width>66</Width>
+          <Height>45</Height>
+          <PosX>210</PosX>
+          <PosY>581</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#MPD2.Video.Subs+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
       </GroupControls>
     </Control>
     <Control x:type="Group">
@@ -1399,7 +1542,7 @@
       <Id>200</Id>
       <Width>1024</Width>
       <Height>768</Height>
-      <VisibleCondition>IsMediaPortalControlFocused(10003)</VisibleCondition>
+      <VisibleCondition>IsMediaPortalControlFocused(10005)</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />

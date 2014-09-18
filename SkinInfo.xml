@@ -15,11 +15,11 @@
   <TextVerticalScrollSeperator>---------------------------------</TextVerticalScrollSeperator>
   <SkinOptions>
     <SkinOption Name="Default" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\Preview_Default.png" Description="Sets BasicHome Screen as Default" />
-    <SkinOption Name="Extended" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\Preview_Extended.png" Description="Attention: You have to rename the Pictures in C:\ProgramData\MPDisplay++\Skin\Titan\Images\BasicHomeImages as you name your Menu Items in Titan BasicHome Editor." />
+    <SkinOption Name="Extended" Group="BasicHome" IsEnabled="true" IsPreviewImageEnabled="true" PreviewImage="\Preview_Extended.png" Description="Attention: You have to rename the Pictures in C:\ProgramData\MPDisplay++\Skin\Titan\Images\BasicHomeImages as you name your Menu Items in Titan BasicHome Editor." />
     <SkinOption Name="Default_NoTouch" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\Preview_Default_NoTouch.png" Description="BasicHome Default Menu without Touch function" />
     <SkinOption Name="Extended_NoTouch" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\Preview_Extended_NoTouch.png" Description="BasicHome Extended Menu without Touch function" />
     <SkinOption Name="ClassicHome" Group="BasicHome" Description="Sets ClassicHome Screen as Default" />
-    <SkinOption Name="ClassicHome_Extended" Group="BasicHome" IsEnabled="true" Description="Sets BasicHome Screen as Default and when switched to BasicHome it will use the Extended Menu" />
+    <SkinOption Name="ClassicHome_Extended" Group="BasicHome" Description="Sets BasicHome Screen as Default and when switched to BasicHome it will use the Extended Menu" />
   </SkinOptions>
   <SkinName>Titan</SkinName>
   <Author>Wondermusic</Author>

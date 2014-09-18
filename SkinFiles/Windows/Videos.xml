@@ -523,7 +523,7 @@
           <Animations />
           <MediaPortalFocusControls />
           <ListControlStyle StyleId="empty" />
-          <ListType>MediaPortalButtonGroup</ListType>
+          <ListType>MediaPortalListControl</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="VideoList" />
           <HorizontalItemStyle StyleId="VideoList Horizontal" />

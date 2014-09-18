@@ -28,7 +28,7 @@
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
-          <Image>#MPD2.fanart.TVSeries</Image>
+          <Image>#TVSeries.Current.Fanart</Image>
           <ImageStretch>Fill</ImageStretch>
           <CoverImage StyleId="Background Play" />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -252,7 +252,6 @@
           <Width>60</Width>
           <Height>60</Height>
           <VisibleCondition>!IsTvRecording</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle>
