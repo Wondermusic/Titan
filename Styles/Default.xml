@@ -726,7 +726,6 @@
       <NoFocusBorderBrush />
       <FocusBrush />
       <FocusBorderBrush />
-      <EnableLabel>false</EnableLabel>
       <FontType>Titan</FontType>
       <FontSize>20</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
@@ -734,6 +733,7 @@
       <LabelMargin>3,3,3,3</LabelMargin>
       <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
       <EnableImage>true</EnableImage>
+      <ImageVerticalAlignment>Bottom</ImageVerticalAlignment>
       <ImageCornerRadius>10</ImageCornerRadius>
       <Width>213</Width>
       <Height>322</Height>
@@ -741,6 +741,16 @@
       <SelectionZoomX>120</SelectionZoomX>
       <SelectionZoomY>120</SelectionZoomY>
       <SelectionZoomDuration>200</SelectionZoomDuration>
+      <EnableLabel2>true</EnableLabel2>
+      <Label2FocusFontBrush x:type="ColorBrush" Color="#FFFF00FF" />
+      <Label2NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFF0" />
+      <EnableLabel3>true</EnableLabel3>
+      <Label3FocusFontBrush x:type="ColorBrush" Color="#FF4169E1" />
+      <Label3NoFocusFontBrush x:type="ColorBrush" Color="#FFFF0000" />
+      <Label3VerticalAlignment>Top</Label3VerticalAlignment>
+      <EnableImage2>true</EnableImage2>
+      <EnableImage3>true</EnableImage3>
+      <Image3VerticalAlignment>Top</Image3VerticalAlignment>
     </ControlStyle>
     <ControlStyle x:type="ListItemStyle" StyleId="MusicList CoverFlow">
       <BorderThickness>1,1,1,1</BorderThickness>

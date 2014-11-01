@@ -219,6 +219,7 @@
           <Animations />
           <MediaPortalFocusControls />
           <EqualizerStyle StyleId="Equalizer" />
+          <EQChannel>1</EQChannel>
           <BandCount>15</BandCount>
           <BandSpacing>1</BandSpacing>
           <BandBorderSize>0</BandBorderSize>
