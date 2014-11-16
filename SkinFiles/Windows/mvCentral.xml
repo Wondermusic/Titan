@@ -190,8 +190,8 @@
           <Id>61</Id>
           <Width>650</Width>
           <Height>60</Height>
-          <PosX>75</PosX>
-          <PosY>12</PosY>
+          <PosX>85</PosX>
+          <PosY>9</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -237,8 +237,8 @@
         <Control x:type="Image">
           <Name>Rec Indicator</Name>
           <Id>68</Id>
-          <Width>60</Width>
-          <Height>60</Height>
+          <Width>85</Width>
+          <Height>85</Height>
           <VisibleCondition>IsTvRecording</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations>
