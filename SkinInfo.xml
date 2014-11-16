@@ -3,7 +3,7 @@
   <SkinWidth>1024</SkinWidth>
   <SkinHeight>768</SkinHeight>
   <CurrentStyle>Default</CurrentStyle>
-  <CurrentLanguage>Deutsch</CurrentLanguage>
+  <CurrentLanguage>English</CurrentLanguage>
   <TextEnableScrolling>false</TextEnableScrolling>
   <TextHorizontalScrollDelay>3</TextHorizontalScrollDelay>
   <TextHorizontalScrollSpeed>20</TextHorizontalScrollSpeed>
@@ -14,8 +14,8 @@
   <TextVerticalScrollWrap>true</TextVerticalScrollWrap>
   <TextVerticalScrollSeperator>---------------------------------</TextVerticalScrollSeperator>
   <SkinOptions>
-    <SkinOption Name="Default" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\Preview_Default.png" Description="Sets BasicHome Screen as Default" />
-    <SkinOption Name="Extended" Group="BasicHome" IsEnabled="true" IsPreviewImageEnabled="true" PreviewImage="\Preview_Extended.png" Description="Attention: You have to rename the Pictures in C:\ProgramData\MPDisplay++\Skin\Titan\Images\BasicHomeImages as you name your Menu Items in Titan BasicHome Editor." />
+    <SkinOption Name="Default" Group="BasicHome" IsEnabled="true" IsPreviewImageEnabled="true" PreviewImage="\Preview_Default.png" Description="Sets BasicHome Screen as Default" />
+    <SkinOption Name="Extended" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\Preview_Extended.png" Description="Attention: You have to rename the Pictures in C:\ProgramData\MPDisplay++\Skin\Titan\Images\BasicHomeImages as you name your Menu Items in Titan BasicHome Editor." />
     <SkinOption Name="Default_NoTouch" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\Preview_Default_NoTouch.png" Description="BasicHome Default Menu without Touch function" />
     <SkinOption Name="Extended_NoTouch" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\Preview_Extended_NoTouch.png" Description="BasicHome Extended Menu without Touch function" />
     <SkinOption Name="ClassicHome" Group="BasicHome" Description="Sets ClassicHome Screen as Default" />
