@@ -101,7 +101,6 @@
       </Animations>
       <MediaPortalFocusControls />
       <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
         <CornerRadius>0,0,20,20</CornerRadius>
         <BackgroundBrush x:type="ColorBrush" Color="#FF272727" />
         <BorderBrush />
@@ -116,10 +115,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-          </ImageStyle>
+          <ImageStyle />
           <Image>\Settings\MainBackground.png</Image>
           <ImageStretch>Fill</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -398,10 +394,7 @@
         <Animation x:type="Slide" Condition="VisibleFalse" Duration="1000" Easing="EaseIn" StartY="580" EndY="-188" />
       </Animations>
       <MediaPortalFocusControls />
-      <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
-        <CornerRadius>0,0,0,0</CornerRadius>
-      </GroupStyle>
+      <GroupStyle />
       <GroupControls>
         <Control x:type="Button">
           <Name>Exit Button</Name>
