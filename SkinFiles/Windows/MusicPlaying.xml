@@ -14,36 +14,29 @@
       <Width>1024</Width>
       <Height>768</Height>
       <VisibleCondition>IsMediaPortalControlFocused(6101) || IsPlayer(IsMusic) || IsMediaPortalControlFocused(6102) || IsMediaPortalControlFocused(6103) || IsMediaPortalControlFocused(6104)</VisibleCondition>
-      <Animations>
-        <Animation x:type="Rotate" Condition="PropertyChanging" Duration="300" Pos3DXTo="90" />
-        <Animation x:type="Rotate" Condition="PropertyChanged" Duration="300" Pos3DXFrom="90" />
-      </Animations>
+      <Animations />
       <MediaPortalFocusControls />
-      <GroupStyle>
-        <BackgroundBrush />
-        <BorderBrush />
-        <GlossBrush />
-      </GroupStyle>
+      <GroupStyle StyleId="Empty" />
       <GroupControls>
         <Control x:type="Image">
           <Name>Fanart</Name>
-          <Id>2</Id>
-          <Width>1366</Width>
+          <Id>8</Id>
+          <Width>1340</Width>
           <Height>768</Height>
-          <PosX>-171</PosX>
+          <PosX>-150</PosX>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
           <Image>#fanarthandler.music.overlay.play</Image>
-          <DefaultImage>\BasicHomeImages\Hovers\Music.jpg</DefaultImage>
-          <ImageStretch>Fill</ImageStretch>
+          <DefaultImage>\BG\Music.jpg</DefaultImage>
+          <ImageStretch>Uniform</ImageStretch>
           <CoverImage StyleId="Background Play" />
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="Image">
           <Name>Overlay</Name>
-          <Id>3</Id>
+          <Id>9</Id>
           <Width>1024</Width>
           <Height>768</Height>
           <VisibleCondition />
@@ -55,12 +48,26 @@
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="Image">
+          <Name>OSD</Name>
+          <Id>10</Id>
+          <Width>1024</Width>
+          <Height>400</Height>
+          <PosY>367</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\osd_bg.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
           <Name>Cover</Name>
-          <Id>4</Id>
-          <Width>320</Width>
-          <Height>320</Height>
-          <PosX>352</PosX>
-          <PosY>100</PosY>
+          <Id>11</Id>
+          <Width>300</Width>
+          <Height>300</Height>
+          <PosX>362</PosX>
+          <PosY>95</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -71,130 +78,87 @@
           <ImageCornerRadius>10</ImageCornerRadius>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
-        <Control x:type="Image">
-          <Name>OSD</Name>
-          <Id>5</Id>
-          <Width>1024</Width>
-          <Height>320</Height>
+        <Control x:type="Label">
+          <Name>Artist</Name>
+          <Id>12</Id>
+          <Width>962</Width>
+          <Height>95</Height>
+          <PosX>30</PosX>
           <PosY>405</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
-          <Image>\osd_bg.png</Image>
-          <ImageStretch>Fill</ImageStretch>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Label">
-          <Name>Artist</Name>
-          <Id>6</Id>
-          <Width>944</Width>
-          <Height>110</Height>
-          <PosX>40</PosX>
-          <PosY>425</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan90" />
+          <LabelStyle StyleId="Titan80" />
           <LabelText>#Play.Current.Artist</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
-          <ScrollDelay>2</ScrollDelay>
-          <ScrollSpeed>4</ScrollSpeed>
-          <ScrollSeperator>  |  </ScrollSeperator>
         </Control>
         <Control x:type="Label">
           <Name>Title</Name>
-          <Id>7</Id>
-          <Width>944</Width>
-          <Height>75</Height>
-          <PosX>40</PosX>
-          <PosY>530</PosY>
+          <Id>13</Id>
+          <Width>962</Width>
+          <Height>85</Height>
+          <PosX>30</PosX>
+          <PosY>483</PosY>
           <VisibleCondition />
-          <Animations>
-            <Animation x:type="Rotate" Condition="PropertyChanging" Duration="300" Pos3DXTo="-90" />
-            <Animation x:type="Rotate" Condition="PropertyChanged" Duration="300" Delay="300" />
-          </Animations>
+          <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan60" />
+          <LabelStyle StyleId="Titan70" />
           <LabelText>#Play.Current.Title</LabelText>
           <LabelTextAlignment>Center</LabelTextAlignment>
-          <ScrollDelay>2</ScrollDelay>
-          <ScrollSpeed>4</ScrollSpeed>
-          <ScrollSeperator>  |  </ScrollSeperator>
-        </Control>
-        <Control x:type="Label">
-          <Name>Next Artist / Title</Name>
-          <Id>8</Id>
-          <Width>944</Width>
-          <Height>50</Height>
-          <PosX>40</PosX>
-          <PosY>668</PosY>
-          <VisibleCondition />
-          <Animations>
-            <Animation x:type="Rotate" Condition="PropertyChanging" Duration="300" Pos3DXTo="90" />
-            <Animation x:type="Rotate" Condition="PropertyChanged" Duration="300" Delay="600" Pos3DXFrom="-90" />
-          </Animations>
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan40 White" />
-          <LabelText>@Next+: +#Play.Next.Artist+ - +#Play.Next.Title+ / +#Play.Next.Duration</LabelText>
-          <LabelTextAlignment>Center</LabelTextAlignment>
-          <ScrollDelay>2</ScrollDelay>
-          <ScrollSpeed>4</ScrollSpeed>
-          <ScrollSeperator>  |  </ScrollSeperator>
         </Control>
         <Control x:type="ProgressBar">
           <Name>ProgressBar</Name>
-          <Id>9</Id>
-          <Width>309</Width>
-          <Height>30</Height>
-          <PosX>365</PosX>
-          <PosY>620</PosY>
+          <Id>14</Id>
+          <Width>458</Width>
+          <Height>47</Height>
+          <PosX>283</PosX>
+          <PosY>627</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <ProgressBarStyle StyleId="default" />
           <ProgressValue>#percentage</ProgressValue>
+          <LabelMovingText>0:34:56</LabelMovingText>
+          <LabelFixedText>1:23:45</LabelFixedText>
         </Control>
         <Control x:type="Label">
           <Name>Playtime</Name>
-          <Id>10</Id>
-          <Width>325</Width>
-          <Height>90</Height>
-          <PosX>38</PosX>
-          <PosY>590</PosY>
+          <Id>15</Id>
+          <Width>250</Width>
+          <Height>70</Height>
+          <PosX>32</PosX>
+          <PosY>614</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan80" />
+          <LabelStyle StyleId="Titan60" />
           <LabelText>#currentplaytime</LabelText>
           <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
         <Control x:type="Label">
-          <Name>Duration</Name>
-          <Id>11</Id>
-          <Width>325</Width>
-          <Height>100</Height>
-          <PosX>671</PosX>
-          <PosY>590</PosY>
+          <Name>Durration</Name>
+          <Id>16</Id>
+          <Width>250</Width>
+          <Height>70</Height>
+          <PosX>745</PosX>
+          <PosY>614</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Titan80" />
+          <LabelStyle StyleId="Titan60" />
           <LabelText>#Play.Current.Duration</LabelText>
           <LabelTextAlignment>Right</LabelTextAlignment>
           <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
         <Control x:type="Equalizer">
-          <Name>Equalizer</Name>
-          <Id>13</Id>
-          <Width>302</Width>
-          <Height>280</Height>
-          <PosX>40</PosX>
-          <PosY>140</PosY>
+          <Name>Equalizer left</Name>
+          <Id>17</Id>
+          <Width>324</Width>
+          <Height>300</Height>
+          <PosX>30</PosX>
+          <PosY>96</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -203,16 +167,16 @@
           <BandSpacing>1</BandSpacing>
           <BandBorderSize>0</BandBorderSize>
           <BandCornerRadius>0</BandCornerRadius>
-          <FalloffSpeed>1</FalloffSpeed>
-          <FallOffHeight>1</FallOffHeight>
+          <FalloffSpeed>2</FalloffSpeed>
+          <FallOffHeight>2</FallOffHeight>
         </Control>
         <Control x:type="Equalizer">
-          <Name>Equalizer</Name>
-          <Id>14</Id>
-          <Width>302</Width>
-          <Height>280</Height>
-          <PosX>677</PosX>
-          <PosY>140</PosY>
+          <Name>Equalizer right</Name>
+          <Id>18</Id>
+          <Width>324</Width>
+          <Height>300</Height>
+          <PosX>668</PosX>
+          <PosY>96</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -222,16 +186,31 @@
           <BandSpacing>1</BandSpacing>
           <BandBorderSize>0</BandBorderSize>
           <BandCornerRadius>0</BandCornerRadius>
-          <FalloffSpeed>1</FalloffSpeed>
-          <FallOffHeight>1</FallOffHeight>
+          <FalloffSpeed>2</FalloffSpeed>
+          <FallOffHeight>2</FallOffHeight>
+        </Control>
+        <Control x:type="Label">
+          <Name>Next</Name>
+          <Id>19</Id>
+          <Width>955</Width>
+          <Height>60</Height>
+          <PosX>32</PosX>
+          <PosY>698</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Titan50_White" />
+          <LabelText>@Next+: +#Play.Next.Artist+ - +#Play.Next.Title+ / +#Play.Next.Duration</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
         </Control>
       </GroupControls>
     </Control>
     <Control x:type="Group">
       <Name>Window Name</Name>
-      <Id>16</Id>
+      <Id>2</Id>
       <Width>1024</Width>
-      <Height>156</Height>
+      <Height>100</Height>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -239,7 +218,7 @@
       <GroupControls>
         <Control x:type="Image">
           <Name>Icon</Name>
-          <Id>17</Id>
+          <Id>4</Id>
           <Width>60</Width>
           <Height>60</Height>
           <VisibleCondition>!IsTvRecording</VisibleCondition>
@@ -247,13 +226,13 @@
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle />
-          <Image>\icon_music.png</Image>
+          <Image>\icon_movies.png</Image>
           <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
         <Control x:type="Label">
           <Name>Name of Window</Name>
-          <Id>18</Id>
+          <Id>5</Id>
           <Width>650</Width>
           <Height>60</Height>
           <PosX>85</PosX>
@@ -269,7 +248,7 @@
         </Control>
         <Control x:type="Label">
           <Name>Time</Name>
-          <Id>19</Id>
+          <Id>6</Id>
           <Width>426</Width>
           <Height>110</Height>
           <PosX>599</PosX>
@@ -286,7 +265,7 @@
         </Control>
         <Control x:type="Image">
           <Name>Rec Indicator</Name>
-          <Id>20</Id>
+          <Id>7</Id>
           <Width>85</Width>
           <Height>85</Height>
           <VisibleCondition>IsTvRecording</VisibleCondition>
@@ -305,7 +284,7 @@
     </Control>
     <Control x:type="Button">
       <Name>Play_Menu</Name>
-      <Id>15</Id>
+      <Id>3</Id>
       <Width>1024</Width>
       <Height>130</Height>
       <VisibleCondition>IsSkinOptionEnabled(Default) || IsSkinOptionEnabled(Extended)</VisibleCondition>
