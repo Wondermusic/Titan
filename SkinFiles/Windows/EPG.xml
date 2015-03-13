@@ -124,9 +124,9 @@
             <ItemMargin>1,1,1,1</ItemMargin>
             <HorizontalAlignment>Right</HorizontalAlignment>
           </VerticalItemStyle>
-          <VerticalIconItemStyle StyleId="Empty List" />
+          <VerticalIconItemStyle StyleId="EmptyList" />
           <HorizontalItemStyle StyleId="VideoList Horizontal" />
-          <CoverFlowItemStyle />
+          <CoverFlowItemStyle StyleId="EmptyList" />
         </Control>
         <Control x:type="Label">
           <Name>Title</Name>
@@ -239,7 +239,7 @@
             <ItemMargin>1,1,1,1</ItemMargin>
             <HorizontalAlignment>Right</HorizontalAlignment>
           </VerticalItemStyle>
-          <VerticalIconItemStyle StyleId="Empty List" />
+          <VerticalIconItemStyle StyleId="EmptyList" />
           <HorizontalItemStyle>
             <BorderThickness>1,1,1,1</BorderThickness>
             <CornerRadius>12,12,12,12</CornerRadius>
