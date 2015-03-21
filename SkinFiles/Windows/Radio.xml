@@ -676,6 +676,176 @@
       </GroupControls>
     </Control>
     <Control x:type="Group">
+      <Name>WebRadioSettings</Name>
+      <Id>104</Id>
+      <Width>1024</Width>
+      <Height>768</Height>
+      <VisibleCondition>IsMediaPortalWindow(5671) || IsMediaPortalWindow(5672)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle />
+      <GroupControls>
+        <Control x:type="Image">
+          <Name>Background</Name>
+          <Id>105</Id>
+          <Width>1366</Width>
+          <Height>768</Height>
+          <PosX>-171</PosX>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Background" />
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Image</Name>
+          <Id>106</Id>
+          <Width>300</Width>
+          <Height>610</Height>
+          <PosX>10</PosX>
+          <PosY>110</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle>
+            <CornerRadius>20,20,20,20</CornerRadius>
+            <BackgroundBrush x:type="ColorBrush" Color="#A0000000" />
+          </ImageStyle>
+          <ImageStretch>None</ImageStretch>
+          <ImageCornerRadius>10</ImageCornerRadius>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="List">
+          <Name>List</Name>
+          <Id>109</Id>
+          <Width>285</Width>
+          <Height>591</Height>
+          <PosX>18</PosX>
+          <PosY>120</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ListControlStyle StyleId="empty" />
+          <ListType>MediaPortalButtonGroup</ListType>
+          <ListLayout>Vertical</ListLayout>
+          <VerticalItemStyle>
+            <CornerRadius>10,10,10,10</CornerRadius>
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FontType>Titan</FontType>
+            <FontSize>33</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>5,0,5,0</LabelMargin>
+            <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+            <Width>250</Width>
+            <Height>50</Height>
+            <HorizontalAlignment>Right</HorizontalAlignment>
+          </VerticalItemStyle>
+          <VerticalIconItemStyle StyleId="EmptyList" />
+          <HorizontalItemStyle StyleId="MusicList Horizontal" />
+          <CoverFlowItemStyle StyleId="MusicList CoverFlow" />
+        </Control>
+        <Control x:type="Image">
+          <Name>Image</Name>
+          <Id>107</Id>
+          <Width>300</Width>
+          <Height>610</Height>
+          <PosX>320</PosX>
+          <PosY>110</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle>
+            <CornerRadius>20,20,20,20</CornerRadius>
+            <BackgroundBrush x:type="ColorBrush" Color="#A0000000" />
+          </ImageStyle>
+          <ImageStretch>None</ImageStretch>
+          <ImageCornerRadius>10</ImageCornerRadius>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="List">
+          <Name>List</Name>
+          <Id>110</Id>
+          <Width>285</Width>
+          <Height>591</Height>
+          <PosX>328</PosX>
+          <PosY>120</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ListControlStyle StyleId="empty" />
+          <ListType>MediaPortalListControl</ListType>
+          <ListLayout>Vertical</ListLayout>
+          <VerticalItemStyle>
+            <CornerRadius>10,10,10,10</CornerRadius>
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FontType>Titan</FontType>
+            <FontSize>33</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>5,0,5,0</LabelMargin>
+            <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+            <Width>250</Width>
+            <Height>50</Height>
+            <HorizontalAlignment>Right</HorizontalAlignment>
+          </VerticalItemStyle>
+          <VerticalIconItemStyle StyleId="EmptyList" />
+          <HorizontalItemStyle StyleId="MusicList Horizontal" />
+          <CoverFlowItemStyle StyleId="MusicList CoverFlow" />
+        </Control>
+        <Control x:type="Image">
+          <Name>Image</Name>
+          <Id>108</Id>
+          <Width>300</Width>
+          <Height>610</Height>
+          <PosX>630</PosX>
+          <PosY>110</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle>
+            <CornerRadius>20,20,20,20</CornerRadius>
+            <BackgroundBrush x:type="ColorBrush" Color="#A0000000" />
+          </ImageStyle>
+          <ImageStretch>None</ImageStretch>
+          <ImageCornerRadius>10</ImageCornerRadius>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="List">
+          <Name>List</Name>
+          <Id>111</Id>
+          <Width>285</Width>
+          <Height>591</Height>
+          <PosX>638</PosX>
+          <PosY>120</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ListControlStyle StyleId="empty" />
+          <ListType>MediaPortalListControl</ListType>
+          <ListLayout>Vertical</ListLayout>
+          <VerticalItemStyle>
+            <CornerRadius>10,10,10,10</CornerRadius>
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FontType>Titan</FontType>
+            <FontSize>33</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>5,0,5,0</LabelMargin>
+            <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+            <Width>250</Width>
+            <Height>50</Height>
+            <HorizontalAlignment>Right</HorizontalAlignment>
+          </VerticalItemStyle>
+          <VerticalIconItemStyle StyleId="EmptyList" />
+          <HorizontalItemStyle StyleId="MusicList Horizontal" />
+          <CoverFlowItemStyle StyleId="MusicList CoverFlow" />
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
       <Name>Window Name</Name>
       <Id>2</Id>
       <Width>1024</Width>

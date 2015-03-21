@@ -593,7 +593,6 @@
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>basichome_button_infoservice</Image>
               <LabelText>@InfoService</LabelText>
               <Actions>
                 <Action Action="MediaPortalWindow" Param="16000" />
@@ -629,7 +628,6 @@
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>basichome_button_onlinevideos</Image>
               <LabelText>@OnlineVideos</LabelText>
               <Actions>
                 <Action Action="MediaPortalWindow" Param="4755" />
@@ -664,7 +662,6 @@
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>basichome_button_plugins</Image>
               <LabelText>@Plugins</LabelText>
               <Actions>
                 <Action Action="MediaPortalWindow" Param="34" />
@@ -701,7 +698,6 @@
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>basichome_button_dummy</Image>
               <LabelText>NewButton</LabelText>
               <Actions>
                 <Action Action="MediaPortalWindow" Param="87258" />
@@ -737,7 +733,6 @@
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>basichome_button_extensions</Image>
               <LabelText>@Extensions</LabelText>
               <Actions>
                 <Action Action="MediaPortalWindow" Param="801" />
@@ -771,7 +766,6 @@
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>basichome_button_dummy</Image>
               <LabelText>NewButton</LabelText>
               <Actions />
             </Control>
@@ -806,7 +800,6 @@
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>basichome_button_dummy</Image>
               <LabelText>NewButton</LabelText>
               <Actions />
             </Control>
@@ -841,7 +834,6 @@
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>basichome_button_dummy</Image>
               <LabelText>NewButton</LabelText>
               <Actions />
             </Control>
@@ -876,7 +868,6 @@
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <Image>basichome_button_dummy</Image>
               <LabelText>NewButton</LabelText>
               <Actions />
             </Control>

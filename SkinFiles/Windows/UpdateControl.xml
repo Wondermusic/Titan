@@ -181,7 +181,7 @@
         <Control x:type="Button">
           <Name>ShowUpdates Button</Name>
           <Id>26</Id>
-          <Width>400</Width>
+          <Width>360</Width>
           <Height>70</Height>
           <PosX>25</PosX>
           <PosY>180</PosY>
@@ -197,7 +197,7 @@
         <Control x:type="Button">
           <Name>SearchUpdates Button</Name>
           <Id>27</Id>
-          <Width>400</Width>
+          <Width>360</Width>
           <Height>70</Height>
           <PosX>25</PosX>
           <PosY>250</PosY>
@@ -213,7 +213,7 @@
         <Control x:type="Button">
           <Name>Install Button</Name>
           <Id>28</Id>
-          <Width>400</Width>
+          <Width>360</Width>
           <Height>70</Height>
           <PosX>25</PosX>
           <PosY>320</PosY>
@@ -229,7 +229,7 @@
         <Control x:type="Button">
           <Name>Restore Button</Name>
           <Id>29</Id>
-          <Width>400</Width>
+          <Width>360</Width>
           <Height>70</Height>
           <PosX>25</PosX>
           <PosY>390</PosY>
@@ -245,7 +245,7 @@
         <Control x:type="Button">
           <Name>Filter Updates Button</Name>
           <Id>30</Id>
-          <Width>400</Width>
+          <Width>360</Width>
           <Height>70</Height>
           <PosX>25</PosX>
           <PosY>460</PosY>
@@ -261,7 +261,7 @@
         <Control x:type="Button">
           <Name>Restart Button</Name>
           <Id>31</Id>
-          <Width>400</Width>
+          <Width>360</Width>
           <Height>70</Height>
           <PosX>25</PosX>
           <PosY>530</PosY>
@@ -277,7 +277,7 @@
         <Control x:type="Button">
           <Name>Clean Button</Name>
           <Id>32</Id>
-          <Width>400</Width>
+          <Width>360</Width>
           <Height>70</Height>
           <PosX>25</PosX>
           <PosY>600</PosY>
