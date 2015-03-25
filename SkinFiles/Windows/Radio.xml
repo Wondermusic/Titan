@@ -706,7 +706,7 @@
           <Height>610</Height>
           <PosX>10</PosX>
           <PosY>110</PosY>
-          <VisibleCondition />
+          <VisibleCondition>IsControlVisible(105)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle>
@@ -754,7 +754,7 @@
           <Height>610</Height>
           <PosX>320</PosX>
           <PosY>110</PosY>
-          <VisibleCondition />
+          <VisibleCondition>IsControlVisible(105)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle>
@@ -772,7 +772,8 @@
           <Height>591</Height>
           <PosX>328</PosX>
           <PosY>120</PosY>
-          <VisibleCondition />
+          <VisibleCondition>IsMediaPortalControlFocused(201)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
           <ListControlStyle StyleId="empty" />
@@ -802,7 +803,7 @@
           <Height>610</Height>
           <PosX>630</PosX>
           <PosY>110</PosY>
-          <VisibleCondition />
+          <VisibleCondition>IsControlVisible(105)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle>
@@ -820,7 +821,8 @@
           <Height>591</Height>
           <PosX>638</PosX>
           <PosY>120</PosY>
-          <VisibleCondition />
+          <VisibleCondition>IsMediaPortalControlFocused(202)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
           <ListControlStyle StyleId="empty" />
@@ -982,5 +984,5 @@
       </Actions>
     </Control>
   </WindowControls>
-  <VisibleCondition>IsMediaPortalWindow(30) || IsMediaPortalWindow(2345) || IsMediaPortalWindow(7890) || IsMediaPortalWindow(25650) || IsMediaPortalWindow(15634330) || IsMediaPortalWindow(25653) || IsMediaPortalWindow(5670)</VisibleCondition>
+  <VisibleCondition>IsMediaPortalWindow(30) || IsMediaPortalWindow(2345) || IsMediaPortalWindow(7890) || IsMediaPortalWindow(25650) || IsMediaPortalWindow(15634330) || IsMediaPortalWindow(25653) || IsMediaPortalWindow(5670) || IsMediaPortalWindow(5671) || IsMediaPortalWindow(5672)</VisibleCondition>
 </Window>
