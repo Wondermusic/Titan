@@ -79,7 +79,7 @@
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
                 <FontType>Titan</FontType>
                 <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <LabelMargin>0,0,0,5</LabelMargin>
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
@@ -114,7 +114,7 @@
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
                 <FontType>Titan</FontType>
                 <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <LabelMargin>0,0,0,5</LabelMargin>
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
@@ -149,7 +149,7 @@
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
                 <FontType>Titan</FontType>
                 <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <LabelMargin>0,0,0,5</LabelMargin>
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
@@ -184,7 +184,7 @@
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
                 <FontType>Titan</FontType>
                 <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <LabelMargin>0,0,0,5</LabelMargin>
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
@@ -219,7 +219,7 @@
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
                 <FontType>Titan</FontType>
                 <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <LabelMargin>0,0,0,5</LabelMargin>
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
@@ -254,7 +254,7 @@
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
                 <FontType>Titan</FontType>
                 <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <LabelMargin>0,0,0,5</LabelMargin>
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
@@ -289,7 +289,7 @@
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
                 <FontType>Titan</FontType>
                 <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <LabelMargin>0,0,0,5</LabelMargin>
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
@@ -436,7 +436,7 @@
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
                 <FontType>Titan</FontType>
                 <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <LabelMargin>0,0,0,5</LabelMargin>
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
@@ -552,7 +552,7 @@
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
                 <FontType>Titan</FontType>
                 <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <LabelMargin>0,0,0,5</LabelMargin>
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
@@ -587,7 +587,7 @@
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
                 <FontType>Titan</FontType>
                 <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <LabelMargin>0,0,0,5</LabelMargin>
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
@@ -622,7 +622,7 @@
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
                 <FontType>Titan</FontType>
                 <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <LabelMargin>0,0,0,5</LabelMargin>
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
@@ -656,7 +656,7 @@
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
                 <FontType>Titan</FontType>
                 <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <LabelMargin>0,0,0,5</LabelMargin>
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
@@ -689,16 +689,15 @@
                 <NoFocusBrush x:type="ImageBrush" Image="\BasicHomeImages\Trakt.png" Stretch="Fill" />
                 <FocusBrush x:type="ImageBrush" Image="\BasicHomeImages\Trakt.png" Stretch="Fill" />
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
-                <EnableLabel>false</EnableLabel>
                 <FontType>Titan</FontType>
                 <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <LabelMargin>0,0,0,5</LabelMargin>
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
                 <ImageStretch>None</ImageStretch>
               </ButtonStyle>
-              <LabelText>NewButton</LabelText>
+              <LabelText>Trakt</LabelText>
               <Actions>
                 <Action Action="MediaPortalWindow" Param="87258" />
               </Actions>
@@ -727,7 +726,7 @@
                 <FocusBorderBrush x:type="ColorBrush" Color="#FF00B7FF" />
                 <FontType>Titan</FontType>
                 <FontSize>50</FontSize>
-                <FocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
                 <LabelMargin>0,0,0,5</LabelMargin>
                 <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>

@@ -12,10 +12,10 @@
     <Control x:type="Label">
       <Name>Dialog Title</Name>
       <Id>1</Id>
-      <Width>615</Width>
+      <Width>600</Width>
       <Height>70</Height>
-      <PosX>61</PosX>
-      <PosY>58</PosY>
+      <PosX>70</PosX>
+      <PosY>70</PosY>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
@@ -25,7 +25,7 @@
         <FontSize>50</FontSize>
         <FontBrush x:type="ColorBrush" Color="#FF000000" />
       </LabelStyle>
-      <LabelText>#Dialog.Label4</LabelText>
+      <LabelText>#Dialog.Label3</LabelText>
       <IsScrollingEnabled>false</IsScrollingEnabled>
       <ScrollSpeed>2</ScrollSpeed>
       <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -58,23 +58,58 @@
         <Action Action="OpenDialog" Param="2016" />
       </Actions>
     </Control>
+    <Control x:type="Image">
+      <Name>NewImage</Name>
+      <Id>4</Id>
+      <Width>200</Width>
+      <Height>200</Height>
+      <PosX>75</PosX>
+      <PosY>280</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="Logo_Image" />
+      <Image>#Dialog.Image5</Image>
+      <ImageStretch>Uniform</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
     <Control x:type="Label">
       <Name>Dialog</Name>
-      <Id>3</Id>
+      <Id>5</Id>
       <Width>668</Width>
-      <Height>341</Height>
+      <Height>60</Height>
       <PosX>61</PosX>
-      <PosY>137</PosY>
+      <PosY>220</PosY>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
       <LabelStyle>
         <FontType>Titan</FontType>
         <FontWeight>Black</FontWeight>
-        <FontSize>34</FontSize>
+        <FontSize>50</FontSize>
         <FontBrush x:type="ColorBrush" Color="#FF000000" />
       </LabelStyle>
-      <LabelText>#Dialog.Label5</LabelText>
+      <LabelText>#TV.View.title</LabelText>
+      <ScrollSpeed>2</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="Label">
+      <Name>Dialog</Name>
+      <Id>6</Id>
+      <Width>449</Width>
+      <Height>60</Height>
+      <PosX>284</PosX>
+      <PosY>280</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle>
+        <FontType>Titan</FontType>
+        <FontWeight>Black</FontWeight>
+        <FontSize>50</FontSize>
+        <FontBrush x:type="ColorBrush" Color="#FF000000" />
+      </LabelStyle>
+      <LabelText>#TV.View.start+ - +#TV.View.stop</LabelText>
       <IsVertical>true</IsVertical>
       <IsScrollingEnabled>false</IsScrollingEnabled>
       <ScrollSpeed>2</ScrollSpeed>

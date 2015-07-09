@@ -66,17 +66,16 @@
         <Control x:type="Image">
           <Name>Cover</Name>
           <Id>5</Id>
-          <Width>300</Width>
-          <Height>300</Height>
+          <Width>290</Width>
+          <Height>290</Height>
           <PosX>55</PosX>
           <PosY>140</PosY>
-          <VisibleCondition>IsControlVisible(40)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition>IsControlVisible(3)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
-          <Image>#TV.RecordedTV.thumb</Image>
-          <DefaultImage>\defaultVideoBig.png</DefaultImage>
+          <Image>#selectedthumb</Image>
+          <DefaultImage>\defaultTVBig.png</DefaultImage>
           <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
@@ -109,7 +108,7 @@
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan 40" />
-          <LabelText>#highlightedbutton</LabelText>
+          <LabelText>#selecteditem</LabelText>
           <ScrollDelay>2</ScrollDelay>
           <ScrollSpeed>4</ScrollSpeed>
           <ScrollSeperator>  |  </ScrollSeperator>
@@ -137,8 +136,7 @@
           <Height>50</Height>
           <PosX>55</PosX>
           <PosY>433</PosY>
-          <VisibleCondition>IsControlVisible(40)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition>IsControlVisible(3)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan40 White" />
@@ -154,8 +152,7 @@
           <Height>164</Height>
           <PosX>55</PosX>
           <PosY>484</PosY>
-          <VisibleCondition>IsControlVisible(40)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition>IsControlVisible(3)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Titan30_White" />
@@ -164,6 +161,22 @@
           <ScrollDelay>2</ScrollDelay>
           <ScrollSpeed>5</ScrollSpeed>
           <ScrollSeperator>---------------------------------------------</ScrollSeperator>
+        </Control>
+        <Control x:type="Image">
+          <Name>Cover</Name>
+          <Id>19</Id>
+          <Width>150</Width>
+          <Height>150</Height>
+          <PosX>379</PosX>
+          <PosY>140</PosY>
+          <VisibleCondition>IsControlVisible(3)</VisibleCondition>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>#TV.RecordedTV.thumb</Image>
+          <DefaultImage>\defaultTVBig.png</DefaultImage>
+          <ImageStretch>Uniform</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
       </GroupControls>
     </Control>

@@ -80,9 +80,9 @@
         <Control x:type="Image">
           <Name>Cover</Name>
           <Id>7</Id>
-          <Width>320</Width>
+          <Width>959</Width>
           <Height>320</Height>
-          <PosX>352</PosX>
+          <PosX>34</PosX>
           <PosY>100</PosY>
           <VisibleCondition />
           <Animations />
@@ -92,7 +92,7 @@
             <BackgroundBrush />
             <BorderBrush />
           </ImageStyle>
-          <Image>#TV.Record.thumb</Image>
+          <Image>#Play.Current.Thumb</Image>
           <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
